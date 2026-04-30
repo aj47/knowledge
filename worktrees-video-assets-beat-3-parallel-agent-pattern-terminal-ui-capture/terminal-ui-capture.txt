@@ -1,0 +1,21 @@
+$ rg -n "panel|tile|composer|renderer|settings" apps/desktop/src/renderer/src apps/desktop/src/main -S | head -n 20
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:2:import { Button } from "@renderer/components/ui/button"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:3:import { Input } from "@renderer/components/ui/input"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:4:import { Label } from "@renderer/components/ui/label"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:5:import { Switch } from "@renderer/components/ui/switch"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:6:import { Textarea } from "@renderer/components/ui/textarea"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:8:import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@renderer/components/ui/card"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:9:import { Badge } from "@renderer/components/ui/badge"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:11:import { tipcClient } from "@renderer/lib/tipc-client"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:12:import { cn } from "@renderer/lib/utils"
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:92:export function SettingsLoops() {
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:422:    <div className="modern-panel h-full overflow-y-auto overflow-x-hidden px-6 py-4">
+apps/desktop/src/renderer/src/pages/settings-loops.tsx:433:export { SettingsLoops as Component }
+apps/desktop/src/main/system-prompts-default.ts:6: * - Other modules (config, TIPC, renderer-facing defaults) may import this.
+apps/desktop/src/main/renderer-handlers.ts:5:export type RendererHandlers = {
+apps/desktop/src/main/renderer-handlers.ts:12:  startMcpRecording: (data?: { conversationId?: string; conversationTitle?: string; sessionId?: string; fromTile?: boolean; fromButtonClick?: boolean }) => void
+apps/desktop/src/main/renderer-handlers.ts:14:  startOrFinishMcpRecording: (data?: { conversationId?: string; sessionId?: string; fromTile?: boolean; fromButtonClick?: boolean }) => void
+apps/desktop/src/main/renderer-handlers.ts:22:  onPanelSizeChanged: (size: { width: number; height: number }) => void
+apps/desktop/src/main/renderer-handlers.ts:26:  // Stop all in-progress TTS playback in this renderer window
+apps/desktop/src/main/panel-position.ts:4:export type PanelPosition =
+apps/desktop/src/main/panel-position.ts:13:export interface PanelSize {

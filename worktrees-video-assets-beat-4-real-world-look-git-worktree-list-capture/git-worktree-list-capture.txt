@@ -1,0 +1,101 @@
+$ git worktree list --porcelain
+worktree /Users/ajjoobandi/Development/dotagents-mono
+HEAD 12a29050b8db54b21a488c5dbe7b4bddc5a939aa
+branch refs/heads/main
+
+worktree /Users/ajjoobandi/Development/dap-mono-mobile
+HEAD b96eee4dcf6992eea4b59e86e95cb9abc0208ba9
+branch refs/heads/fix/mobile-expo-app
+
+worktree /Users/ajjoobandi/Development/dap-mono-pr35
+HEAD c6ce2618aa4fb6780cfea887333ccf3b4901d8ab
+branch refs/heads/fix/remote-server-connectable-url-and-mobile-headers
+
+worktree /Users/ajjoobandi/Development/dap-mono-pr36
+HEAD af36f1edc7eb826a0f13b020880a993caa3ef276
+branch refs/heads/triage-open-issues
+
+worktree /Users/ajjoobandi/Development/dap-mono-review
+HEAD 0b98a9b9280c328b0146188f1d8d28aa3fcb4135
+branch refs/heads/review/batches-1-3-5
+
+worktree /Users/ajjoobandi/Development/dap-mono-tiles
+HEAD 893c95469c1587596b48ee9d5b171561e5a774e1
+branch refs/heads/fix/session-tile-bugs
+
+worktree /Users/ajjoobandi/Development/dap-mono-w1
+HEAD 56daa81fb0c812f7b386bf4fa0d784e578ae6947
+branch refs/heads/fix/agent-runid-stale-progress
+
+worktree /Users/ajjoobandi/Development/dotagents-mono-landing-pr
+HEAD bd564074257271ffa9354230bd86081bda4f98f1
+branch refs/heads/feat/website-landing-import
+
+worktree /Users/ajjoobandi/Development/dotagents-mono-worktrees/compact-ui-loop
+HEAD e3286fc312a3efeba6b66bf1ea3989acd433ce19
+branch refs/heads/aloops/compact-ui-loop
+
+worktree /Users/ajjoobandi/Development/dotagents-mono-worktrees/langfuse-bug-fix-loop
+HEAD 980e027acaebabe4512ea5be0b08923d583aba63
+branch refs/heads/aloops/langfuse-bug-fix-loop
+
+worktree /Users/ajjoobandi/Development/dotagents-mono-worktrees/mobile-app-improvement-loop
+HEAD 2a6dd11124668b649015e7245ea3a2967bdde166
+branch refs/heads/aloops/mobile-app-improvement-loop
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/aj/isolated-fixes-20260309-093841
+HEAD 7e0f44137c72bcc71406536b2d227f17f7a41add
+branch refs/heads/aj/isolated-fixes-20260309-093841
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-25
+HEAD 7851249708270c5a759f67ef5dac9e3013fa5a4b
+branch refs/heads/feat/issue-25-dotagents-bundles
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-53
+HEAD 67332321ff63cca78df213de08ea35af652e1a4e
+branch refs/heads/feat/issue-53
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-54
+HEAD 67332321ff63cca78df213de08ea35af652e1a4e
+branch refs/heads/feat/issue-54
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-55
+HEAD 67332321ff63cca78df213de08ea35af652e1a4e
+branch refs/heads/feat/issue-55
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-56
+HEAD bd21ed441098583965be8644158680ca9a6bf682
+branch refs/heads/feat/issue-56-hub-bundle-inspector
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-57
+HEAD 82c8a29c1be5128b816a63b5fc0cfd44a42598e9
+branch refs/heads/feat/issue-57-bundle-import-safety
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-58
+HEAD 67b88971b732a7c69b7301aeade8a36f5d3d8112
+branch refs/heads/feat/issue-58-conversation-history
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/main-merge-76
+HEAD 7e0f44137c72bcc71406536b2d227f17f7a41add
+branch refs/heads/merge/pr-76-main
+
+worktree /Users/ajjoobandi/Development/dotagents-mono/.worktrees/pr-76-resolve
+HEAD 23be2fc168903f018f2f39a7e446d0ae253b6314
+branch refs/heads/resolve/pr-76
+
+worktree /Users/ajjoobandi/intent/workspaces/bug-fix/dotagents-mono
+HEAD 930faab46336349a70e822daa1ec33cdbace5519
+branch refs/heads/fix-snoozed-icon-during-active-session
+
+worktree /Users/ajjoobandi/intent/workspaces/open-check/dotagents-mono
+HEAD 24074f2d6d17b161471e71be67c462b4d090a08b
+branch refs/heads/triage-issues-to-pr
+
+worktree /Users/ajjoobandi/intent/workspaces/respond-user/dotagents-mono
+HEAD 437eec6d1b17325b340721b3c3829438463a4d2e
+branch refs/heads/respond-to-user-mid-turn
+
+worktree /Users/ajjoobandi/intent/workspaces/two-fix/dotagents-mono
+HEAD d94073d4fb4024bff0c70791ced28eb0dd621048
+branch refs/heads/fix-tts-playback-bugs
+

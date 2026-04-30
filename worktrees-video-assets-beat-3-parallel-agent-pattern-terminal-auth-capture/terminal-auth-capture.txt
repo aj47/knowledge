@@ -1,0 +1,21 @@
+$ rg -n "oauth|auth|token" apps/desktop/src/main apps/desktop/src/preload tests -S | head -n 20
+apps/desktop/src/preload/index.d.ts:7:      initiateOAuthFlow: (serverName: string) => Promise<{ authorizationUrl: string; state: string }>
+apps/desktop/src/preload/index.d.ts:8:      completeOAuthFlow: (serverName: string, code: string, state: string) => Promise<{ success: boolean; error?: string }>
+apps/desktop/src/preload/index.d.ts:9:      getOAuthStatus: (serverName: string) => Promise<{ configured: boolean; authenticated: boolean; tokenExpiry?: number; error?: string }>
+apps/desktop/src/preload/index.d.ts:10:      revokeOAuthTokens: (serverName: string) => Promise<{ success: boolean; error?: string }>
+apps/desktop/src/preload/index.ts:6:  // OAuth APIs
+apps/desktop/src/preload/index.ts:7:  initiateOAuthFlow: (serverName: string) => ipcRenderer.invoke('initiateOAuthFlow', serverName),
+apps/desktop/src/preload/index.ts:8:  completeOAuthFlow: (serverName: string, code: string, state: string) =>
+apps/desktop/src/preload/index.ts:9:    ipcRenderer.invoke('completeOAuthFlow', { serverName, code, state }),
+apps/desktop/src/preload/index.ts:10:  getOAuthStatus: (serverName: string) => ipcRenderer.invoke('getOAuthStatus', serverName),
+apps/desktop/src/preload/index.ts:11:  revokeOAuthTokens: (serverName: string) => ipcRenderer.invoke('revokeOAuthTokens', serverName),
+apps/desktop/src/main/profile-service.ts:105:  // Validate oauth if provided (must be an object with expected structure)
+apps/desktop/src/main/profile-service.ts:106:  // OAuthConfig uses serverMetadata.authorization_endpoint/token_endpoint, not authorizationUrl/tokenUrl
+apps/desktop/src/main/profile-service.ts:107:  if (c.oauth !== undefined) {
+apps/desktop/src/main/profile-service.ts:108:    if (typeof c.oauth !== "object" || c.oauth === null || Array.isArray(c.oauth)) {
+apps/desktop/src/main/profile-service.ts:111:    const oauth = c.oauth as Record<string, unknown>
+apps/desktop/src/main/profile-service.ts:113:    if (oauth.clientId !== undefined && typeof oauth.clientId !== "string") {
+apps/desktop/src/main/profile-service.ts:116:    if (oauth.clientSecret !== undefined && typeof oauth.clientSecret !== "string") {
+apps/desktop/src/main/profile-service.ts:119:    if (oauth.scope !== undefined && typeof oauth.scope !== "string") {
+apps/desktop/src/main/profile-service.ts:122:    if (oauth.redirectUri !== undefined && typeof oauth.redirectUri !== "string") {
+apps/desktop/src/main/profile-service.ts:126:    if (oauth.useDiscovery !== undefined && typeof oauth.useDiscovery !== "boolean") {

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DotAgents — AI Agent Orchestration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=IBM+Plex+Mono:wght@400;600&family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --c-bg:#0a0a0c;
+    --c-cream:#e8e4d9;
+    --c-amber:#f0a500;
+    --c-teal:#00e5c7;
+    --c-hot:#ff3d5a;
+    --c-blue:#2d5fff;
+    --grid-col:rgba(255,255,255,.03);
+  }
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{
+    font-family:'Outfit',sans-serif;
+    background:var(--c-bg);
+    color:var(--c-cream);
+    overflow-x:hidden;
+    cursor:default;
+  }
+
+  /* NOISE OVERLAY */
+  body::before{
+    content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity:.035;mix-blend-mode:overlay;
+  }
+
+  /* GRID BG */
+  .grid-bg{
+    position:fixed;inset:0;z-index:0;
+    background-image:
+      linear-gradient(var(--grid-col) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid-col) 1px,transparent 1px);
+    background-size:60px 60px;
+  }
+
+  /* GRADIENT MESH BLOBS */
+  .mesh-blob{position:fixed;border-radius:50%;filter:blur(120px);opacity:.25;z-index:0;pointer-events:none}
+  .mesh-blob.a{width:600px;height:600px;background:radial-gradient(circle,var(--c-teal),transparent 70%);top:-200px;left:-100px;animation:blobDrift 20s ease-in-out infinite}
+  .mesh-blob.b{width:500px;height:500px;background:radial-gradient(circle,var(--c-hot),transparent 70%);bottom:-100px;right:-150px;animation:blobDrift 25s ease-in-out infinite reverse}
+  .mesh-blob.c{width:400px;height:400px;background:radial-gradient(circle,var(--c-amber),transparent 70%);top:40%;left:50%;animation:blobDrift 18s ease-in-out infinite}
+  @keyframes blobDrift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-60px) scale(1.1)}66%{transform:translate(-30px,50px) scale(.9)}}
+
+  .page-wrap{position:relative;z-index:1}
+
+  /* NAV */
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.5rem 3rem;position:fixed;top:0;left:0;right:0;z-index:100;
+    backdrop-filter:blur(20px);background:rgba(10,10,12,.6);
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .logo{font-family:'Dela Gothic One',cursive;font-size:1.4rem;letter-spacing:-.02em;display:flex;align-items:center;gap:.6rem}
+  .logo .dot{width:12px;height:12px;border-radius:50%;background:var(--c-teal);display:inline-block;animation:pulse 2s ease infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,229,199,.6)}50%{box-shadow:0 0 0 10px rgba(0,229,199,0)}}
+  nav ul{display:flex;gap:2rem;list-style:none}
+  nav a{color:var(--c-cream);text-decoration:none;font-size:.9rem;font-weight:500;opacity:.7;transition:all .3s;position:relative}
+  nav a:hover{opacity:1}
+  nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--c-teal);transition:width .3s}
+  nav a:hover::after{width:100%}
+  .nav-cta{
+    padding:.6rem 1.4rem;border:1px solid var(--c-teal);border-radius:4px;
+    color:var(--c-teal);font-family:'IBM Plex Mono',monospace;font-size:.8rem;font-weight:600;
+    transition:all .3s;opacity:1!important;
+  }
+  .nav-cta:hover{background:var(--c-teal);color:var(--c-bg)}
+  .nav-cta::after{display:none!important}
+
+  /* HERO */
+  .hero{
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:8rem 2rem 4rem;position:relative;
+  }
+  .hero-badge{
+    font-family:'IBM Plex Mono',monospace;font-size:.75rem;font-weight:600;
+    color:var(--c-amber);border:1px solid rgba(240,165,0,.3);
+    padding:.4rem 1rem;border-radius:100px;margin-bottom:2rem;
+    letter-spacing:.1em;text-transform:uppercase;
+    animation:fadeUp .8s ease both;
+  }
+  .hero h1{
+    font-family:'Dela Gothic One',cursive;font-size:clamp(3rem,8vw,7rem);
+    line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;
+    animation:fadeUp .8s ease .15s both;
+  }
+  .hero h1 .highlight{
+    background:linear-gradient(135deg,var(--c-teal),var(--c-blue));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .hero-sub{
+    font-size:clamp(1rem,2vw,1.3rem);font-weight:300;max-width:600px;
+    line-height:1.7;opacity:.6;margin-bottom:3rem;
+    animation:fadeUp .8s ease .3s both;
+  }
+  @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+  .hero-actions{display:flex;gap:1rem;animation:fadeUp .8s ease .45s both;flex-wrap:wrap;justify-content:center}
+  .btn-primary{
+    padding:.9rem 2.2rem;background:var(--c-teal);color:var(--c-bg);border:none;
+    font-family:'IBM Plex Mono',monospace;font-size:.9rem;font-weight:600;
+    border-radius:4px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden;
+  }
+  .btn-primary::before{
+    content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,.2));
+    transform:translateX(-100%);transition:transform .5s;
+  }
+  .btn-primary:hover::before{transform:translateX(100%)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,229,199,.3)}
+
+  .btn-secondary{
+    padding:.9rem 2.2rem;background:transparent;color:var(--c-cream);
+    border:1px solid rgba(232,228,217,.2);font-family:'IBM Plex Mono',monospace;
+    font-size:.9rem;font-weight:600;border-radius:4px;cursor:pointer;transition:all .3s;
+  }
+  .btn-secondary:hover{border-color:var(--c-cream);transform:translateY(-2px)}
+
+  /* TERMINAL PREVIEW */
+  .terminal-preview{
+    margin-top:4rem;max-width:700px;width:100%;
+    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);
+    border-radius:8px;overflow:hidden;animation:fadeUp .8s ease .6s both;
+    box-shadow:0 20px 80px rgba(0,0,0,.5);
+  }
+  .terminal-bar{
+    display:flex;align-items:center;gap:.5rem;padding:.8rem 1rem;
+    background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .terminal-dot{width:10px;height:10px;border-radius:50%}
+  .terminal-dot:nth-child(1){background:#ff5f57}
+  .terminal-dot:nth-child(2){background:#ffbd2e}
+  .terminal-dot:nth-child(3){background:#28ca41}
+  .terminal-body{
+    padding:1.5rem;font-family:'IBM Plex Mono',monospace;font-size:.8rem;
+    line-height:1.8;min-height:200px;
+  }
+  .terminal-line{opacity:0;animation:typeLine .4s ease forwards}
+  .terminal-line .prompt{color:var(--c-teal)}
+  .terminal-line .cmd{color:var(--c-cream)}
+  .terminal-line .output{color:rgba(232,228,217,.5)}
+  .terminal-line .success{color:#28ca41}
+  .terminal-line .agent-name{color:var(--c-amber)}
+
+  /* FEATURES */
+  .features{padding:6rem 3rem;max-width:1200px;margin:0 auto}
+  .section-label{
+    font-family:'IBM Plex Mono',monospace;font-size:.75rem;font-weight:600;
+    color:var(--c-hot);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1rem;
+  }
+  .section-title{
+    font-family:'Dela Gothic One',cursive;font-size:clamp(2rem,4vw,3.5rem);
+    line-height:1.05;margin-bottom:4rem;max-width:700px;
+  }
+  .features-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;
+  }
+  .feature-card{
+    background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);
+    border-radius:8px;padding:2rem;position:relative;overflow:hidden;
+    transition:all .4s cubic-bezier(.175,.885,.32,1.275);cursor:default;
+  }
+  .feature-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,var(--c-teal),var(--c-blue),var(--c-hot));
+    transform:scaleX(0);transform-origin:left;transition:transform .5s;
+  }
+  .feature-card:hover{
+    transform:translateY(-4px);border-color:rgba(255,255,255,.12);
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
+  }
+  .feature-card:hover::before{transform:scaleX(1)}
+  .feature-icon{
+    width:48px;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+    font-size:1.4rem;margin-bottom:1.2rem;
+  }
+  .feature-card:nth-child(1) .feature-icon{background:rgba(0,229,199,.1);color:var(--c-teal)}
+  .feature-card:nth-child(2) .feature-icon{background:rgba(240,165,0,.1);color:var(--c-amber)}
+  .feature-card:nth-child(3) .feature-icon{background:rgba(255,61,90,.1);color:var(--c-hot)}
+  .feature-card:nth-child(4) .feature-icon{background:rgba(45,95,255,.1);color:var(--c-blue)}
+  .feature-card:nth-child(5) .feature-icon{background:rgba(0,229,199,.1);color:var(--c-teal)}
+  .feature-card:nth-child(6) .feature-icon{background:rgba(240,165,0,.1);color:var(--c-amber)}
+  .feature-card h3{font-family:'Outfit',sans-serif;font-weight:700;font-size:1.15rem;margin-bottom:.6rem}
+  .feature-card p{font-size:.9rem;line-height:1.6;opacity:.5;font-weight:300}
+
+  /* METRICS BAND */
+  .metrics{
+    padding:4rem 3rem;border-top:1px solid rgba(255,255,255,.06);
+    border-bottom:1px solid rgba(255,255,255,.06);margin:2rem 0;
+  }
+  .metrics-inner{
+    max-width:1200px;margin:0 auto;display:flex;justify-content:space-around;
+    flex-wrap:wrap;gap:2rem;
+  }
+  .metric{text-align:center}
+  .metric-val{
+    font-family:'Dela Gothic One',cursive;font-size:clamp(2.5rem,5vw,4rem);
+    background:linear-gradient(135deg,var(--c-cream),var(--c-teal));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  }
+  .metric-label{font-family:'IBM Plex Mono',monospace;font-size:.75rem;opacity:.4;margin-top:.4rem;letter-spacing:.1em;text-transform:uppercase}
+
+  /* ARCHITECTURE SECTION */
+  .architecture{padding:6rem 3rem;max-width:1200px;margin:0 auto}
+  .arch-visual{
+    margin-top:3rem;display:grid;grid-template-columns:1fr 2fr 1fr;gap:1rem;align-items:center;
+  }
+  .arch-node{
+    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);
+    border-radius:8px;padding:1.5rem;text-align:center;
+    transition:all .3s;
+  }
+  .arch-node:hover{border-color:var(--c-teal);box-shadow:0 0 30px rgba(0,229,199,.1)}
+  .arch-node .node-label{font-family:'IBM Plex Mono',monospace;font-size:.7rem;opacity:.4;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
+  .arch-node .node-name{font-weight:700;font-size:1rem;margin-bottom:.3rem}
+  .arch-node .node-desc{font-size:.8rem;opacity:.4;font-weight:300}
+  .arch-center{
+    background:linear-gradient(135deg,rgba(0,229,199,.05),rgba(45,95,255,.05));
+    border:1px solid rgba(0,229,199,.2);border-radius:12px;padding:2.5rem;text-align:center;
+    position:relative;
+  }
+  .arch-center::before{
+    content:'';position:absolute;inset:-1px;border-radius:12px;
+    background:linear-gradient(135deg,var(--c-teal),var(--c-blue));
+    z-index:-1;opacity:.15;filter:blur(20px);
+  }
+  .arch-center .node-name{font-family:'Dela Gothic One',cursive;font-size:1.3rem;color:var(--c-teal)}
+  .arch-side{display:flex;flex-direction:column;gap:1rem}
+  .arch-connector{
+    font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:var(--c-teal);
+    opacity:.4;text-align:center;margin:.3rem 0;
+  }
+
+  /* CTA */
+  .cta-section{
+    padding:8rem 3rem;text-align:center;position:relative;
+  }
+  .cta-section h2{
+    font-family:'Dela Gothic One',cursive;font-size:clamp(2.5rem,5vw,4.5rem);
+    line-height:1;margin-bottom:1.5rem;
+  }
+  .cta-section p{font-size:1.1rem;opacity:.5;font-weight:300;max-width:500px;margin:0 auto 2.5rem}
+  .cta-input-group{
+    display:flex;gap:.5rem;max-width:440px;margin:0 auto;
+  }
+  .cta-input{
+    flex:1;padding:.9rem 1.2rem;background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);border-radius:4px;
+    color:var(--c-cream);font-family:'IBM Plex Mono',monospace;font-size:.85rem;
+    outline:none;transition:border-color .3s;
+  }
+  .cta-input::placeholder{color:rgba(232,228,217,.3)}
+  .cta-input:focus{border-color:var(--c-teal)}
+
+  /* FOOTER */
+  footer{
+    padding:3rem;border-top:1px solid rgba(255,255,255,.06);
+    display:flex;justify-content:space-between;align-items:center;
+    font-family:'IBM Plex Mono',monospace;font-size:.75rem;opacity:.3;
+    max-width:1200px;margin:0 auto;
+  }
+
+  /* SCROLL ANIMATIONS */
+  .reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.175,.885,.32,1.275)}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  /* FLOATING PARTICLES */
+  .particles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .particle{
+    position:absolute;width:3px;height:3px;background:var(--c-teal);border-radius:50%;
+    opacity:0;animation:particleFloat linear infinite;
+  }
+  @keyframes particleFloat{
+    0%{opacity:0;transform:translateY(100vh) scale(0)}
+    10%{opacity:.6}
+    90%{opacity:.6}
+    100%{opacity:0;transform:translateY(-10vh) scale(1)}
+  }
+
+  /* SCANLINE */
+  .scanline{
+    position:fixed;top:0;left:0;right:0;height:2px;z-index:9998;pointer-events:none;
+    background:linear-gradient(90deg,transparent,var(--c-teal),transparent);
+    opacity:.08;animation:scanDown 8s linear infinite;
+  }
+  @keyframes scanDown{from{top:0}to{top:100vh}}
+
+  /* RESPONSIVE */
+  @media(max-width:768px){
+    nav{padding:1rem 1.5rem}
+    nav ul{display:none}
+    .features{padding:4rem 1.5rem}
+    .arch-visual{grid-template-columns:1fr;gap:1.5rem}
+    .cta-input-group{flex-direction:column}
+    footer{flex-direction:column;gap:1rem;text-align:center}
+  }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="mesh-blob a"></div>
+<div class="mesh-blob b"></div>
+<div class="mesh-blob c"></div>
+<div class="scanline"></div>
+<div class="particles" id="particles"></div>
+
+<div class="page-wrap">
+  <nav>
+    <div class="logo"><span class="dot"></span>DotAgents</div>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#metrics">Metrics</a></li>
+      <li><a href="https://github.com/aj47/dotagents-mono" target="_blank">GitHub</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Get Early Access →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">⚡ Now in Public Beta</div>
+    <h1>Orchestrate<br><span class="highlight">AI Agents</span><br>Like Never Before</h1>
+    <p class="hero-sub">The open protocol for spawning, coordinating, and scaling autonomous agents. One control plane. Infinite intelligence.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Start Building →</button>
+      <button class="btn-secondary" onclick="window.open('https://github.com/aj47/dotagents-mono','_blank')">View Source</button>
+    </div>
+
+    <div class="terminal-preview">
+      <div class="terminal-bar">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+      </div>
+      <div class="terminal-body" id="terminal-body"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-label reveal">Capabilities</div>
+    <h2 class="section-title reveal">Everything you need to<br>command autonomous agents</h2>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🧠</div>
+        <h3>Multi-Agent Orchestration</h3>
+        <p>Spawn, coordinate, and manage dozens of specialized agents from a single control plane. Agents communicate via the dotage protocol.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">⚡</div>
+        <h3>Hot-Swappable Skills</h3>
+        <p>Agents load capabilities on-demand from the open skill registry. Add browser automation, email, code execution — anything.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔥</div>
+        <h3>Real-Time Streaming</h3>
+        <p>Watch agent reasoning, tool calls, and outputs in real-time. Full observability with Langfuse integration baked in.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🌐</div>
+        <h3>MCP Server Mesh</h3>
+        <p>Connect any Model Context Protocol server. GitHub, filesystem, databases — agents access tools through a unified interface.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔄</div>
+        <h3>Scheduled Autonomy</h3>
+        <p>Set repeat tasks with cron-like precision. Agents wake up, execute, report, and sleep. Fully autonomous operation loops.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🛡️</div>
+        <h3>Human-in-the-Loop</h3>
+        <p>Tool approval gates, verification steps, and kill switches. You stay in control while agents do the heavy lifting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="metrics" id="metrics">
+    <div class="metrics-inner">
+      <div class="metric reveal">
+        <div class="metric-val" data-target="38">0</div>
+        <div class="metric-label">MCP Tools</div>
+      </div>
+      <div class="metric reveal">
+        <div class="metric-val" data-target="12">0</div>
+        <div class="metric-label">Agent Skills</div>
+      </div>
+      <div class="metric reveal">
+        <div class="metric-val" data-target="99.7">0</div>
+        <div class="metric-label">% Uptime</div>
+      </div>
+      <div class="metric reveal">
+        <div class="metric-val" data-target="150">0</div>
+        <div class="metric-label">ms Avg Latency</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section class="architecture" id="architecture">
+    <div class="section-label reveal">Under the Hood</div>
+    <h2 class="section-title reveal">Built on the<br><span style="color:var(--c-teal)">dotage</span> protocol</h2>
+    <div class="arch-visual reveal">
+      <div class="arch-side">
+        <div class="arch-node">
+          <div class="node-label">Input</div>
+          <div class="node-name">Voice / Text</div>
+          <div class="node-desc">Natural language commands</div>
+        </div>
+        <div class="arch-connector">───►</div>
+        <div class="arch-node">
+          <div class="node-label">Memory</div>
+          <div class="node-name">Persistent Store</div>
+          <div class="node-desc">Cross-session context</div>
+        </div>
+      </div>
+      <div class="arch-center">
+        <div class="node-label">Core Engine</div>
+        <div class="node-name">DotAgents Orchestrator</div>
+        <div class="node-desc" style="margin-top:.5rem;opacity:.5">Routes tasks → spawns agents → collects results</div>
+      </div>
+      <div class="arch-side">
+        <div class="arch-node">
+          <div class="node-label">Execution</div>
+          <div class="node-name">Agent Workers</div>
+          <div class="node-desc">Parallel task runners</div>
+        </div>
+        <div class="arch-connector">◄───</div>
+        <div class="arch-node">
+          <div class="node-label">Tools</div>
+          <div class="node-name">MCP Servers</div>
+          <div class="node-desc">38 tools connected</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="cta">
+    <div class="section-label reveal">Join the Movement</div>
+    <h2 class="reveal">The future is<br><span style="color:var(--c-amber)">agentic</span></h2>
+    <p class="reveal">Get early access to DotAgents and start building autonomous workflows today.</p>
+    <div class="cta-input-group reveal">
+      <input type="email" class="cta-input" placeholder="your@email.com">
+      <button class="btn-primary">Join Waitlist</button>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2025 DotAgents — Open Source AI Agent Orchestration</div>
+    <div>Built with the dotage protocol</div>
+  </footer>
+</div>
+
+<script>
+// Particles
+const pc=document.getElementById('particles');
+for(let i=0;i<30;i++){
+  const p=document.createElement('div');p.className='particle';
+  p.style.left=Math.random()*100+'%';
+  p.style.animationDuration=(8+Math.random()*12)+'s';
+  p.style.animationDelay=Math.random()*10+'s';
+  p.style.width=p.style.height=(1+Math.random()*3)+'px';
+  if(Math.random()>.7)p.style.background='#f0a500';
+  if(Math.random()>.9)p.style.background='#ff3d5a';
+  pc.appendChild(p);
+}
+
+// Terminal typing
+const lines=[
+  {type:'cmd',prompt:'$ ',text:'dotagents spawn --agent "web-browser" --task "research competitors"'},
+  {type:'output',text:'⟳ Spawning agent: Web Browser...'},
+  {type:'success',text:'✓ Agent spawned (pid: 4821) — executing task'},
+  {type:'cmd',prompt:'$ ',text:'dotagents spawn --agent "code-analyst" --task "review PR #142"'},
+  {type:'output',text:'⟳ Spawning agent: Code Analyst...'},
+  {type:'success',text:'✓ Agent spawned (pid: 4822) — executing task'},
+  {type:'cmd',prompt:'$ ',text:'dotagents status --all'},
+  {type:'agent',text:'┌─ web-browser    ● RUNNING   [████████░░] 80%'},
+  {type:'agent',text:'├─ code-analyst   ● RUNNING   [███░░░░░░░] 30%'},
+  {type:'agent',text:'└─ orchestrator   ● IDLE      awaiting results'},
+  {type:'success',text:'✓ 2 agents active — 38 tools available'},
+];
+const tb=document.getElementById('terminal-body');
+let li=0;
+function typeLine(){
+  if(li>=lines.length)return;
+  const l=lines[li];
+  const el=document.createElement('div');el.className='terminal-line';
+  if(l.type==='cmd'){
+    el.innerHTML=`<span class="prompt">${l.prompt}</span><span class="cmd">${l.text}</span>`;
+  }else if(l.type==='output'){
+    el.innerHTML=`<span class="output">${l.text}</span>`;
+  }else if(l.type==='success'){
+    el.innerHTML=`<span class="success">${l.text}</span>`;
+  }else if(l.type==='agent'){
+    el.innerHTML=`<span class="agent-name">${l.text}</span>`;
+  }
+  el.style.animationDelay='0s';
+  tb.appendChild(el);
+  setTimeout(()=>{el.style.opacity='1'},50);
+  li++;
+  setTimeout(typeLine,l.type==='cmd'?800:400);
+}
+setTimeout(typeLine,1200);
+
+// Scroll reveal
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+},{threshold:.15});
+reveals.forEach(r=>observer.observe(r));
+
+// Counter animation
+function animateCounters(){
+  document.querySelectorAll('.metric-val').forEach(el=>{
+    const target=parseFloat(el.dataset.target);
+    const isFloat=target%1!==0;
+    let current=0;
+    const step=target/60;
+    const timer=setInterval(()=>{
+      current+=step;
+      if(current>=target){current=target;clearInterval(timer)}
+      el.textContent=isFloat?current.toFixed(1):Math.floor(current);
+    },25);
+  });
+}
+const metricObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){animateCounters();metricObs.disconnect()}});
+},{threshold:.3});
+metricObs.observe(document.querySelector('.metrics'));
+
+// Parallax on hero
+document.addEventListener('mousemove',(e)=>{
+  const x=(e.clientX/window.innerWidth-.5)*20;
+  const y=(e.clientY/window.innerHeight-.5)*20;
+  document.querySelectorAll('.mesh-blob').forEach((b,i)=>{
+    b.style.transform=`translate(${x*(i+1)*.3}px,${y*(i+1)*.3}px)`;
+  });
+});
+</script>
+</body>
+</html>

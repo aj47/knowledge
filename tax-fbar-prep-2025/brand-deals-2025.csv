@@ -1,0 +1,12 @@
+ID,Status,Direction,Created on,Finished on,Source fee amount,Source fee currency,Target fee amount,Target fee currency,Source name,Source amount (after fees),Source currency,Target name,Target amount (after fees),Target currency,Exchange rate,Reference,Batch,Created by,Category,Note
+TRANSFER-1557256311,COMPLETED,IN,2025-05-27 22:20:33,2025-05-27 22:22:06,0,USD,,,Currency Cloud,2000,USD,Arash Joobandi,2000,USD,1,BrightData,,Arash Joobandi,Money added,
+TRANSFER-1501836928,COMPLETED,IN,2025-04-17 9:04:41,2025-04-17 9:05:34,,,,,OLINDA SAS,1000,USD,Arash Joobandi,1000,USD,1,Klap,,,Money added,
+TRANSFER-1479061365,COMPLETED,IN,2025-04-01 13:24:21,2025-04-01 13:24:38,0,USD,,,Rosebud AI,1000,USD,Arash Joobandi,1000,USD,1,MercuryACH,,Arash Joobandi,Money added,
+TRANSFER-1542511491,COMPLETED,IN,2025-05-16 14:01:12,2025-05-16 14:01:26,6.11,USD,,,APIFY TECHNOLOGIES S.R.O.,713.89,USD,Arash Joobandi,713.89,USD,1,APIFY1,,Arash Joobandi,Money added,
+TRANSFER-1510606024,COMPLETED,IN,2025-04-24 13:31:58,2025-04-24 13:32:08,,,,,Scrimba AS,500,USD,Arash Joobandi,500,USD,1,scrimbafs,,,Money added,
+TRANSFER-1492805531,COMPLETED,IN,2025-04-10 16:20:44,2025-04-10 16:21:11,0,USD,,,TESTSPRITE INC.,500,USD,Arash Joobandi,500,USD,1,TESTSPRITE,,Arash Joobandi,Money added,
+TRANSFER-1443603919,COMPLETED,IN,2025-03-06 5:02:25,2025-03-06 5:02:42,0,USD,,,Warp,500,USD,Arash Joobandi,500,USD,1,warp 1,,Arash Joobandi,Money added,
+TRANSFER-1479055763,COMPLETED,IN,2025-04-01 13:22:23,2025-04-01 13:22:39,0,USD,,,Warp,400,USD,Arash Joobandi,400,USD,1,warp2,,Arash Joobandi,Money added,
+TRANSFER-1506380259,COMPLETED,IN,2025-04-21 16:00:11,2025-04-26 1:50:47,6.11,USD,,,NIM AI INC.,293.89,USD,Arash Joobandi,293.89,USD,1,EDUCATORS COLLAB,,Arash Joobandi,Money added,
+TRANSFER-1629995622,COMPLETED,IN,2025-07-16 4:01:41,2025-07-16 4:01:49,0,USD,,,Augment,165.1,USD,Arash Joobandi,165.1,USD,1,YFP2PME8XZ,,Arash Joobandi,Money added,
+TRANSFER-1386314346,COMPLETED,IN,2025-01-23 9:14:04,2025-01-23 9:14:12,,,,,Scrimba AS,134.72,USD,Arash Joobandi,134.72,USD,1,Payout 24,,,Money added,

@@ -1,0 +1,145 @@
+Category,Subcategory,Metric,Description,MeasurementType,ScaleOrUnit,CollectionMethod,Notes
+Execution,Setup,Runs locally,Does the project install and start successfully without intervention,Binary,0/1,Manual run check,Failing this should be called out separately
+Execution,Setup,Install friction,How much manual work was needed to install dependencies or fix environment issues,Ordinal,1-5,Manual observation,1 none 5 major friction
+Execution,Setup,Build success,Does the project complete a production build,Binary,0/1,Build command,Run same build command for every model
+Execution,Setup,Runtime stability,Presence of crashes white screens or fatal runtime issues,Ordinal,1-5,Manual QA + console review,1 severe instability 5 stable
+Execution,Setup,Console cleanliness,Number and severity of console errors and warnings,Ordinal,1-5,Browser console review,Score severity not just raw count
+Execution,Setup,Time to first usable UI,How quickly a working interface appears after launch,Numeric,seconds,Timed observation,Optional if timing each run
+Execution,Setup,Completeness of output,Whether both landing page and dashboard were delivered,Ordinal,0-2,Manual review,0 neither 1 one surface 2 both
+Execution,Setup,Prompt compliance,How fully the output follows the requested task,Ordinal,1-5,Manual review,Separate from quality
+Execution,Code,Production readiness,How close the code feels to something a team could build on,Ordinal,1-5,Code review + app review,Not just visual finish
+Execution,Code,Responsiveness implemented,Whether responsive behavior actually exists beyond desktop,Binary,0/1,Viewport QA,Check multiple breakpoints
+Visual Design,Identity,Distinctive visual identity,Whether the product has a recognizable point of view rather than generic SaaS styling,Ordinal,1-5,Side-by-side review,One of the most important metrics
+Visual Design,Identity,Memorability,How likely the design is to stick in the viewer's mind,Ordinal,1-5,Reviewer judgment,Useful for video conclusions
+Visual Design,Identity,Brand cohesion,Consistency of brand language across landing page and dashboard,Ordinal,1-5,Manual review,Look for shared visual DNA
+Visual Design,Identity,Originality of concept,Whether the design attempts something unique instead of remixing defaults,Ordinal,1-5,Reviewer judgment,Reward clear concept not randomness
+Visual Design,Identity,Restraint,Whether the design avoids overdesign visual noise and gimmicks,Ordinal,1-5,Reviewer judgment,High score means disciplined choices
+Visual Design,Layout,Hierarchy clarity,How clearly the layout guides attention to the most important content,Ordinal,1-5,Manual review,Check first impression and scan path
+Visual Design,Layout,Spacing quality,Quality and consistency of whitespace rhythm and layout breathing room,Ordinal,1-5,Manual review,Common failure point
+Visual Design,Layout,Alignment consistency,Consistency of grid alignment edges and spatial organization,Ordinal,1-5,Manual review,Check sloppiness in cards and sections
+Visual Design,Layout,Composition strength,Overall balance proportion and arrangement of elements,Ordinal,1-5,Reviewer judgment,Applies to macro layout quality
+Visual Design,Layout,Density control,Whether dense information remains readable without feeling empty or crowded,Ordinal,1-5,Manual review,Important for dashboard
+Visual Design,Typography,Typography quality,Quality of font sizing weights contrast and text rhythm,Ordinal,1-5,Manual review,Key signal of taste
+Visual Design,Typography,Readability,How easy long and short text is to read,Ordinal,1-5,Manual review,Check paragraph width line height contrast
+Visual Design,Typography,Copy presentation,How well the design uses typographic treatment to support messaging,Ordinal,1-5,Manual review,Not copy quality itself
+Visual Design,Color,Palette quality,Quality sophistication and fit of the chosen color system,Ordinal,1-5,Manual review,Look for amateur palettes
+Visual Design,Color,Color restraint,Whether color is used purposefully rather than everywhere,Ordinal,1-5,Manual review,High score means controlled color usage
+Visual Design,Color,Contrast and accessibility,Legibility of text and controls against backgrounds,Ordinal,1-5,Manual review + spot checks,Can include quick contrast spot checks
+Visual Design,Surfaces,Card and panel design,Quality of panels surfaces borders shadows and containment,Ordinal,1-5,Manual review,Dashboard-heavy signal
+Visual Design,Surfaces,Visual depth,Use of layering elevation and separation to create structure,Ordinal,1-5,Manual review,Should support hierarchy not clutter
+Visual Design,Surfaces,Component finish,How refined buttons inputs nav elements and status chips feel,Ordinal,1-5,Manual review,Micro-polish metric
+Visual Design,Imagery,Illustration or graphic system quality,Quality of diagrams hero visuals or supporting illustrations if present,Ordinal,1-5,Manual review,NA if no custom visual system
+Visual Design,Imagery,Product mockup quality,Quality of any embedded product previews or UI mockups on landing page,Ordinal,1-5,Manual review,Important for landing credibility
+Visual Design,Motion,Motion and interaction polish,Quality of animations transitions hover states and feedback,Ordinal,1-5,Interactive QA,Only score what exists
+Visual Design,Motion,Motion restraint,Whether motion helps comprehension instead of distracting,Ordinal,1-5,Interactive QA,High score means tasteful use
+Landing Page,Messaging,Hero clarity,How quickly the hero explains what Intent is and why it matters,Ordinal,1-5,Manual review,Top-fold effectiveness
+Landing Page,Messaging,Hero strength,How compelling the main headline subhead and CTA feel together,Ordinal,1-5,Manual review,Message + layout combined
+Landing Page,Messaging,Value proposition sharpness,Clarity and specificity of why this product exists,Ordinal,1-5,Manual review,Penalize vagueness
+Landing Page,Messaging,Differentiation framing,How well it explains why this is better than a single chat workflow,Ordinal,1-5,Manual review,Explicit prompt requirement
+Landing Page,Messaging,Copy quality,Quality of the written marketing copy,Ordinal,1-5,Manual review,Not just no placeholder text
+Landing Page,Messaging,Credibility of claims,Whether benefits and language feel believable,Ordinal,1-5,Manual review,Avoid hype fluff
+Landing Page,Structure,Information architecture,Quality of section ordering narrative flow and page progression,Ordinal,1-5,Manual review,Does the story build logically
+Landing Page,Structure,Scannability,How easy it is to skim and understand the page,Ordinal,1-5,Manual review,Important for real-world use
+Landing Page,Structure,CTA strategy,Placement clarity and persuasiveness of calls to action,Ordinal,1-5,Manual review,Multiple CTA moments if needed
+Landing Page,Structure,Section variety,Whether sections feel intentionally varied rather than repetitive card stacks,Ordinal,1-5,Manual review,Common AI weakness
+Landing Page,Content,How it works explanation,How clearly the workflow of specs agents workspaces and worktrees is explained,Ordinal,1-5,Manual review,Core product understanding test
+Landing Page,Content,Feature articulation,How clearly core capabilities are described,Ordinal,1-5,Manual review,Not just buzzwords
+Landing Page,Content,Social proof realism,Believability and quality of logos quotes metrics or credibility elements,Ordinal,1-5,Manual review,Check realism not brand legality
+Landing Page,Content,Visual storytelling,How well visuals reinforce the product story,Ordinal,1-5,Manual review,Could include diagrams or previews
+Landing Page,Content,Landing-page-to-product continuity,How well the landing page sets expectations that the dashboard fulfills,Ordinal,1-5,Manual review,Big cohesion metric
+Landing Page,Responsiveness,Mobile hero quality,Quality of the mobile hero layout and readability,Ordinal,1-5,Mobile viewport QA,Same content quality on mobile
+Landing Page,Responsiveness,Mobile section adaptability,How well mid-page sections translate to smaller screens,Ordinal,1-5,Mobile viewport QA,Check stacking and readability
+Landing Page,Responsiveness,Mobile CTA usability,Tap targets and CTA clarity on mobile,Ordinal,1-5,Mobile viewport QA,Practical UX metric
+Dashboard,Structure,Dashboard first impression,How understandable and useful the dashboard feels in the first few seconds,Ordinal,1-5,Manual review,Equivalent to real product scanability
+Dashboard,Structure,Overview quality,Quality of the main overview or home state,Ordinal,1-5,Manual review,Should answer what needs attention
+Dashboard,Structure,Information hierarchy,Clarity of what is primary secondary and tertiary in the dashboard,Ordinal,1-5,Manual review,Crucial for dense systems
+Dashboard,Structure,Navigational clarity,How easy it is to understand navigation and major surfaces,Ordinal,1-5,Interactive QA,Sidebar tabs breadcrumbs etc
+Dashboard,Structure,Density management,How well the UI handles lots of information without collapsing into clutter,Ordinal,1-5,Manual review,Core challenge of this prompt
+Dashboard,Structure,Surface prioritization,Whether the most important objects get the most visual weight,Ordinal,1-5,Manual review,Agents specs workspaces approvals
+Dashboard,Product Model,Agent representation quality,How well agents are represented as understandable work actors,Ordinal,1-5,Manual review,Not just avatar cards
+Dashboard,Product Model,Workspace representation quality,How clearly multiple workspaces are shown and differentiated,Ordinal,1-5,Manual review,Prompt requirement
+Dashboard,Product Model,Worktree representation quality,How effectively worktrees are represented in a believable way,Ordinal,1-5,Manual review,Hard product-specific concept
+Dashboard,Product Model,Spec representation quality,How well specs and spec progress are surfaced,Ordinal,1-5,Manual review,Another key concept
+Dashboard,Product Model,Parallel work visualization,How clearly parallel execution is shown,Ordinal,1-5,Manual review,One of the key differentiators
+Dashboard,Product Model,Task state modeling,How well active blocked completed and waiting states are modeled,Ordinal,1-5,Manual review,Should be visible and believable
+Dashboard,Product Model,Approval modeling,How well approvals are surfaced and contextualized,Ordinal,1-5,Manual review,Prompt requirement
+Dashboard,Product Model,Artifact modeling,How clearly outputs artifacts or deliverables are presented,Ordinal,1-5,Manual review,Useful realism signal
+Dashboard,Product Model,Merge readiness modeling,How well branch or merge completion is shown,Ordinal,1-5,Manual review,Product understanding signal
+Dashboard,Product Model,Attention routing,How well the UI shows what needs the user's attention immediately,Ordinal,1-5,Manual review,Extremely important
+Dashboard,Usefulness,Believability as a real product,Whether the dashboard feels like something teams could actually use,Ordinal,1-5,Reviewer judgment,High-level realism metric
+Dashboard,Usefulness,Decision support quality,Whether the UI helps users decide what to do next,Ordinal,1-5,Interactive QA,Good product thinking signal
+Dashboard,Usefulness,Actionability,Presence and quality of actionable controls or next steps,Ordinal,1-5,Interactive QA,Not just status boards
+Dashboard,Usefulness,Learnability,How quickly a new user could understand how to use the dashboard,Ordinal,1-5,Reviewer judgment,Broad UX metric
+Dashboard,Usefulness,Depth beyond concept art,Whether the dashboard includes enough state and detail to feel usable,Ordinal,1-5,Manual review,Penalize shallow concept screens
+Dashboard,Interactivity,Explorability,How much the mocked app can actually be clicked explored or navigated,Ordinal,1-5,Interactive QA,Explicitly added to prompt
+Dashboard,Interactivity,State coverage,Range of believable mocked states and scenarios included,Ordinal,1-5,Interactive QA,Active blocked completed waiting etc
+Dashboard,Interactivity,Feedback quality,Quality of hover selected active expanded loading or empty-state feedback,Ordinal,1-5,Interactive QA,Micro interaction metric
+Dashboard,Interactivity,Prototype coherence,Whether interactions and routes form a coherent mini-product,Ordinal,1-5,Interactive QA,Not fragmented screens
+Dashboard,Data,Mock data realism,How realistic the dashboard data feels,Ordinal,1-5,Manual review,Names statuses artifacts timelines etc
+Dashboard,Data,Mock data variety,Range and diversity of tasks agents and workspaces in the data,Ordinal,1-5,Manual review,Needed to show system breadth
+Dashboard,Data,Mock data consistency,Whether data labels states and relationships remain internally consistent,Ordinal,1-5,Manual review,Common model failure
+Dashboard,Data,Signal-to-noise ratio,Whether the presented data is meaningful rather than filler,Ordinal,1-5,Manual review,Reward useful density
+User Experience,Clarity,What is happening now,How clearly the product indicates current active work,Ordinal,1-5,Manual review,High-value cross-surface metric
+User Experience,Clarity,What needs attention,How clearly the product surfaces urgent issues or blockers,Ordinal,1-5,Manual review,Important for orchestration apps
+User Experience,Clarity,What was produced,How clearly artifacts and outcomes are surfaced,Ordinal,1-5,Manual review,Useful for review workflows
+User Experience,Clarity,What to do next,How obvious the next action is for the user,Ordinal,1-5,Manual review + interactive QA,Global usability signal
+User Experience,Clarity,System legibility,How understandable the system feels overall,Ordinal,1-5,Reviewer judgment,Great summary metric
+User Experience,States,Empty states,Quality of empty or initial states where present,Ordinal,1-5,Interactive QA,Optional if present
+User Experience,States,Loading states,Quality of loading feedback where present,Ordinal,1-5,Interactive QA,Optional if present
+User Experience,States,Error states,Quality of error or failure handling surfaces where present,Ordinal,1-5,Interactive QA,Optional if present
+User Experience,States,Blocked states,Quality of blocked state communication,Ordinal,1-5,Interactive QA,Prompt-relevant
+User Experience,States,Completed states,Quality of completed state communication,Ordinal,1-5,Interactive QA,Should feel satisfying and useful
+User Experience,Controls,Primary action clarity,How clear the main calls to action and next steps are,Ordinal,1-5,Manual review,Landing and dashboard
+User Experience,Controls,Secondary control quality,Quality of filters tabs sort or utility controls,Ordinal,1-5,Interactive QA,Especially dashboard
+User Experience,Controls,Affordance quality,Whether controls look interactive and understandable,Ordinal,1-5,Interactive QA,Classic UI metric
+User Experience,Controls,Interaction consistency,Consistency of behavior across similar controls,Ordinal,1-5,Interactive QA,Useful for polish
+User Experience,Navigation,Cross-surface continuity,How well users can move between landing context and product context,Ordinal,1-5,Reviewer judgment,May be limited in mock
+User Experience,Navigation,Internal navigation flow,How coherent navigation feels within the dashboard,Ordinal,1-5,Interactive QA,Key UX metric
+User Experience,Navigation,Orientation and wayfinding,How easy it is to know where you are in the product,Ordinal,1-5,Interactive QA,Breadcrumbs labels selection states
+Product Thinking,Understanding,Understanding of agent orchestration,How deeply the output seems to understand the product concept,Ordinal,1-5,Reviewer judgment,One of the most important metrics
+Product Thinking,Understanding,Understanding of multi-workspace workflows,How well the design reflects multiple concurrent workspaces,Ordinal,1-5,Manual review,Concept comprehension
+Product Thinking,Understanding,Understanding of spec-driven development,How well specs are integrated into the product story and UI,Ordinal,1-5,Manual review,Harder than generic dashboards
+Product Thinking,Understanding,Understanding of worktrees,How well the design encodes worktree concepts in understandable UI,Ordinal,1-5,Manual review,Advanced concept test
+Product Thinking,Judgment,Appropriateness of abstraction,Whether the design abstracts complex concepts well without oversimplifying,Ordinal,1-5,Reviewer judgment,Subtle but important
+Product Thinking,Judgment,Feature selection judgment,Whether the chosen surfaced features make sense for an MVP,Ordinal,1-5,Reviewer judgment,Not everything should be shown
+Product Thinking,Judgment,Prioritization judgment,Whether the product puts emphasis on the right things,Ordinal,1-5,Reviewer judgment,High-level product taste
+Product Thinking,Judgment,Novelty with relevance,Whether unique ideas are genuinely useful to the domain,Ordinal,1-5,Reviewer judgment,Reward relevant originality
+Product Thinking,Judgment,Avoidance of gimmicks,Whether the product avoids superficial sci-fi AI tropes,Ordinal,1-5,Manual review,Penalty metric in positive form
+Cohesion,System,Landing-dashboard cohesion,Whether both surfaces feel designed by the same product team,Ordinal,1-5,Manual review,Core benchmark metric
+Cohesion,System,Conceptual cohesion,Whether the same product story carries through both surfaces,Ordinal,1-5,Manual review,Important for full-stack taste
+Cohesion,System,Visual cohesion,Consistency of style tokens spacing components and brand elements,Ordinal,1-5,Manual review,Can be scored separately from conceptual cohesion
+Cohesion,System,Interaction cohesion,Consistency of interaction patterns and control language,Ordinal,1-5,Interactive QA,Especially if dashboard has multiple views
+Cohesion,System,Data cohesion,Whether messaging and mock data tell the same product story,Ordinal,1-5,Manual review,Subtle realism metric
+Responsiveness,Desktop,Desktop quality,Overall quality at large viewport,Ordinal,1-5,Desktop QA,Baseline
+Responsiveness,Tablet,Tablet adaptability,How well layout adapts to medium viewports,Ordinal,1-5,Tablet viewport QA,Often ignored by models
+Responsiveness,Mobile,Mobile quality,Overall quality at small viewport,Ordinal,1-5,Mobile viewport QA,Important but not primary
+Responsiveness,Mobile,Navigation adaptation,Quality of mobile nav and control adaptation,Ordinal,1-5,Mobile viewport QA,Menus tabs drawers
+Responsiveness,Mobile,Content preservation,Whether important content survives mobile collapse,Ordinal,1-5,Mobile viewport QA,Penalize loss of meaning
+Accessibility,Basics,Text contrast,Basic contrast adequacy for key text and controls,Ordinal,1-5,Spot checks,Not a full audit
+Accessibility,Basics,Keyboard navigability,Basic keyboard usability if interactive,Ordinal,1-5,Keyboard QA,Optional but valuable
+Accessibility,Basics,Focus states,Visibility and quality of focus indication,Ordinal,1-5,Keyboard QA,Good frontend signal
+Accessibility,Basics,Semantic labeling,Basic use of labels headings and landmarks if inspectable,Ordinal,1-5,Code review + QA,Optional depth metric
+Accessibility,Basics,Reduced dependence on color alone,Whether state is communicated beyond just color,Ordinal,1-5,Manual review,Important for status-heavy UIs
+Code Quality,Architecture,Component structure,Whether the code is reasonably organized into components,Ordinal,1-5,Code review,Optional if reviewing code deeply
+Code Quality,Architecture,Reusability,Whether repeated patterns are abstracted sensibly,Ordinal,1-5,Code review,Not over-engineering
+Code Quality,Architecture,State management sanity,Whether interactive state is handled coherently,Ordinal,1-5,Code review + QA,Relevant for explorable prototype
+Code Quality,Architecture,Data modeling sanity,Whether mocked data structures are coherent and maintainable,Ordinal,1-5,Code review,Useful if code inspection is part of benchmark
+Code Quality,Cleanliness,Readability of code,How understandable the code is to a human developer,Ordinal,1-5,Code review,Optional secondary metric
+Code Quality,Cleanliness,Styling discipline,Whether Tailwind usage is disciplined rather than chaotic,Ordinal,1-5,Code review,Useful if you show code in video
+Code Quality,Cleanliness,Dead or broken elements,Presence of obviously incomplete fake or broken UI hooks,Ordinal,1-5,Code review + QA,5 means clean few dead ends
+Code Quality,Cleanliness,Handoff readiness,How easy it would be for a human frontend engineer to continue from here,Ordinal,1-5,Code review,Practical value metric
+Failure Modes,Common Failures,Generic AI look,Degree to which the output looks like a generic AI-generated SaaS template,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Failure Modes,Common Failures,Vague messaging,Degree to which copy relies on generic buzzwords without specificity,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Failure Modes,Common Failures,Concept mismatch,Degree to which the design misunderstands the product concept,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Failure Modes,Common Failures,Shallow dashboard,Degree to which the dashboard is more concept art than usable UI,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Failure Modes,Common Failures,Visual clutter,Degree to which the design is noisy cluttered or overstuffed,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Failure Modes,Common Failures,Overreliance on gradients or glow,Degree to which style depends on clichéd futuristic effects,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Failure Modes,Common Failures,Poor state realism,Degree to which mocked data and statuses feel fake or incoherent,Ordinal,1-5,Reviewer judgment,Reverse score or convert later
+Outcome,Overall,Overall visual score,Holistic visual quality judgment,Ordinal,1-10,Reviewer synthesis,Final summary score
+Outcome,Overall,Overall product score,Holistic product and UX judgment,Ordinal,1-10,Reviewer synthesis,Final summary score
+Outcome,Overall,Overall benchmark score,Overall combined judgment of the submission,Ordinal,1-10,Reviewer synthesis,Can be weighted rollup or gut check
+Outcome,Overall,Would build on this,Would a real startup team want to continue from this output,Binary,0/1,Reviewer judgment,Great final video-friendly metric
+Outcome,Overall,Would ship this direction,Would you be excited to refine rather than restart,Binary,0/1,Reviewer judgment,Useful founder lens
+Outcome,Overall,Most impressive thing,Single strongest element of the submission,Text,free text,Reviewer note,Qualitative note
+Outcome,Overall,Biggest weakness,Single most important weakness of the submission,Text,free text,Reviewer note,Qualitative note
+Outcome,Overall,Signature tendency,What this run reveals about the model's default frontend tendency,Text,free text,Reviewer note,Great for video narration

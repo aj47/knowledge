@@ -1,0 +1,33 @@
+$ cd /Users/ajjoobandi/Development/dotagents-mono/apps/desktop/tmp/worktrees-video-assets/beat-2-worktrees
+$ mkdir demo-worktree-repo && cd demo-worktree-repo
+$ git init -b main
+Initialized empty Git repository in /Users/ajjoobandi/Development/dotagents-mono/apps/desktop/tmp/worktrees-video-assets/beat-2-worktrees/demo-worktree-repo/.git/
+$ printf '# Worktree Demo\n' > README.md
+$ git add README.md
+$ git -c user.name='AJ' -c user.email='aj@example.com' commit -m 'init demo repo'
+[main (root-commit) e41489e] init demo repo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+$ git worktree add -b feature/auth wt-feature-auth
+Preparing worktree (new branch 'feature/auth')
+HEAD is now at e41489e init demo repo
+$ git worktree add -b feature/billing wt-feature-billing
+Preparing worktree (new branch 'feature/billing')
+HEAD is now at e41489e init demo repo
+$ ls -la
+total 8
+drwxr-xr-x   6 ajjoobandi  staff  192  9 Mar 12:59 .
+drwxr-xr-x   6 ajjoobandi  staff  192  9 Mar 12:59 ..
+drwxr-xr-x  13 ajjoobandi  staff  416  9 Mar 12:59 .git
+-rw-r--r--   1 ajjoobandi  staff   16  9 Mar 12:59 README.md
+drwxr-xr-x   4 ajjoobandi  staff  128  9 Mar 12:59 wt-feature-auth
+drwxr-xr-x   4 ajjoobandi  staff  128  9 Mar 12:59 wt-feature-billing
+$ find . -maxdepth 1 -type d | sort
+.
+./.git
+./wt-feature-auth
+./wt-feature-billing
+$ git worktree list
+/Users/ajjoobandi/Development/dotagents-mono/apps/desktop/tmp/worktrees-video-assets/beat-2-worktrees/demo-worktree-repo                     e41489e [main]
+/Users/ajjoobandi/Development/dotagents-mono/apps/desktop/tmp/worktrees-video-assets/beat-2-worktrees/demo-worktree-repo/wt-feature-auth     e41489e [feature/auth]
+/Users/ajjoobandi/Development/dotagents-mono/apps/desktop/tmp/worktrees-video-assets/beat-2-worktrees/demo-worktree-repo/wt-feature-billing  e41489e [feature/billing]

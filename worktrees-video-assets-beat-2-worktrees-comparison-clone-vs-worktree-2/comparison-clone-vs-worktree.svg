@@ -1,0 +1,30 @@
+<svg width="1500" height="900" viewBox="0 0 1500 900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 700 36px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; fill: #0f172a; }
+    .h { font: 700 26px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; fill: #0f172a; }
+    .t { font: 500 20px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; fill: #1e293b; }
+    .s { font: 500 18px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; fill: #334155; }
+  </style>
+  <rect width="1500" height="900" fill="#f8fafc"/>
+  <text x="750" y="70" class="title" text-anchor="middle">Clone vs Worktree (for parallel branch work)</text>
+
+  <rect x="70" y="120" width="660" height="700" rx="20" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+  <text x="400" y="170" class="h" text-anchor="middle">Separate Clones</text>
+  <text x="120" y="230" class="t">• clone-A/.git (full object DB)</text>
+  <text x="120" y="270" class="t">• clone-B/.git (duplicate object DB)</text>
+  <text x="120" y="310" class="t">• clone-C/.git (duplicate object DB)</text>
+  <text x="120" y="370" class="t">Storage: High (triplicated history)</text>
+  <text x="120" y="410" class="t">Setup: Slow (git clone each time)</text>
+  <text x="120" y="450" class="t">Branch switching: isolated per clone</text>
+  <text x="120" y="510" class="s">Good when repos are unrelated or need total isolation.</text>
+
+  <rect x="770" y="120" width="660" height="700" rx="20" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+  <text x="1100" y="170" class="h" text-anchor="middle">Git Worktrees</text>
+  <text x="820" y="230" class="t">• one central .git object DB</text>
+  <text x="820" y="270" class="t">• main/ + wt-feature-auth + wt-feature-billing</text>
+  <text x="820" y="310" class="t">• each folder checks out a different branch</text>
+  <text x="820" y="370" class="t">Storage: Lower (shared history/objects)</text>
+  <text x="820" y="410" class="t">Setup: Fast (git worktree add)</text>
+  <text x="820" y="450" class="t">Branch switching: no stash dance across tasks</text>
+  <text x="820" y="510" class="s">Ideal for parallel feature work in the same repo.</text>
+</svg>

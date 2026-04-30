@@ -1,0 +1,27 @@
+# Tolaria app files (machine-specific, never commit)
+.laputa/settings.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Knowledge vault should not track bulky binary/media assets
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.pdf

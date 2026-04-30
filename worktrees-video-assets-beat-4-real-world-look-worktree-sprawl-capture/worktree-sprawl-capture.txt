@@ -1,0 +1,26 @@
+$ git worktree list --porcelain | awk '/^worktree /{print substr($0,10)}' | nl -w2 -s'. '
+ 1. /Users/ajjoobandi/Development/dotagents-mono
+ 2. /Users/ajjoobandi/Development/dap-mono-mobile
+ 3. /Users/ajjoobandi/Development/dap-mono-pr35
+ 4. /Users/ajjoobandi/Development/dap-mono-pr36
+ 5. /Users/ajjoobandi/Development/dap-mono-review
+ 6. /Users/ajjoobandi/Development/dap-mono-tiles
+ 7. /Users/ajjoobandi/Development/dap-mono-w1
+ 8. /Users/ajjoobandi/Development/dotagents-mono-landing-pr
+ 9. /Users/ajjoobandi/Development/dotagents-mono-worktrees/compact-ui-loop
+10. /Users/ajjoobandi/Development/dotagents-mono-worktrees/langfuse-bug-fix-loop
+11. /Users/ajjoobandi/Development/dotagents-mono-worktrees/mobile-app-improvement-loop
+12. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/aj/isolated-fixes-20260309-093841
+13. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-25
+14. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-53
+15. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-54
+16. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-55
+17. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-56
+18. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-57
+19. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/issue-58
+20. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/main-merge-76
+21. /Users/ajjoobandi/Development/dotagents-mono/.worktrees/pr-76-resolve
+22. /Users/ajjoobandi/intent/workspaces/bug-fix/dotagents-mono
+23. /Users/ajjoobandi/intent/workspaces/open-check/dotagents-mono
+24. /Users/ajjoobandi/intent/workspaces/respond-user/dotagents-mono
+25. /Users/ajjoobandi/intent/workspaces/two-fix/dotagents-mono

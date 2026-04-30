@@ -1,0 +1,15 @@
+$ git worktree list --porcelain | awk '/^worktree /{print substr($0,10)}' > /tmp/dotagents_worktrees.txt
+
+$ while IFS= read -r wt; do nm="$wt/node_modules"; if [ -d "$nm" ]; then du -sh "$nm"; fi; done < /tmp/dotagents_worktrees.txt
+2.7G	/Users/ajjoobandi/Development/dotagents-mono/node_modules
+1.7G	/Users/ajjoobandi/Development/dap-mono-mobile/node_modules
+1.7G	/Users/ajjoobandi/Development/dap-mono-pr35/node_modules
+1.7G	/Users/ajjoobandi/Development/dap-mono-pr36/node_modules
+1.7G	/Users/ajjoobandi/Development/dap-mono-review/node_modules
+1.3G	/Users/ajjoobandi/Development/dap-mono-tiles/node_modules
+1.7G	/Users/ajjoobandi/Development/dap-mono-w1/node_modules
+1.7G	/Users/ajjoobandi/Development/dotagents-mono-worktrees/compact-ui-loop/node_modules
+4.0K	/Users/ajjoobandi/Development/dotagents-mono-worktrees/langfuse-bug-fix-loop/node_modules
+1.0G	/Users/ajjoobandi/Development/dotagents-mono/.worktrees/aj/isolated-fixes-20260309-093841/node_modules
+1.7G	/Users/ajjoobandi/intent/workspaces/bug-fix/dotagents-mono/node_modules
+1.7G	/Users/ajjoobandi/intent/workspaces/two-fix/dotagents-mono/node_modules

@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DotAgents - Sessions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            border: 'hsl(var(--border))',
+            input: 'hsl(var(--input))',
+            ring: 'hsl(var(--ring))',
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: { DEFAULT: 'hsl(var(--primary))', foreground: 'hsl(var(--primary-foreground))' },
+            secondary: { DEFAULT: 'hsl(var(--secondary))', foreground: 'hsl(var(--secondary-foreground))' },
+            destructive: { DEFAULT: 'hsl(var(--destructive))', foreground: 'hsl(var(--destructive-foreground))' },
+            muted: { DEFAULT: 'hsl(var(--muted))', foreground: 'hsl(var(--muted-foreground))' },
+            accent: { DEFAULT: 'hsl(var(--accent))', foreground: 'hsl(var(--accent-foreground))' },
+            card: { DEFAULT: 'hsl(var(--card))', foreground: 'hsl(var(--card-foreground))' },
+          },
+          borderRadius: { lg: 'var(--radius)', md: 'calc(var(--radius) - 2px)', sm: 'calc(var(--radius) - 4px)' },
+        }
+      }
+    }
+  </script>
+  <style>
+    /* ===== THEME SYSTEM ===== */
+    :root, [data-theme="dark"] {
+      --background: 0 0% 0%;
+      --foreground: 0 0% 99%;
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 98%;
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 98%;
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+      --secondary: 0 0% 14.9%;
+      --secondary-foreground: 0 0% 98%;
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 221 83% 53%;
+      --radius: 0.5rem;
+    }
+    [data-theme="light"] {
+      --background: 0 0% 100%;
+      --foreground: 0 0% 3.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 0 0% 3.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 0 0% 3.9%;
+      --primary: 0 0% 9%;
+      --primary-foreground: 0 0% 98%;
+      --secondary: 0 0% 96.1%;
+      --secondary-foreground: 0 0% 9%;
+      --muted: 0 0% 96.1%;
+      --muted-foreground: 0 0% 45.1%;
+      --accent: 0 0% 96.1%;
+      --accent-foreground: 0 0% 9%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 0 0% 95%;
+      --input: 0 0% 89.8%;
+      --ring: 221 83% 53%;
+      --radius: 0.5rem;
+    }
+    [data-theme="cyberpunk"] {
+      --background: 270 50% 3%;
+      --foreground: 300 100% 95%;
+      --card: 270 50% 6%;
+      --card-foreground: 300 100% 95%;
+      --popover: 270 50% 6%;
+      --popover-foreground: 300 100% 95%;
+      --primary: 320 100% 60%;
+      --primary-foreground: 270 50% 3%;
+      --secondary: 270 40% 15%;
+      --secondary-foreground: 300 100% 90%;
+      --muted: 270 40% 12%;
+      --muted-foreground: 280 30% 60%;
+      --accent: 280 60% 18%;
+      --accent-foreground: 300 100% 90%;
+      --destructive: 0 80% 55%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 280 50% 18%;
+      --input: 270 40% 15%;
+      --ring: 320 100% 60%;
+      --radius: 0.25rem;
+    }
+    [data-theme="ocean"] {
+      --background: 210 60% 4%;
+      --foreground: 200 50% 95%;
+      --card: 210 55% 7%;
+      --card-foreground: 200 50% 95%;
+      --popover: 210 55% 7%;
+      --popover-foreground: 200 50% 95%;
+      --primary: 190 90% 50%;
+      --primary-foreground: 210 60% 4%;
+      --secondary: 210 45% 14%;
+      --secondary-foreground: 200 50% 90%;
+      --muted: 210 40% 12%;
+      --muted-foreground: 200 30% 55%;
+      --accent: 200 50% 16%;
+      --accent-foreground: 200 50% 90%;
+      --destructive: 0 70% 50%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 210 40% 16%;
+      --input: 210 40% 14%;
+      --ring: 190 90% 50%;
+      --radius: 0.625rem;
+    }
+    [data-theme="forest"] {
+      --background: 150 30% 3%;
+      --foreground: 140 20% 92%;
+      --card: 150 25% 6%;
+      --card-foreground: 140 20% 92%;
+      --popover: 150 25% 6%;
+      --popover-foreground: 140 20% 92%;
+      --primary: 142 70% 45%;
+      --primary-foreground: 150 30% 3%;
+      --secondary: 150 20% 13%;
+      --secondary-foreground: 140 20% 90%;
+      --muted: 150 15% 11%;
+      --muted-foreground: 140 15% 50%;
+      --accent: 145 25% 15%;
+      --accent-foreground: 140 20% 90%;
+      --destructive: 0 70% 50%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 150 20% 15%;
+      --input: 150 20% 13%;
+      --ring: 142 70% 45%;
+      --radius: 0.5rem;
+    }
+    [data-theme="sunset"] {
+      --background: 15 40% 4%;
+      --foreground: 30 60% 95%;
+      --card: 15 35% 7%;
+      --card-foreground: 30 60% 95%;
+      --popover: 15 35% 7%;
+      --popover-foreground: 30 60% 95%;
+      --primary: 25 95% 55%;
+      --primary-foreground: 15 40% 4%;
+      --secondary: 15 25% 14%;
+      --secondary-foreground: 30 60% 90%;
+      --muted: 15 20% 12%;
+      --muted-foreground: 20 25% 50%;
+      --accent: 20 30% 16%;
+      --accent-foreground: 30 60% 90%;
+      --destructive: 0 80% 55%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 15 25% 16%;
+      --input: 15 25% 14%;
+      --ring: 25 95% 55%;
+      --radius: 0.5rem;
+    }
+    [data-theme="lavender"] {
+      --background: 260 30% 96%;
+      --foreground: 260 30% 10%;
+      --card: 260 30% 98%;
+      --card-foreground: 260 30% 10%;
+      --popover: 260 30% 98%;
+      --popover-foreground: 260 30% 10%;
+      --primary: 260 65% 55%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 260 20% 90%;
+      --secondary-foreground: 260 30% 15%;
+      --muted: 260 20% 92%;
+      --muted-foreground: 260 15% 45%;
+      --accent: 260 25% 88%;
+      --accent-foreground: 260 30% 15%;
+      --destructive: 0 70% 55%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 260 15% 88%;
+      --input: 260 15% 85%;
+      --ring: 260 65% 55%;
+      --radius: 0.75rem;
+    }
+    [data-theme="midnight-blue"] {
+      --background: 222 47% 6%;
+      --foreground: 210 40% 95%;
+      --card: 222 44% 9%;
+      --card-foreground: 210 40% 95%;
+      --popover: 222 44% 9%;
+      --popover-foreground: 210 40% 95%;
+      --primary: 217 91% 60%;
+      --primary-foreground: 222 47% 6%;
+      --secondary: 222 30% 16%;
+      --secondary-foreground: 210 40% 90%;
+      --muted: 222 25% 13%;
+      --muted-foreground: 215 20% 55%;
+      --accent: 220 35% 18%;
+      --accent-foreground: 210 40% 90%;
+      --destructive: 0 70% 50%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 222 25% 17%;
+      --input: 222 25% 16%;
+      --ring: 217 91% 60%;
+      --radius: 0.5rem;
+    }
+    [data-theme="rose"] {
+      --background: 350 30% 4%;
+      --foreground: 350 20% 95%;
+      --card: 350 25% 7%;
+      --card-foreground: 350 20% 95%;
+      --popover: 350 25% 7%;
+      --popover-foreground: 350 20% 95%;
+      --primary: 350 80% 58%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 350 20% 14%;
+      --secondary-foreground: 350 20% 90%;
+      --muted: 350 15% 12%;
+      --muted-foreground: 350 15% 52%;
+      --accent: 350 25% 16%;
+      --accent-foreground: 350 20% 90%;
+      --destructive: 0 80% 55%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 350 20% 16%;
+      --input: 350 20% 14%;
+      --ring: 350 80% 58%;
+      --radius: 0.5rem;
+    }
+    [data-theme="catppuccin"] {
+      --background: 240 21% 12%;
+      --foreground: 226 64% 88%;
+      --card: 240 21% 15%;
+      --card-foreground: 226 64% 88%;
+      --popover: 240 21% 15%;
+      --popover-foreground: 226 64% 88%;
+      --primary: 266 85% 78%;
+      --primary-foreground: 240 21% 12%;
+      --secondary: 240 18% 20%;
+      --secondary-foreground: 226 64% 88%;
+      --muted: 240 16% 18%;
+      --muted-foreground: 228 24% 55%;
+      --accent: 240 20% 22%;
+      --accent-foreground: 226 64% 88%;
+      --destructive: 347 87% 68%;
+      --destructive-foreground: 240 21% 12%;
+      --border: 240 16% 20%;
+      --input: 240 16% 20%;
+      --ring: 266 85% 78%;
+      --radius: 0.625rem;
+    }
+    [data-theme="solarized"] {
+      --background: 192 100% 5%;
+      --foreground: 44 87% 70%;
+      --card: 192 81% 8%;
+      --card-foreground: 44 87% 70%;
+      --popover: 192 81% 8%;
+      --popover-foreground: 44 87% 70%;
+      --primary: 175 59% 40%;
+      --primary-foreground: 192 100% 5%;
+      --secondary: 192 50% 14%;
+      --secondary-foreground: 44 87% 70%;
+      --muted: 192 40% 11%;
+      --muted-foreground: 186 8% 55%;
+      --accent: 192 45% 16%;
+      --accent-foreground: 44 87% 70%;
+      --destructive: 1 71% 52%;
+      --destructive-foreground: 192 100% 5%;
+      --border: 192 35% 15%;
+      --input: 192 35% 14%;
+      --ring: 175 59% 40%;
+      --radius: 0.375rem;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: hsl(var(--background));
+      color: hsl(var(--foreground));
+      overflow: hidden;
+      height: 100vh;
+    }
+    /* Scrollbar styles */
+    .scroll-area::-webkit-scrollbar { width: 6px; }
+    .scroll-area::-webkit-scrollbar-track { background: transparent; }
+    .scroll-area::-webkit-scrollbar-thumb { background: transparent; border-radius: 3px; }
+    .group\/tile:hover .scroll-area::-webkit-scrollbar-thumb { background: hsl(var(--muted)); }
+    .scroll-area::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
+
+    /* Pulse animations */
+    @keyframes pulse-blue {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    @keyframes pulse-amber {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .animate-pulse-blue { animation: pulse-blue 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    .animate-pulse-amber { animation: pulse-amber 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+    /* Streaming dots */
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    .streaming-cursor::after {
+      content: '▊';
+      animation: blink 1s infinite;
+      color: hsl(var(--muted-foreground));
+      margin-left: 2px;
+    }
+
+    /* Chevron animation */
+    .chevron-rotate { transition: transform 0.2s ease; }
+    .chevron-collapsed { transform: rotate(180deg); }
+
+    /* Resize handle */
+    .resize-handle {
+      cursor: ns-resize;
+      user-select: none;
+      touch-action: none;
+    }
+
+    /* Button base styles */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.375rem;
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      padding: 0.375rem 0.75rem;
+      transition: all 150ms ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+      line-height: 1.25rem;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: hsl(var(--primary));
+      color: hsl(var(--primary-foreground));
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary {
+      background: hsl(var(--secondary));
+      color: hsl(var(--secondary-foreground));
+      border-color: hsl(var(--border));
+    }
+    .btn-secondary:hover { background: hsl(var(--accent)); }
+    .btn-ghost {
+      background: transparent;
+      color: hsl(var(--foreground));
+    }
+    .btn-ghost:hover { background: hsl(var(--accent)); }
+    .btn-icon {
+      padding: 0.375rem;
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+    .btn-icon svg { width: 14px; height: 14px; }
+
+    /* Code block styles */
+    pre {
+      background: hsl(var(--muted));
+      border-radius: calc(var(--radius) - 2px);
+      padding: 0.75rem;
+      overflow-x: auto;
+      font-size: 0.75rem;
+      line-height: 1.5;
+      margin: 0.5rem 0;
+    }
+    code {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 0.75rem;
+    }
+    :not(pre) > code {
+      background: hsl(var(--muted));
+      padding: 0.125rem 0.375rem;
+      border-radius: calc(var(--radius) - 4px);
+      font-size: 0.75rem;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: hsl(var(--card));
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+      font-size: 0.8125rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 100;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    /* Tile focus ring */
+    .tile-focused {
+      border-color: rgb(59, 130, 246) !important;
+      box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.3);
+    }
+    .dark .tile-focused { background: rgba(30, 58, 138, 0.2) !important; }
+    .tile-focused:not(.dark *) { background: rgba(239, 246, 255, 0.3) !important; }
+
+    /* Tile approval ring */
+    .tile-approval {
+      border-color: rgb(245, 158, 11) !important;
+      box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.3);
+    }
+    .dark .tile-approval { background: rgba(120, 53, 15, 0.2) !important; }
+
+    /* Tile error */
+    .tile-error {
+      border-color: rgb(239, 68, 68) !important;
+    }
+
+    /* Layout transitions */
+    .session-grid { transition: all 0.3s ease; }
+    .session-tile { transition: all 0.3s ease; }
+
+    /* Drag handle */
+    .drag-handle {
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      cursor: grab;
+    }
+    .group\/tile:hover .drag-handle { opacity: 1; }
+    .drag-handle:active { cursor: grabbing; }
+
+    /* Theme Picker */
+    .theme-opt {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.8125rem;
+      color: hsl(var(--foreground));
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.1s;
+    }
+    .theme-opt:hover { background: hsl(var(--accent)); }
+    .theme-swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .theme-check {
+      margin-left: auto;
+      font-size: 0.75rem;
+      color: hsl(var(--primary));
+      font-weight: 600;
+    }
+    #theme-dropdown {
+      max-height: 420px;
+      overflow-y: auto;
+    }
+    #theme-dropdown::-webkit-scrollbar { width: 4px; }
+    #theme-dropdown::-webkit-scrollbar-thumb { background: hsl(var(--muted)); border-radius: 2px; }
+  </style>
+</head>
+<body class="h-screen flex flex-col">
+
+  <!-- Top Toolbar -->
+  <div id="toolbar" class="flex-shrink-0 px-4 py-2 flex items-center justify-between border-b" style="background: hsl(var(--muted) / 0.2); border-color: hsl(var(--border));">
+    <div class="flex items-center gap-2">
+      <button class="btn btn-primary" onclick="showToast('Opening new text session...')">
+        <i data-lucide="plus" style="width:14px;height:14px"></i>
+        Start with Text
+      </button>
+      <button class="btn btn-secondary" onclick="showToast('Opening new voice session...')">
+        <i data-lucide="mic" style="width:14px;height:14px"></i>
+        Start with Voice
+      </button>
+      <div class="relative">
+        <button class="btn btn-ghost" onclick="toggleDropdown('prompts-dropdown')" id="prompts-btn">
+          <i data-lucide="chevron-down" style="width:14px;height:14px"></i>
+          Prompts
+        </button>
+        <div id="prompts-dropdown" class="hidden absolute top-full left-0 mt-1 w-48 rounded-md border py-1 z-50" style="background: hsl(var(--popover)); border-color: hsl(var(--border)); box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <div class="px-3 py-1.5 text-xs font-medium" style="color: hsl(var(--muted-foreground));">Quick Prompts</div>
+          <button class="w-full text-left px-3 py-1.5 text-sm hover:bg-[hsl(var(--accent))]" onclick="showToast('Prompt selected')">Code Review</button>
+          <button class="w-full text-left px-3 py-1.5 text-sm hover:bg-[hsl(var(--accent))]" onclick="showToast('Prompt selected')">Write Tests</button>
+          <button class="w-full text-left px-3 py-1.5 text-sm hover:bg-[hsl(var(--accent))]" onclick="showToast('Prompt selected')">Debug Error</button>
+          <button class="w-full text-left px-3 py-1.5 text-sm hover:bg-[hsl(var(--accent))]" onclick="showToast('Prompt selected')">Refactor</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center gap-1">
+      <button class="btn btn-ghost" onclick="showToast('Opening past sessions...')">
+        <i data-lucide="clock" style="width:14px;height:14px"></i>
+        Past Sessions
+      </button>
+      <button class="btn btn-ghost btn-icon" onclick="cycleLayout()" id="layout-btn" title="Cycle layout">
+        <i data-lucide="columns-2" style="width:14px;height:14px"></i>
+      </button>
+      <button class="btn btn-ghost btn-icon" id="clear-completed-btn" onclick="clearCompleted()" title="Clear completed">
+        <i data-lucide="check-circle-2" style="width:14px;height:14px"></i>
+      </button>
+      <div class="w-px h-5 mx-1" style="background: hsl(var(--border));"></div>
+      <div class="relative" id="theme-picker-wrap">
+        <button class="btn btn-ghost" onclick="toggleThemePicker()" id="theme-btn" title="Switch theme" style="gap:0.25rem;">
+          <i data-lucide="palette" style="width:14px;height:14px"></i>
+          <span id="theme-label" class="text-xs" style="max-width:80px;overflow:hidden;text-overflow:ellipsis;">Dark</span>
+          <i data-lucide="chevron-down" style="width:10px;height:10px;opacity:0.5"></i>
+        </button>
+        <div id="theme-dropdown" class="hidden absolute right-0 top-full mt-1 w-52 rounded-lg border py-1 z-50" style="background:hsl(var(--popover));border-color:hsl(var(--border));box-shadow:0 8px 24px rgba(0,0,0,0.4);">
+          <div class="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider" style="color:hsl(var(--muted-foreground));">Theme</div>
+          <button onclick="setTheme('dark')" class="theme-opt" data-theme-id="dark">
+            <span class="theme-swatch" style="background:#000"></span>
+            <span>Dark</span><span class="theme-check" id="check-dark">✓</span>
+          </button>
+          <button onclick="setTheme('light')" class="theme-opt" data-theme-id="light">
+            <span class="theme-swatch" style="background:#fff;border:1px solid #e5e5e5"></span>
+            <span>Light</span><span class="theme-check" id="check-light"></span>
+          </button>
+          <div class="my-1 mx-2" style="height:1px;background:hsl(var(--border))"></div>
+          <div class="px-3 py-1 text-[10px] font-semibold uppercase tracking-wider" style="color:hsl(var(--muted-foreground));">Color Themes</div>
+          <button onclick="setTheme('cyberpunk')" class="theme-opt" data-theme-id="cyberpunk">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#1a0a2e,#ff00aa)"></span>
+            <span>Cyberpunk</span><span class="theme-check" id="check-cyberpunk"></span>
+          </button>
+          <button onclick="setTheme('ocean')" class="theme-opt" data-theme-id="ocean">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#0a1628,#00c8d4)"></span>
+            <span>Ocean</span><span class="theme-check" id="check-ocean"></span>
+          </button>
+          <button onclick="setTheme('forest')" class="theme-opt" data-theme-id="forest">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#0a1a0a,#2ec44e)"></span>
+            <span>Forest</span><span class="theme-check" id="check-forest"></span>
+          </button>
+          <button onclick="setTheme('sunset')" class="theme-opt" data-theme-id="sunset">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#1a0f08,#e87b1c)"></span>
+            <span>Sunset</span><span class="theme-check" id="check-sunset"></span>
+          </button>
+          <button onclick="setTheme('lavender')" class="theme-opt" data-theme-id="lavender">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#e8e0f4,#7b5ec6)"></span>
+            <span>Lavender</span><span class="theme-check" id="check-lavender"></span>
+          </button>
+          <button onclick="setTheme('midnight-blue')" class="theme-opt" data-theme-id="midnight-blue">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#0d1526,#3b82f6)"></span>
+            <span>Midnight Blue</span><span class="theme-check" id="check-midnight-blue"></span>
+          </button>
+          <button onclick="setTheme('rose')" class="theme-opt" data-theme-id="rose">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#1a0a10,#e6456a)"></span>
+            <span>Rosé</span><span class="theme-check" id="check-rose"></span>
+          </button>
+          <button onclick="setTheme('catppuccin')" class="theme-opt" data-theme-id="catppuccin">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#1e1e2e,#cba6f7)"></span>
+            <span>Catppuccin</span><span class="theme-check" id="check-catppuccin"></span>
+          </button>
+          <button onclick="setTheme('solarized')" class="theme-opt" data-theme-id="solarized">
+            <span class="theme-swatch" style="background:linear-gradient(135deg,#002b36,#2aa198)"></span>
+            <span>Solarized</span><span class="theme-check" id="check-solarized"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Session Grid -->
+  <div id="session-grid" class="session-grid flex flex-wrap gap-4 p-4 content-start flex-1 overflow-auto" style="min-height: 0;">
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script>
+    // ====== STATE ======
+    let currentLayout = '1x2'; // 1x2, 2x2, 1x1
+    let focusedTile = 'session-1';
+    let sessions = [
+      {
+        id: 'session-1',
+        title: 'Refactor authentication module to use JWT tokens',
+        profile: 'Main Agent',
+        model: 'anthropic/claude-sonnet-4',
+        agent: null,
+        status: 'active', // active, complete, error, snoozed, approval
+        collapsed: false,
+        step: 3,
+        totalSteps: 10,
+        lastActivity: '2s ago',
+        queued: 0,
+        messages: [
+          {
+            role: 'user',
+            content: 'Refactor the authentication module in <code>src/auth/</code> to use JWT tokens instead of session-based auth. Make sure to update the middleware, token generation, and validation logic.'
+          },
+          {
+            role: 'assistant',
+            content: `I'll refactor the authentication module to use JWT tokens. Let me start by analyzing the current codebase and then make the necessary changes.
+
+First, let me update the token generation utility:
+
+<pre><code>// src/auth/token.ts
+import jwt from 'jsonwebtoken';
+
+interface TokenPayload {
+  userId: string;
+  email: string;
+  role: string;
+}
+
+export function generateAccessToken(payload: TokenPayload): string {
+  return jwt.sign(payload, process.env.JWT_SECRET!, {
+    expiresIn: '15m',
+  });
+}
+
+export function generateRefreshToken(payload: TokenPayload): string {
+  return jwt.sign(payload, process.env.JWT_REFRESH_SECRET!, {
+    expiresIn: '7d',
+  });
+}
+
+export function verifyToken(token: string): TokenPayload {
+  return jwt.verify(token, process.env.JWT_SECRET!) as TokenPayload;
+}</code></pre>
+
+Now I'll update the authentication middleware to validate JWT tokens instead of session cookies.`,
+            streaming: true
+          },
+          {
+            role: 'tool',
+            name: 'execute_command',
+            content: `<span style="color: hsl(var(--muted-foreground));">$ cat src/auth/middleware.ts</span>
+<span style="color: rgb(134,239,172);">✓ File read successfully (42 lines)</span>
+
+Found existing session-based middleware. Will need to replace \`req.session.user\` references with JWT token verification from Authorization header.`
+          }
+        ],
+        approvalTool: null
+      },
+      {
+        id: 'session-2',
+        title: 'Generate API documentation for user endpoints',
+        profile: 'Documentation Agent',
+        model: 'anthropic/claude-sonnet-4',
+        agent: 'Doc Writer',
+        status: 'complete',
+        collapsed: false,
+        step: 5,
+        totalSteps: 5,
+        lastActivity: '3m ago',
+        queued: 0,
+        messages: [
+          {
+            role: 'user',
+            content: 'Generate comprehensive API documentation for all user-related endpoints in the REST API. Include request/response schemas, auth requirements, and example payloads.'
+          },
+          {
+            role: 'assistant',
+            content: `I'll analyze the user endpoints and generate complete API documentation. Let me scan the route files first.`
+          },
+          {
+            role: 'tool',
+            name: 'read_file',
+            content: `<span style="color: hsl(var(--muted-foreground));">$ find src/routes/user* -type f</span>
+src/routes/users.ts
+src/routes/userProfile.ts
+src/routes/userSettings.ts`
+          },
+          {
+            role: 'assistant',
+            content: `Here's the complete API documentation:
+
+## User Endpoints
+
+### GET /api/users
+Returns a paginated list of users.
+
+**Auth:** Bearer token required (admin role)
+
+**Query Parameters:**
+- \`page\` (number, default: 1)
+- \`limit\` (number, default: 20)
+- \`search\` (string, optional)
+
+### POST /api/users
+Creates a new user account.
+
+**Auth:** Bearer token required (admin role)
+
+**Request Body:**
+<pre><code>{
+  "email": "user@example.com",
+  "name": "John Doe",
+  "role": "member"
+}</code></pre>
+
+### GET /api/users/:id
+Returns a single user by ID.
+
+### PATCH /api/users/:id
+Updates user properties. Supports partial updates.
+
+### DELETE /api/users/:id
+Soft-deletes a user account.
+
+Documentation has been saved to \`docs/api/users.md\` ✓`
+          },
+          {
+            role: 'user',
+            content: 'Looks great! Can you also add rate limiting info to each endpoint?'
+          }
+        ],
+        approvalTool: null
+      },
+      {
+        id: 'session-3',
+        title: 'Deploy staging environment updates',
+        profile: 'DevOps Agent',
+        model: 'anthropic/claude-sonnet-4',
+        agent: 'DevOps',
+        status: 'approval',
+        collapsed: false,
+        step: 4,
+        totalSteps: 8,
+        lastActivity: '15s ago',
+        queued: 1,
+        messages: [
+          {
+            role: 'user',
+            content: 'Deploy the latest changes from the <code>staging</code> branch to the staging environment. Run migrations and health checks after deployment.'
+          },
+          {
+            role: 'assistant',
+            content: `I'll deploy the staging branch. Let me first check the current deployment status and then proceed with the rollout.
+
+The staging branch has 12 new commits since last deployment. I'll proceed with the deployment pipeline.`
+          },
+          {
+            role: 'tool',
+            name: 'execute_command',
+            content: `<span style="color: hsl(var(--muted-foreground));">$ git log --oneline staging..HEAD | wc -l</span>
+12
+<span style="color: hsl(var(--muted-foreground));">$ kubectl get pods -n staging</span>
+NAME                        READY   STATUS    RESTARTS
+api-server-7d8f9b6c4-x2k1  1/1     Running   0
+worker-5c8d7e9f1-m3n4      1/1     Running   0
+redis-6b7c8d9e0-p5q6       1/1     Running   0`
+          },
+          {
+            role: 'assistant',
+            content: 'All pods are healthy. Now I need to run the deployment command which will apply the new image and run database migrations. This requires your approval.'
+          }
+        ],
+        approvalTool: {
+          name: 'execute_command',
+          args: 'kubectl set image deployment/api-server api-server=registry.example.com/api:staging-latest -n staging && kubectl rollout status deployment/api-server -n staging'
+        }
+      },
+      {
+        id: 'session-4',
+        title: 'Sync database migrations',
+        profile: 'Main Agent',
+        model: 'anthropic/claude-sonnet-4',
+        agent: null,
+        status: 'error',
+        collapsed: false,
+        step: 2,
+        totalSteps: 6,
+        lastActivity: '1m ago',
+        queued: 0,
+        messages: [
+          {
+            role: 'user',
+            content: 'Run all pending database migrations on the development database and verify the schema matches the ORM models.'
+          },
+          {
+            role: 'assistant',
+            content: 'Let me check the pending migrations and run them against the dev database.'
+          },
+          {
+            role: 'tool',
+            name: 'execute_command',
+            content: `<span style="color: hsl(var(--muted-foreground));">$ npx prisma migrate dev</span>
+<span style="color: rgb(248,113,113);">Error: P3009 - migrate found failed migrations in the target database</span>
+<span style="color: rgb(248,113,113);">Migration "20240115_add_user_preferences" failed to apply.</span>`
+          },
+          {
+            role: 'error',
+            content: 'Migration failed: P3009 - Found failed migrations in target database. The migration "20240115_add_user_preferences" has a conflict with the current schema. Manual intervention may be required to resolve the migration state.'
+          }
+        ],
+        approvalTool: null
+      },
+      {
+        id: 'session-5',
+        title: 'Monitor CI/CD pipeline status',
+        profile: 'DevOps Agent',
+        model: 'anthropic/claude-sonnet-4',
+        agent: 'Monitor',
+        status: 'snoozed',
+        collapsed: true,
+        step: 1,
+        totalSteps: 1,
+        lastActivity: '10m ago',
+        queued: 0,
+        messages: [
+          {
+            role: 'user',
+            content: 'Monitor the CI/CD pipeline for the main branch and notify me if any builds fail.'
+          },
+          {
+            role: 'assistant',
+            content: 'Monitoring pipeline. Last check: all 3 workflows passing. Next check in 5 minutes. Session snoozed until next interval.'
+          }
+        ],
+        approvalTool: null
+      }
+    ];
+
+    // ====== RENDER ======
+    function renderSessions() {
+      const grid = document.getElementById('session-grid');
+      grid.innerHTML = '';
+
+      const visibleSessions = sessions.filter(s => !s.removed);
+      if (visibleSessions.length === 0) {
+        grid.innerHTML = renderEmptyState();
+        lucide.createIcons();
+        return;
+      }
+
+      visibleSessions.forEach(session => {
+        const tile = createTile(session);
+        grid.appendChild(tile);
+      });
+
+      applyLayout();
+      lucide.createIcons();
+    }
+
+    function renderEmptyState() {
+      return `
+        <div class="flex flex-col items-center justify-center w-full h-full gap-4">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center" style="background: hsl(var(--muted));">
+            <i data-lucide="message-circle" style="width:28px;height:28px;color:hsl(var(--muted-foreground))"></i>
+          </div>
+          <h2 class="text-lg font-semibold">No Active Sessions</h2>
+          <p class="text-sm" style="color: hsl(var(--muted-foreground));">Start a new session to begin working with your agents.</p>
+          <div class="flex gap-2 mt-2">
+            <button class="btn btn-primary" onclick="showToast('Opening new text session...')">
+              <i data-lucide="plus" style="width:14px;height:14px"></i> Start with Text
+            </button>
+            <button class="btn btn-secondary" onclick="showToast('Opening new voice session...')">
+              <i data-lucide="mic" style="width:14px;height:14px"></i> Start with Voice
+            </button>
+          </div>
+          <div class="flex gap-4 mt-3 text-xs" style="color: hsl(var(--muted-foreground));">
+            <span>⌘K text</span>
+            <span>⌘⇧K voice</span>
+            <span>⌘⇧; dictation</span>
+          </div>
+        </div>`;
+    }
+
+    function getStatusIcon(status) {
+      switch(status) {
+        case 'active': return `<i data-lucide="activity" class="animate-pulse-blue" style="width:14px;height:14px;color:rgb(59,130,246)"></i>`;
+        case 'complete': return `<i data-lucide="check-circle-2" style="width:14px;height:14px;color:rgb(34,197,94)"></i>`;
+        case 'error': return `<i data-lucide="x-circle" style="width:14px;height:14px;color:rgb(239,68,68)"></i>`;
+        case 'snoozed': return `<i data-lucide="moon" style="width:14px;height:14px;color:hsl(var(--muted-foreground))"></i>`;
+        case 'approval': return `<i data-lucide="shield" class="animate-pulse-amber" style="width:14px;height:14px;color:rgb(245,158,11)"></i>`;
+        default: return '';
+      }
+    }
+
+    function getTileClass(session) {
+      let cls = 'session-tile rounded-lg border overflow-hidden flex flex-col group/tile ';
+      cls += `bg-[hsl(var(--card))] border-[hsl(var(--border))] `;
+      if (focusedTile === session.id && session.status !== 'approval') cls += 'tile-focused ';
+      if (session.status === 'approval') cls += 'tile-approval ';
+      if (session.status === 'error') cls += 'tile-error ';
+      return cls;
+    }
+
+    function createTile(session) {
+      const wrapper = document.createElement('div');
+      wrapper.className = getTileClass(session);
+      wrapper.id = `tile-${session.id}`;
+      wrapper.setAttribute('data-session-id', session.id);
+      wrapper.onclick = (e) => {
+        if (!e.target.closest('button')) {
+          focusedTile = session.id;
+          renderSessions();
+        }
+      };
+
+      const headerActions = getHeaderActions(session);
+      const isCollapsed = session.collapsed;
+
+      wrapper.innerHTML = `
+        <!-- Drag handle -->
+        <div class="drag-handle absolute top-2 left-1 z-10 p-0.5 rounded" style="color: hsl(var(--muted-foreground));">
+          <i data-lucide="grip-vertical" style="width:12px;height:12px"></i>
+        </div>
+
+        <!-- Header -->
+        <div class="flex items-center gap-2 px-3 py-2 border-b cursor-pointer select-none" style="background: hsl(var(--muted) / 0.3); border-color: hsl(var(--border));" onclick="toggleCollapse('${session.id}', event)">
+          ${getStatusIcon(session.status)}
+          <span class="flex-1 truncate font-medium text-sm">${session.title}</span>
+          <button class="btn btn-ghost btn-icon" onclick="toggleCollapse('${session.id}', event)" title="Collapse">
+            <i data-lucide="${isCollapsed ? 'chevron-down' : 'chevron-up'}" class="chevron-rotate" style="width:14px;height:14px"></i>
+          </button>
+          ${headerActions}
+        </div>
+
+        ${!isCollapsed ? `
+        <!-- Conversation -->
+        <div class="flex-1 min-h-0 overflow-auto scroll-area p-3 space-y-3">
+          ${renderMessages(session)}
+          ${session.status === 'active' && session.messages[session.messages.length-1]?.role === 'assistant' ? `
+          <div class="pl-3 border-l-2" style="border-color: rgba(59,130,246,0.3);">
+            <div class="streaming-cursor text-sm"></div>
+          </div>` : ''}
+        </div>
+
+        ${session.approvalTool ? renderApprovalBanner(session) : ''}
+
+        <!-- Footer -->
+        <div class="px-3 py-2 border-t flex items-center gap-2 flex-wrap" style="background: hsl(var(--muted) / 0.2); border-color: hsl(var(--border));">
+          <span class="text-[10px] px-1.5 py-0.5 rounded" style="background: hsl(var(--muted)); color: hsl(var(--muted-foreground));">${session.profile}</span>
+          <span class="text-[10px]" style="color: hsl(var(--muted-foreground));">${session.model}</span>
+          ${session.agent ? `<span class="text-[10px]" style="color: rgb(59,130,246);">${session.agent}</span>` : ''}
+          <span class="flex-1"></span>
+          <span class="text-[10px]" style="color: hsl(var(--muted-foreground));">Step ${session.step}/${session.totalSteps}</span>
+          <span class="text-[10px]" style="color: hsl(var(--muted-foreground));">· ${session.lastActivity}</span>
+          ${session.queued > 0 ? `<span class="text-[10px] px-1.5 py-0.5 rounded" style="background: hsl(var(--muted)); color: hsl(var(--muted-foreground));">${session.queued} queued</span>` : ''}
+        </div>
+
+        <!-- Resize handle -->
+        <div class="resize-handle h-2 flex items-center justify-center" style="background: hsl(var(--muted) / 0.3);" onmousedown="startResize(event, '${session.id}')">
+          <i data-lucide="grip-horizontal" style="width:12px;height:8px;color:hsl(var(--muted-foreground));opacity:0.5"></i>
+        </div>
+        ` : ''}
+      `;
+
+      wrapper.style.position = 'relative';
+      return wrapper;
+    }
+
+    function getHeaderActions(session) {
+      let actions = '';
+      actions += `<button class="btn btn-ghost btn-icon" onclick="minimizeTile('${session.id}', event)" title="Minimize"><i data-lucide="minimize-2" style="width:14px;height:14px"></i></button>`;
+
+      if (session.status === 'active' || session.status === 'approval') {
+        actions += `<button class="btn btn-ghost btn-icon" onclick="stopSession('${session.id}', event)" title="Stop"><i data-lucide="octagon-x" style="width:14px;height:14px;color:hsl(var(--muted-foreground))"></i></button>`;
+      }
+      if (session.status === 'error') {
+        actions += `<button class="btn btn-ghost btn-icon" onclick="retrySession('${session.id}', event)" title="Retry"><i data-lucide="refresh-cw" style="width:14px;height:14px"></i></button>`;
+      }
+      actions += `<button class="btn btn-ghost btn-icon" onclick="dismissTile('${session.id}', event)" title="Dismiss"><i data-lucide="x" style="width:14px;height:14px"></i></button>`;
+      return actions;
+    }
+
+    function renderMessages(session) {
+      return session.messages.map((msg, idx) => {
+        if (msg.role === 'user') {
+          return `
+            <div class="group/msg">
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="text-xs font-medium capitalize" style="color: hsl(var(--muted-foreground));">User</span>
+                <button class="btn btn-ghost btn-icon opacity-0 group-hover/msg:opacity-100 transition-opacity" style="width:1.25rem;height:1.25rem;" onclick="copyMessage(this, event)" data-content="${escapeAttr(stripHtml(msg.content))}" title="Copy">
+                  <i data-lucide="copy" style="width:11px;height:11px"></i>
+                </button>
+              </div>
+              <div class="text-sm leading-relaxed">${msg.content}</div>
+            </div>`;
+        } else if (msg.role === 'assistant') {
+          return `
+            <div class="pl-3 border-l-2" style="border-color: rgba(59,130,246,0.3);">
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="text-xs font-medium capitalize" style="color: hsl(var(--muted-foreground));">Assistant</span>
+              </div>
+              <div class="text-sm leading-relaxed">${msg.content}</div>
+            </div>`;
+        } else if (msg.role === 'tool') {
+          return `
+            <div class="pl-3 border-l-2" style="border-color: hsl(var(--muted));">
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="text-xs font-medium" style="color: hsl(var(--muted-foreground));">
+                  <i data-lucide="terminal" style="width:11px;height:11px;display:inline-block;vertical-align:-1px;margin-right:3px"></i>
+                  ${msg.name || 'Tool'}
+                </span>
+              </div>
+              <div class="text-sm leading-relaxed font-mono text-xs" style="color: hsl(var(--muted-foreground));">${msg.content}</div>
+            </div>`;
+        } else if (msg.role === 'error') {
+          return `
+            <div class="rounded-md p-3 border" style="background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3);">
+              <div class="flex items-center gap-1.5 mb-1">
+                <i data-lucide="alert-triangle" style="width:13px;height:13px;color:rgb(239,68,68)"></i>
+                <span class="text-xs font-medium" style="color: rgb(239,68,68);">Error</span>
+              </div>
+              <div class="text-sm" style="color: rgb(252,165,165);">${msg.content}</div>
+            </div>`;
+        }
+        return '';
+      }).join('');
+    }
+
+    function renderApprovalBanner(session) {
+      return `
+        <div class="px-3 py-2.5 flex items-center gap-3 border-t" style="background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.3);">
+          <i data-lucide="shield" style="width:16px;height:16px;color:rgb(245,158,11);flex-shrink:0"></i>
+          <div class="flex-1 min-w-0">
+            <div class="text-xs font-medium mb-0.5" style="color: rgb(245,158,11);">Tool Approval Required</div>
+            <div class="text-xs truncate" style="color: hsl(var(--muted-foreground));">
+              <code class="text-xs">${session.approvalTool.name}</code>
+            </div>
+            <div class="text-[10px] mt-0.5 truncate font-mono" style="color: hsl(var(--muted-foreground)); opacity: 0.7;">${escapeHtml(session.approvalTool.args)}</div>
+          </div>
+          <div class="flex gap-2 flex-shrink-0">
+            <button class="btn text-xs py-1 px-2.5" style="border: 1px solid rgba(239,68,68,0.5); color: rgb(239,68,68); background: transparent;" onclick="denyApproval('${session.id}', event)">Deny</button>
+            <button class="btn text-xs py-1 px-2.5" style="background: rgb(34,197,94); color: white; border: none;" onclick="approveAction('${session.id}', event)">Approve</button>
+          </div>
+        </div>`;
+    }
+
+    // ====== LAYOUT ======
+    function applyLayout() {
+      const grid = document.getElementById('session-grid');
+      const tiles = grid.querySelectorAll('.session-tile');
+      const visibleSessions = sessions.filter(s => !s.removed);
+
+      tiles.forEach((tile, idx) => {
+        tile.style.width = '';
+        tile.style.height = '';
+        tile.style.flex = '';
+        tile.style.maxHeight = '';
+      });
+
+      if (currentLayout === '1x2') {
+        grid.style.flexWrap = 'wrap';
+        grid.style.alignContent = 'start';
+        tiles.forEach(tile => {
+          tile.style.width = 'calc(50% - 0.5rem)';
+          tile.style.height = 'calc(50vh - 2.5rem)';
+          tile.style.minHeight = '200px';
+        });
+      } else if (currentLayout === '2x2') {
+        grid.style.flexWrap = 'wrap';
+        grid.style.alignContent = 'start';
+        tiles.forEach(tile => {
+          tile.style.width = 'calc(50% - 0.5rem)';
+          tile.style.height = 'calc(50vh - 2.75rem)';
+          tile.style.minHeight = '180px';
+        });
+      } else if (currentLayout === '1x1') {
+        grid.style.flexWrap = 'nowrap';
+        grid.style.flexDirection = 'column';
+        const focused = focusedTile || visibleSessions[0]?.id;
+        tiles.forEach(tile => {
+          const sid = tile.getAttribute('data-session-id');
+          if (sid === focused) {
+            tile.style.width = '100%';
+            tile.style.flex = '1';
+            tile.style.minHeight = '300px';
+          } else {
+            tile.style.width = '100%';
+            tile.style.height = '48px';
+            tile.style.minHeight = '48px';
+            tile.style.overflow = 'hidden';
+          }
+        });
+      }
+    }
+
+    function cycleLayout() {
+      const layouts = ['1x2', '2x2', '1x1'];
+      const idx = layouts.indexOf(currentLayout);
+      currentLayout = layouts[(idx + 1) % layouts.length];
+      const layoutBtn = document.getElementById('layout-btn');
+      const iconMap = { '1x2': 'columns-2', '2x2': 'layout-grid', '1x1': 'maximize-2' };
+      layoutBtn.innerHTML = `<i data-lucide="${iconMap[currentLayout]}" style="width:14px;height:14px"></i>`;
+      layoutBtn.title = `Layout: ${currentLayout}`;
+      renderSessions();
+      showToast(`Layout: ${currentLayout}`);
+    }
+
+    // ====== INTERACTIONS ======
+    function toggleCollapse(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        session.collapsed = !session.collapsed;
+        renderSessions();
+      }
+    }
+
+    function minimizeTile(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        session.collapsed = true;
+        renderSessions();
+      }
+    }
+
+    function dismissTile(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        const tile = document.getElementById(`tile-${sessionId}`);
+        if (tile) {
+          tile.style.opacity = '0';
+          tile.style.transform = 'scale(0.95)';
+          tile.style.transition = 'all 0.2s ease';
+          setTimeout(() => {
+            session.removed = true;
+            if (focusedTile === sessionId) {
+              const remaining = sessions.filter(s => !s.removed);
+              focusedTile = remaining.length > 0 ? remaining[0].id : null;
+            }
+            renderSessions();
+          }, 200);
+        }
+      }
+    }
+
+    function stopSession(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        session.status = 'complete';
+        session.approvalTool = null;
+        renderSessions();
+        showToast(`Session stopped: ${session.title.substring(0, 30)}...`);
+      }
+    }
+
+    function retrySession(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        session.status = 'active';
+        session.messages = session.messages.filter(m => m.role !== 'error');
+        renderSessions();
+        showToast('Retrying session...');
+      }
+    }
+
+    function clearCompleted() {
+      const completedCount = sessions.filter(s => s.status === 'complete' && !s.removed).length;
+      if (completedCount === 0) {
+        showToast('No completed sessions to clear');
+        return;
+      }
+      sessions.forEach(s => {
+        if (s.status === 'complete') s.removed = true;
+      });
+      const remaining = sessions.filter(s => !s.removed);
+      focusedTile = remaining.length > 0 ? remaining[0].id : null;
+      renderSessions();
+      showToast(`Cleared ${completedCount} completed session${completedCount > 1 ? 's' : ''}`);
+    }
+
+    function approveAction(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        session.status = 'active';
+        session.approvalTool = null;
+        session.messages.push({
+          role: 'tool',
+          name: 'execute_command',
+          content: `<span style="color: rgb(134,239,172);">✓ Command approved and executed</span>\nDeployment rollout started. Waiting for pods to be ready...`
+        });
+        renderSessions();
+        showToast('Action approved ✓');
+      }
+    }
+
+    function denyApproval(sessionId, event) {
+      event?.stopPropagation();
+      const session = sessions.find(s => s.id === sessionId);
+      if (session) {
+        session.status = 'active';
+        session.approvalTool = null;
+        session.messages.push({
+          role: 'assistant',
+          content: 'Understood, the action was denied. Let me know if you\'d like me to take a different approach or modify the command.'
+        });
+        renderSessions();
+        showToast('Action denied');
+      }
+    }
+
+    function copyMessage(btn, event) {
+      event?.stopPropagation();
+      const text = btn.getAttribute('data-content');
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Copied to clipboard');
+      }).catch(() => {
+        showToast('Failed to copy');
+      });
+    }
+
+    let currentTheme = 'dark';
+    const themeNames = {
+      'dark': 'Dark',
+      'light': 'Light',
+      'cyberpunk': 'Cyberpunk',
+      'ocean': 'Ocean',
+      'forest': 'Forest',
+      'sunset': 'Sunset',
+      'lavender': 'Lavender',
+      'midnight-blue': 'Midnight Blue',
+      'rose': 'Rosé',
+      'catppuccin': 'Catppuccin',
+      'solarized': 'Solarized'
+    };
+
+    function setTheme(theme) {
+      currentTheme = theme;
+      const html = document.documentElement;
+      // Remove dark class handling
+      html.className = (theme !== 'light' && theme !== 'lavender') ? 'dark' : '';
+      html.setAttribute('data-theme', theme);
+      // Update label
+      document.getElementById('theme-label').textContent = themeNames[theme] || theme;
+      // Update checkmarks
+      document.querySelectorAll('.theme-check').forEach(el => el.textContent = '');
+      const checkEl = document.getElementById('check-' + theme);
+      if (checkEl) checkEl.textContent = '✓';
+      // Close picker
+      document.getElementById('theme-dropdown').classList.add('hidden');
+      // Re-render to update inline styles that reference css vars
+      renderSessions();
+      showToast('Theme: ' + (themeNames[theme] || theme));
+    }
+
+    function toggleThemePicker() {
+      const dd = document.getElementById('theme-dropdown');
+      dd.classList.toggle('hidden');
+      if (!dd.classList.contains('hidden')) {
+        setTimeout(() => {
+          document.addEventListener('click', function closePicker(e) {
+            if (!document.getElementById('theme-picker-wrap').contains(e.target)) {
+              dd.classList.add('hidden');
+              document.removeEventListener('click', closePicker);
+            }
+          });
+        }, 10);
+      }
+    }
+
+    // Legacy alias
+    function toggleTheme() { setTheme(currentTheme === 'dark' ? 'light' : 'dark'); }
+
+    function toggleDropdown(id) {
+      const dd = document.getElementById(id);
+      dd.classList.toggle('hidden');
+      // Close on outside click
+      if (!dd.classList.contains('hidden')) {
+        setTimeout(() => {
+          document.addEventListener('click', function closeDD(e) {
+            if (!dd.contains(e.target) && e.target.id !== 'prompts-btn') {
+              dd.classList.add('hidden');
+              document.removeEventListener('click', closeDD);
+            }
+          });
+        }, 10);
+      }
+    }
+
+    // ====== RESIZE ======
+    let resizeState = null;
+
+    function startResize(event, sessionId) {
+      event.preventDefault();
+      event.stopPropagation();
+      const tile = document.getElementById(`tile-${sessionId}`);
+      const startY = event.clientY;
+      const startHeight = tile.offsetHeight;
+      resizeState = { tile, startY, startHeight, sessionId };
+
+      document.addEventListener('mousemove', onResize);
+      document.addEventListener('mouseup', stopResize);
+      document.body.style.cursor = 'ns-resize';
+      document.body.style.userSelect = 'none';
+    }
+
+    function onResize(event) {
+      if (!resizeState) return;
+      const delta = event.clientY - resizeState.startY;
+      const newHeight = Math.max(100, resizeState.startHeight + delta);
+      resizeState.tile.style.height = newHeight + 'px';
+    }
+
+    function stopResize() {
+      resizeState = null;
+      document.removeEventListener('mousemove', onResize);
+      document.removeEventListener('mouseup', stopResize);
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    }
+
+    // ====== TOAST ======
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toast._timeout);
+      toast._timeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+
+    // ====== HELPERS ======
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function escapeAttr(text) {
+      return text.replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function stripHtml(html) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
+    // ====== INIT ======
+    document.addEventListener('DOMContentLoaded', () => {
+      renderSessions();
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.metaKey && e.key === 'k' && !e.shiftKey) {
+        e.preventDefault();
+        showToast('Opening new text session... (⌘K)');
+      }
+      if (e.metaKey && e.shiftKey && e.key === 'K') {
+        e.preventDefault();
+        showToast('Opening new voice session... (⌘⇧K)');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+$ ls tests && echo && rg -n "describe\\(|test\\(" tests apps/desktop/src -S | head -n 20
+OAUTH_DEEPLINK_TEST_RESULTS.md
+test-oauth-deeplink.js
+
+apps/desktop/src/main/mcp-sampling.ts:109:    const hasToolMarkers = /<\|[^|]*\|>/.test(rawContent)
+apps/desktop/src/main/builtin-tools.save-repeat-task-result.test.ts:16:describe("builtin save_repeat_task", () => {
+apps/desktop/src/main/diagnostics.test.ts:21:describe("diagnostics service", () => {
+apps/desktop/src/main/agent-profile-mcp-cleanup.test.ts:35:describe("agent-profile-mcp-cleanup", () => {
+apps/desktop/src/main/acp-session-state.test.ts:7:describe("acp-session-state", () => {
+apps/desktop/src/main/remote-server.ts:317:  if (normalizedHost === "::" || normalizedHost === "::1" || /^fe[89ab]/.test(normalizedHost) || normalizedHost.startsWith("ff")) {
+apps/desktop/src/main/startup-routing.test.ts:8:describe("startup routing", () => {
+apps/desktop/src/main/agent-profile-connection-sanitize.test.mjs:6:test('drops stale hidden baseUrl data from ACP connections during save sanitization', () => {
+apps/desktop/src/main/agent-profile-connection-sanitize.test.mjs:27:test('keeps only remote URL data for remote connections', () => {
+apps/desktop/src/main/agent-profile-connection-sanitize.test.mjs:46:test('treats blank visible fields as explicit clears instead of preserving stale saved values', () => {
+apps/desktop/src/main/app-switcher.test.ts:18:describe("ensureAppSwitcherPresence", () => {
+apps/desktop/src/main/acp-service.test.ts:113:describe("ACP Service", () => {
+apps/desktop/src/main/acp-service.test.ts:154:  describe("getAgents", () => {
+apps/desktop/src/main/acp-service.test.ts:168:  describe("spawnAgent", () => {
+apps/desktop/src/main/acp-service.test.ts:378:  describe("getOrCreateSession", () => {
+apps/desktop/src/main/acp-service.test.ts:415:  describe("runTask", () => {
+apps/desktop/src/main/acp-service.test.ts:462:  describe("getAgentStatus", () => {
+apps/desktop/src/main/acp-service.test.ts:470:  describe("session/update normalization", () => {
+apps/desktop/src/main/acp-service.test.ts:697:  describe("ACP Client Capabilities", () => {
+apps/desktop/src/main/acp-service.test.ts:698:    describe("fs/read_text_file", () => {

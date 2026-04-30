@@ -1,0 +1,566 @@
+{
+  "counts_by_kind_topic": {
+    "conversation:content": 179,
+    "conversation:engineering": 189,
+    "conversation:other": 20,
+    "conversation:personal": 17,
+    "conversation:product": 27,
+    "conversation:research": 63,
+    "meta:content": 1,
+    "meta:engineering": 1,
+    "meta:other": 2,
+    "project:content": 2,
+    "project:engineering": 1,
+    "project:product": 1
+  },
+  "high_signal_count": 407,
+  "examples": {
+    "content": [
+      {
+        "slug": "claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 13481,
+        "title": "Script adaptation for Auggie"
+      },
+      {
+        "slug": "claude-conversation-2025-12-03-cline-s-stealth-microwave-model-and-ai-coding-news-d43d1e37",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 9432,
+        "title": "Cline's stealth microwave model and AI coding news"
+      },
+      {
+        "slug": "claude-conversation-2025-12-24-understanding-my-core-values-d2dcb494",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 8448,
+        "title": "Understanding my core values"
+      },
+      {
+        "slug": "claude-conversation-2025-12-20-mcp-server-for-downloading-script-assets-4567801c",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 8245,
+        "title": "MCP server for downloading script assets"
+      },
+      {
+        "slug": "claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 8136,
+        "title": "Clawdbot follow-up video talking points"
+      },
+      {
+        "slug": "claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 8134,
+        "title": "Mapping gaps in your belief system"
+      },
+      {
+        "slug": "claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 8036,
+        "title": "Grok 4.1 free API on OpenRouter"
+      },
+      {
+        "slug": "claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 8027,
+        "title": "Augment outperforms on SWE-bench Pro benchmark"
+      },
+      {
+        "slug": "claude-conversation-2026-01-19-auggie-cli-video-script-interview-c5e12fbc",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 7342,
+        "title": "Auggie CLI video script interview"
+      },
+      {
+        "slug": "claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 6993,
+        "title": "Parallel ideation with AI subagents"
+      },
+      {
+        "slug": "claude-conversation-2025-12-30-note-taking-from-content-c2678ab9",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 6627,
+        "title": "Note-taking from content"
+      },
+      {
+        "slug": "claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 6535,
+        "title": "Clawd.bot video use cases research"
+      },
+      {
+        "slug": "claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 6029,
+        "title": "Elasticsearch blob store transient metadata consolidation"
+      },
+      {
+        "slug": "claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 5725,
+        "title": "Maximizing impact and growth through content"
+      },
+      {
+        "slug": "claude-conversation-2024-07-07-consolidating-income-statements-96bf1d4f",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 5255,
+        "title": "Consolidating Income Statements"
+      },
+      {
+        "slug": "claude-conversation-2025-12-04-speakmcp-announcement-expansion-711ac787",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 4908,
+        "title": "Speakmcp announcement expansion"
+      },
+      {
+        "slug": "claude-conversation-2025-11-30-retention-graph-analysis-and-insights-c9413a28",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 4733,
+        "title": "Retention graph analysis and insights"
+      },
+      {
+        "slug": "claude-conversation-2026-02-13-abundance-over-permanent-underclass-5eff8094",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 4624,
+        "title": "Abundance over permanent underclass"
+      },
+      {
+        "slug": "claude-conversation-2025-12-12-speakmcp-v1-0-0-release-video-48df0a51",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 4466,
+        "title": "SpeakMCP v1.0.0 release video"
+      },
+      {
+        "slug": "claude-conversation-2025-12-16-discord-points-dao-structure-c3380c1f",
+        "kind": "conversation",
+        "topic": "content",
+        "words": 4107,
+        "title": "Discord points DAO structure"
+      }
+    ],
+    "engineering": [
+      {
+        "slug": "claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 14026,
+        "title": "Building a live documentation indexing system with context engines"
+      },
+      {
+        "slug": "claude-conversation-2026-01-05-interview-preparation-for-0xsero-3fe0d934",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 11908,
+        "title": "Interview preparation for 0xsero"
+      },
+      {
+        "slug": "claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 10155,
+        "title": "LLM fundamentals for AI agent development"
+      },
+      {
+        "slug": "claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 8645,
+        "title": "Getting started with Ralph Loop"
+      },
+      {
+        "slug": "claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 7397,
+        "title": "Integrating context engine SDK with LangChain"
+      },
+      {
+        "slug": "claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 7182,
+        "title": "Demo repositories for context services use cases"
+      },
+      {
+        "slug": "claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 5800,
+        "title": "Extending Janus Model for Image-to-Image"
+      },
+      {
+        "slug": "claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 5779,
+        "title": "MCP to skills migration stream planning"
+      },
+      {
+        "slug": "claude-conversation-2024-06-28-storing-and-updating-json-data-in-next-js-app-703ac0d4",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 5358,
+        "title": "Storing and Updating JSON Data in Next.js App"
+      },
+      {
+        "slug": "claude-conversation-2025-11-26-finding-your-voice-in-the-first-week-3c8c5535",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 5116,
+        "title": "Finding your voice in the first week"
+      },
+      {
+        "slug": "claude-conversation-2026-02-09-e3-visa-holder-marriage-to-us-citizen-work-authorization-85df6033",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 4564,
+        "title": "E3 visa holder marriage to US citizen work authorization"
+      },
+      {
+        "slug": "claude-conversation-2024-08-07-glowing-japanese-text-energy-beam-12fafb78",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 4435,
+        "title": "Glowing Japanese Text Energy Beam"
+      },
+      {
+        "slug": "claude-conversation-2024-07-11-explaining-computer-vision-code-conversion-to-javascript-866903a5",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3760,
+        "title": "Explaining Computer Vision Code Conversion to JavaScript"
+      },
+      {
+        "slug": "claude-conversation-2026-02-02-clawdbot-setup-and-migration-guide-65331d69",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3696,
+        "title": "Clawdbot setup and migration guide"
+      },
+      {
+        "slug": "claude-conversation-2025-03-25-transforming-transaction-history-to-template-format-80442ec2",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3673,
+        "title": "Transforming Transaction History to Template Format"
+      },
+      {
+        "slug": "claude-conversation-2024-07-09-gmail-integration-for-saas-privacy-and-scalability-considerations-61fa0f1c",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3273,
+        "title": "Gmail Integration for SaaS: Privacy and Scalability Considerations"
+      },
+      {
+        "slug": "claude-conversation-2024-10-03-secure-flask-server-on-aws-with-https-6737ad60",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3209,
+        "title": "Secure Flask Server on AWS with HTTPS"
+      },
+      {
+        "slug": "claude-conversation-2025-12-22-copilot-mcp-node-environment-and-npm-package-visibility-ad5914a0",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3122,
+        "title": "Copilot MCP node environment and npm package visibility"
+      },
+      {
+        "slug": "claude-conversation-2023-07-14-python-file-functions-5c19cafc",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3089,
+        "title": "Python file functions"
+      },
+      {
+        "slug": "claude-conversation-2025-12-21-finding-simple-web-games-for-llm-benchmarking-26731fcb",
+        "kind": "conversation",
+        "topic": "engineering",
+        "words": 3070,
+        "title": "Finding simple web games for LLM benchmarking"
+      }
+    ],
+    "personal": [
+      {
+        "slug": "claude-conversation-2025-12-25-understanding-beliefs-through-personal-values-6c1b8b80",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 13598,
+        "title": "Understanding beliefs through personal values"
+      },
+      {
+        "slug": "claude-conversation-2026-01-04-blueprint-longevity-mix-ingredients-and-nutrients-4302ffaf",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 10513,
+        "title": "Blueprint longevity mix ingredients and nutrients"
+      },
+      {
+        "slug": "claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 4725,
+        "title": "\ud83d\udcac I never used to get forehead a..."
+      },
+      {
+        "slug": "claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 2271,
+        "title": "Chest pain that feels like heartburn"
+      },
+      {
+        "slug": "claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 2066,
+        "title": "Probiotic Plan for Enhancing Exercise Performance"
+      },
+      {
+        "slug": "claude-conversation-2026-01-18-preventing-forehead-pimples-0a360148",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 1730,
+        "title": "Preventing forehead pimples"
+      },
+      {
+        "slug": "claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 1629,
+        "title": "Choosing oils for omega-6 balance"
+      },
+      {
+        "slug": "claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 1479,
+        "title": "Bacteriophage therapy for targeted gut bacteria removal"
+      },
+      {
+        "slug": "claude-conversation-2026-02-09-efficient-heavy-lifting-for-health-and-longevity-f182f5f6",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 1220,
+        "title": "Efficient heavy lifting for health and longevity"
+      },
+      {
+        "slug": "claude-conversation-2026-01-17-low-motivation-e6d4cff9",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 931,
+        "title": "\ud83d\udcac Low motivation"
+      },
+      {
+        "slug": "claude-conversation-2026-01-21-soybean-oil-and-omega-6-ratios-c20c596d",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 891,
+        "title": "Soybean oil and omega-6 ratios"
+      },
+      {
+        "slug": "claude-conversation-2025-12-29-quick-healthy-meals-from-amazon-prime-2b058fed",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 878,
+        "title": "Quick healthy meals from Amazon Prime"
+      },
+      {
+        "slug": "claude-conversation-2026-01-17-when-to-take-nad-b2bae91d",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 861,
+        "title": "\ud83d\udcac When to take nad+"
+      },
+      {
+        "slug": "claude-conversation-2024-04-13-playing-audio-files-in-java-programs-d912e709",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 600,
+        "title": "Playing Audio Files in Java Programs"
+      },
+      {
+        "slug": "claude-conversation-2023-08-17-progress-without-play-what-if-video-games-never-existed-0f9c6ebe",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 565,
+        "title": "Progress Without Play: What If Video Games Never Existed?"
+      },
+      {
+        "slug": "claude-conversation-2025-03-23-tiktok-hook-formats-extracted-e9b90e4c",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 497,
+        "title": "TikTok Hook Formats Extracted"
+      },
+      {
+        "slug": "claude-conversation-2025-03-23-identifying-mold-on-bread-f521f776",
+        "kind": "conversation",
+        "topic": "personal",
+        "words": 448,
+        "title": "Identifying Mold on Bread"
+      }
+    ],
+    "product": [
+      {
+        "slug": "claude-conversation-2025-12-07-speakmcp-demo-and-audience-strategy-8a285a15",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 5344,
+        "title": "SpeakMCP demo and audience strategy"
+      },
+      {
+        "slug": "claude-conversation-2026-02-09-maximizing-intent-launch-impact-8cff58eb",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 4946,
+        "title": "Maximizing intent launch impact"
+      },
+      {
+        "slug": "claude-conversation-2026-01-25-approaching-faris-kojok-s-outreach-opportunity-0e5160da",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 3482,
+        "title": "Approaching Faris Kojok's outreach opportunity"
+      },
+      {
+        "slug": "claude-conversation-2026-02-18-quarterly-okrs-with-speakmcp-and-learning-goals-bdd71178",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 3283,
+        "title": "Quarterly OKRs with SpeakMCP and learning goals"
+      },
+      {
+        "slug": "claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 2828,
+        "title": "Windows ISO driver installation error on HP ZBook"
+      },
+      {
+        "slug": "claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 2341,
+        "title": "Hooks for spec-driven multi-agent framework"
+      },
+      {
+        "slug": "claude-conversation-2026-01-04-hp-zbook-wifi-connection-issue-on-cachyos-13c27495",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 2214,
+        "title": "HP ZBook WiFi connection issue on CachyOS"
+      },
+      {
+        "slug": "claude-conversation-2026-02-18-positioning-personal-brand-as-company-distribution-channel-7476c9d2",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1991,
+        "title": "Positioning personal brand as company distribution channel"
+      },
+      {
+        "slug": "claude-conversation-2026-01-07-tennis-forehand-wrist-control-and-power-92a49660",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1828,
+        "title": "Tennis forehand wrist control and power"
+      },
+      {
+        "slug": "claude-conversation-2026-01-04-virtualbox-vs-qemu-on-linux-793943dc",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1710,
+        "title": "VirtualBox vs QEMU on Linux"
+      },
+      {
+        "slug": "claude-conversation-2025-12-11-naming-speakmcp-as-an-agent-platform-fd15e6b6",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1560,
+        "title": "Naming speakmcp as an agent platform"
+      },
+      {
+        "slug": "claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1411,
+        "title": "Monetizing a Kimi K2.5 fine-tune model"
+      },
+      {
+        "slug": "claude-conversation-2026-02-06-fixing-shaky-legs-and-stepping-into-the-ball-in-tennis-785bef96",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1390,
+        "title": "Fixing shaky legs and stepping into the ball in tennis"
+      },
+      {
+        "slug": "claude-conversation-2025-12-25-building-a-market-driven-product-strategy-f00cbfc1",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1177,
+        "title": "Building a market-driven product strategy"
+      },
+      {
+        "slug": "claude-conversation-2026-02-11-positioning-speakmcp-for-nvidia-technology-showcase-43291bda",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1151,
+        "title": "Positioning speakmcp for NVIDIA technology showcase"
+      },
+      {
+        "slug": "claude-conversation-2025-03-23-ai-powered-presentation-tools-for-software-engineers-43049356",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1120,
+        "title": "AI-Powered Presentation Tools for Software Engineers"
+      },
+      {
+        "slug": "claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1039,
+        "title": "BPO and salicylic acid skincare routine"
+      },
+      {
+        "slug": "claude-conversation-2026-02-06-pre-match-leg-preparation-for-tennis-8fbc35dd",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 1018,
+        "title": "Pre-match leg preparation for tennis"
+      },
+      {
+        "slug": "claude-conversation-2025-02-28-100-creative-green-screen-backgrounds-for-tech-influencers-95a31f75",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 993,
+        "title": "100 Creative Green Screen Backgrounds for Tech Influencers"
+      },
+      {
+        "slug": "claude-conversation-2026-02-23-vaccine-records-for-marriage-physical-071ea038",
+        "kind": "conversation",
+        "topic": "product",
+        "words": 969,
+        "title": "Vaccine records for marriage physical"
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "execution_fail_rejections": {
+    "1effd92cd35ded80": {
+      "at": "2026-04-24T20:25:28.273841Z",
+      "market": "general-market-reasoning",
+      "reason": "execution failure in logs"
+    },
+    "8b8772bb0cbd0740": {
+      "at": "2026-04-24T20:25:28.273841Z",
+      "market": "Market Edge Analysis (April 23, 2026): The Harvey Weinstein NY retrial is for a SINGLE count of third-degree rape (Jessi",
+      "reason": "execution failure in logs"
+    },
+    "f79c574f821c734b": {
+      "at": "2026-04-24T20:25:28.273841Z",
+      "market": "2026-04-24t19",
+      "reason": "execution failure in logs"
+    }
+  },
+  "false_positive_alerts": [
+    {
+      "hash": "d23698feb968dc56",
+      "marked_at": "2026-04-24T20:26:41.964414Z",
+      "reason": "superseded by stricter v2 monitor; alert came from generic/noisy cluster"
+    },
+    {
+      "hash": "e301dcc0da0a6993",
+      "marked_at": "2026-04-24T20:26:41.964414Z",
+      "reason": "superseded by stricter v2 monitor; alert came from generic/noisy cluster"
+    },
+    {
+      "hash": "eb643c3a2341f3d8",
+      "marked_at": "2026-04-24T20:26:41.964414Z",
+      "reason": "superseded by stricter v2 monitor; alert came from generic/noisy cluster"
+    },
+    {
+      "hash": "3cc927d8f9e7fc12",
+      "marked_at": "2026-04-24T20:27:19.846641Z",
+      "reason": "superseded by stricter v3 monitor; modest/not-strong edge does not meet alert bar"
+    }
+  ],
+  "last_alert_count": 3,
+  "last_context_cycles": 10,
+  "last_context_cycles_count": 10,
+  "last_digest_date": "2026-04-24",
+  "last_digest_delivery_error": null,
+  "last_digest_email_sent": false,
+  "last_digest_sent_at": "2026-04-24T20:27:05.404983Z",
+  "last_new_cycles": 0,
+  "last_new_cycles_count": 4,
+  "last_processed_created_at": "2026-04-24T20:45:00.684701+00:00",
+  "last_rows_fetched": 50,
+  "last_run_alerts": 0,
+  "last_run_context_cycles": 10,
+  "last_run_new_cycles": 0,
+  "last_successful_run_at": "2026-04-24T20:57:05.371677+00:00",
+  "last_successful_scrape_at": "2026-04-24T20:45:39.961556+00:00",
+  "latest_rows_count": 50,
+  "recent_alerts": {
+    "1b503c4f4b6f0e47": {
+      "confidence": "Medium",
+      "cycles": [
+        "trading-gpt-5.4-cycle-20260424-192843"
+      ],
+      "delivery": "pending",
+      "side": "NO",
+      "timestamp": "2026-04-24T20:57:05.371677+00:00",
+      "title": "No $0.9840 | Bid:$0.0140 Ask:$0.0180 Spread:$0.0040 | Liq:$4,015 Vol24h:$39 | 1dChange:-0.00% | Time"
+    },
+    "823a47ccffb6eb86": {
+      "confidence": "High",
+      "cycles": [
+        "trading-glm-5-cycle-20260424-201533",
+        "trading-gpt-5.2-cycle-20260424-201338"
+      ],
+      "delivery": "pending",
+      "side": "NO",
+      "timestamp": "2026-04-24T20:57:05.371677+00:00",
+      "title": "No $0.9895 | Bid:$0.0100 Ask:$0.0110 Spread:$0.0010 | Liq:$67,826 Vol24h:$20,514 | 1dChange:-0.00% |"
+    },
+    "89935c732c3b1e24": {
+      "confidence": "Medium",
+      "cycles": [
+        "trading-gpt-5.4-cycle-20260424-192843"
+      ],
+      "delivery": "pending",
+      "side": "NO",
+      "timestamp": "2026-04-24T20:57:05.371677+00:00",
+      "title": "No $0.9895 | Bid:$0.0060 Ask:$0.0150 Spread:$0.0090 | Liq:$4,791 Vol24h:$40 | 1dChange:-0.00% | Time"
+    }
+  },
+  "seen_cycle_ids": [
+    "trading-gemini-3-pro-preview-cycle-20260424-194510",
+    "trading-gpt-5.4-cycle-20260424-192843",
+    "trading-claude-opus-4-6-cycle-20260424-191502",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-191137",
+    "trading-glm-5-cycle-20260424-190243",
+    "trading-gpt-5.2-cycle-20260424-190056",
+    "trading-mystery-model-alpha-cycle-20260424-184814",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-183938",
+    "trading-claude-opus-4-5-20251101-cycle-20260424-182641",
+    "trading-gemini-3-pro-preview-cycle-20260424-181511",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-175804",
+    "trading-glm-5-cycle-20260424-175327",
+    "trading-mystery-model-alpha-cycle-20260424-175019",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-174757",
+    "trading-gemini-3-pro-preview-cycle-20260424-174510",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-173529",
+    "trading-glm-5-cycle-20260424-172402",
+    "trading-mystery-model-alpha-cycle-20260424-172103",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-171916",
+    "trading-gemini-3-pro-preview-cycle-20260424-171511",
+    "trading-gpt-5.4-cycle-20260424-170415",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-165514",
+    "trading-glm-5-cycle-20260424-164659",
+    "trading-gpt-5.2-cycle-20260424-164554",
+    "trading-glm-4.7-cycle-20260424-164421",
+    "trading-mystery-model-alpha-cycle-20260424-164017",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-162648",
+    "trading-gemini-3-pro-preview-cycle-20260424-161510",
+    "trading-gpt-5.4-cycle-20260424-160405",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-155550",
+    "trading-glm-5-cycle-20260424-154547",
+    "trading-gpt-5.2-cycle-20260424-154351",
+    "trading-mystery-model-alpha-cycle-20260424-152820",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-152230",
+    "trading-gemini-3-pro-preview-cycle-20260424-151511",
+    "trading-gpt-5.4-cycle-20260424-150416",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-145651",
+    "trading-glm-5-cycle-20260424-144226",
+    "trading-gpt-5.2-cycle-20260424-144011",
+    "trading-mystery-model-alpha-cycle-20260424-143703",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-142919",
+    "trading-gemini-3-pro-preview-cycle-20260424-141512",
+    "trading-gpt-5.4-cycle-20260424-140212",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-135406",
+    "trading-glm-5-cycle-20260424-134244",
+    "trading-gpt-5.2-cycle-20260424-134154",
+    "trading-mystery-model-alpha-cycle-20260424-133250",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-132000",
+    "trading-gemini-3-pro-preview-cycle-20260424-131509",
+    "trading-gpt-5.4-cycle-20260424-130935",
+    "trading-gpt-5.2-cycle-20260424-201338",
+    "trading-mystery-model-alpha-cycle-20260424-200909",
+    "trading-grok-4-1-fast-reasoning-cycle-20260424-200600",
+    "trading-claude-opus-4-5-20251101-cycle-20260424-195612",
+    "trading-gpt-5.4-cycle-20260424-204451",
+    "trading-claude-opus-4-6-cycle-20260424-203640",
+    "trading-gemini-3.1-pro-preview-cycle-20260424-202951",
+    "trading-glm-5-cycle-20260424-201533",
+    "trading-glm-4.7-cycle-20260424-201244"
+  ]
+}

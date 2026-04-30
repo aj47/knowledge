@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DotAgents — Option B: Voice Command Center</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B1120; --bg-card: #131B2E; --bg-surface: #1A2540;
+    --text: #F1F5F9; --text-muted: #94A3B8; --text-dim: #64748B;
+    --accent: #F59E0B; --accent-glow: rgba(245,158,11,0.12); --accent-hover: #FBBF24;
+    --accent-dim: #B45309;
+    --border: #1E293B; --border-hover: #334155;
+    --success: #10B981; --error: #F43F5E; --warning: #F59E0B;
+    --radius: 14px; --font: 'Space Grotesk', sans-serif; --body: 'Inter', sans-serif; --mono: 'JetBrains Mono', monospace;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:var(--body); overflow-x:hidden; }
+
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:20px 40px; border-bottom:1px solid var(--border); backdrop-filter:blur(12px); position:sticky; top:0; z-index:100; background:rgba(11,17,32,0.85); }
+  .logo { display:flex; align-items:center; gap:12px; font-family:var(--font); font-weight:700; font-size:20px; letter-spacing:-0.02em; }
+  .logo-icon { width:32px; height:32px; border-radius:50%; background:radial-gradient(circle at 40% 40%, var(--accent-hover), var(--accent-dim)); box-shadow:0 0 24px var(--accent-glow), 0 0 48px rgba(245,158,11,0.06); animation:glow-pulse 3s ease-in-out infinite; }
+  .nav-links { display:flex; gap:28px; align-items:center; }
+  .nav-links a { color:var(--text-muted); text-decoration:none; font-size:14px; font-weight:500; transition:color 0.2s; }
+  .nav-links a:hover { color:var(--accent); }
+  .btn { padding:10px 22px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; border:none; transition:all 0.2s; font-family:var(--font); }
+  .btn-primary { background:var(--accent); color:#0B1120; }
+  .btn-primary:hover { background:var(--accent-hover); box-shadow:0 4px 24px var(--accent-glow); transform:translateY(-1px); }
+  .btn-ghost { background:transparent; color:var(--text-muted); border:1px solid var(--border); }
+  .btn-ghost:hover { border-color:var(--accent); color:var(--accent); }
+
+  .hero { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:120px 40px 80px; position:relative; overflow:hidden; }
+  .hero::before { content:''; position:absolute; top:30%; left:50%; transform:translate(-50%,-50%); width:800px; height:800px; background:radial-gradient(circle, rgba(245,158,11,0.08) 0%, transparent 60%); pointer-events:none; }
+  .hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:200px; background:linear-gradient(to top, var(--bg), transparent); pointer-events:none; }
+
+  .hero-orb { width:100px; height:100px; border-radius:50%; background:radial-gradient(circle at 35% 35%, var(--accent-hover), var(--accent), var(--accent-dim)); box-shadow:0 0 80px var(--accent-glow), 0 0 160px rgba(245,158,11,0.06); margin-bottom:48px; position:relative; z-index:1; animation:orb-breathe 4s ease-in-out infinite; }
+  .hero-orb::after { content:''; position:absolute; inset:-20px; border-radius:50%; border:1px solid rgba(245,158,11,0.1); animation:ring-expand 4s ease-in-out infinite; }
+
+  .hero-badge { font-family:var(--mono); font-size:12px; color:var(--accent); padding:6px 16px; border:1px solid rgba(245,158,11,0.2); border-radius:20px; margin-bottom:28px; display:inline-block; position:relative; z-index:1; background:rgba(245,158,11,0.05); letter-spacing:0.05em; }
+  .hero h1 { font-family:var(--font); font-size:72px; font-weight:700; letter-spacing:-0.04em; line-height:1.05; margin-bottom:24px; position:relative; z-index:1; }
+  .hero h1 .glow { color:var(--accent); text-shadow:0 0 40px var(--accent-glow); }
+  .hero p { font-size:18px; color:var(--text-muted); max-width:480px; line-height:1.7; margin-bottom:44px; position:relative; z-index:1; }
+  .hero-actions { display:flex; gap:16px; position:relative; z-index:1; }
+
+  /* Swatches */
+  .swatches { display:flex; gap:12px; flex-wrap:wrap; margin:40px auto; max-width:900px; justify-content:center; }
+  .swatch { width:80px; text-align:center; }
+  .swatch-color { width:80px; height:80px; border-radius:10px; margin-bottom:8px; border:1px solid var(--border); }
+  .swatch-label { font-size:11px; color:var(--text-dim); font-family:var(--mono); }
+  .divider { height:1px; background:var(--border); max-width:900px; margin:80px auto; }
+
+  .section-label { font-family:var(--mono); font-size:12px; color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:12px; }
+  .section-title { font-family:var(--font); font-size:36px; font-weight:700; letter-spacing:-0.02em; margin-bottom:16px; }
+  .section-desc { font-size:16px; color:var(--text-muted); max-width:500px; margin-bottom:48px; line-height:1.6; }
+  .app-section { padding:80px 40px; text-align:center; }
+
+  /* App Frame */
+  .app-frame { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; max-width:900px; margin:0 auto; box-shadow:0 20px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(245,158,11,0.03); }
+  .app-titlebar { display:flex; align-items:center; padding:14px 18px; background:rgba(26,37,64,0.6); border-bottom:1px solid var(--border); gap:8px; }
+  .app-titlebar .dots { display:flex; gap:6px; }
+  .app-titlebar .dot { width:10px; height:10px; border-radius:50%; }
+  .app-titlebar .dot.red { background:#FF5F57; } .app-titlebar .dot.yellow { background:#FEBC2E; } .app-titlebar .dot.green { background:#28C840; }
+  .app-titlebar .title { flex:1; text-align:center; font-size:12px; color:var(--text-dim); font-weight:500; font-family:var(--font); }
+  .app-body { padding:24px; min-height:400px; }
+
+  /* Waveform */
+  .waveform-area { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:60px 20px; position:relative; }
+  .waveform-area::before { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:300px; height:300px; background:radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); pointer-events:none; }
+  .waveform { display:flex; align-items:center; gap:4px; height:100px; margin-bottom:24px; position:relative; z-index:1; }
+  .waveform .bar { width:4px; background:linear-gradient(to top, var(--accent-dim), var(--accent)); border-radius:2px; animation:wave 1.4s ease-in-out infinite; }
+  .waveform .bar:nth-child(odd) { animation-delay:0.15s; }
+  .waveform .bar:nth-child(3n) { animation-delay:0.35s; }
+  .waveform .bar:nth-child(4n) { animation-delay:0.55s; }
+  .recording-label { font-size:14px; color:var(--text-muted); font-weight:500; font-family:var(--font); position:relative; z-index:1; }
+  .recording-label .active { color:var(--accent); font-weight:600; }
+
+  /* Tiles */
+  .tiles-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; }
+  .tile { background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:18px; transition:all 0.2s; }
+  .tile:hover { border-color:var(--border-hover); }
+  .tile-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+  .tile-status { display:flex; align-items:center; gap:6px; font-size:12px; font-weight:600; font-family:var(--font); }
+  .tile-status .dot-indicator { width:7px; height:7px; border-radius:50%; }
+  .tile-status.active .dot-indicator { background:var(--accent); box-shadow:0 0 8px var(--accent-glow); animation:pulse 2s infinite; }
+  .tile-status.completed .dot-indicator { background:var(--success); }
+  .tile-badge { font-family:var(--mono); font-size:11px; padding:4px 10px; border-radius:6px; background:var(--bg-surface); color:var(--text-dim); }
+  .tile-content { font-size:13px; color:var(--text-muted); line-height:1.5; }
+  .tile-content .tool-call { font-family:var(--mono); font-size:12px; color:var(--accent); background:rgba(245,158,11,0.08); padding:2px 8px; border-radius:4px; display:inline-block; margin:2px 0; border:1px solid rgba(245,158,11,0.1); }
+  .tile-content strong { color:var(--text); font-family:var(--font); }
+
+  /* Settings */
+  .settings-layout { display:grid; grid-template-columns:200px 1fr; min-height:400px; }
+  .settings-sidebar { border-right:1px solid var(--border); padding:16px; }
+  .settings-sidebar a { display:block; padding:8px 12px; border-radius:8px; font-size:13px; color:var(--text-muted); text-decoration:none; margin-bottom:2px; cursor:pointer; transition:all 0.15s; font-family:var(--font); }
+  .settings-sidebar a.active { background:rgba(245,158,11,0.08); color:var(--accent); font-weight:600; border:1px solid rgba(245,158,11,0.1); }
+  .settings-sidebar a:hover { background:rgba(255,255,255,0.03); }
+  .settings-main { padding:24px; text-align:left; }
+  .setting-group { margin-bottom:32px; }
+  .setting-group h3 { font-size:14px; font-weight:600; margin-bottom:16px; font-family:var(--font); color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:0.08em; }
+  .setting-row { display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-bottom:1px solid var(--border); }
+  .setting-label { font-size:13px; }
+  .setting-label small { display:block; color:var(--text-dim); font-size:12px; margin-top:3px; }
+  .toggle { width:42px; height:24px; background:var(--bg-surface); border-radius:12px; position:relative; cursor:pointer; border:1px solid var(--border); }
+  .toggle.on { background:var(--accent); border-color:var(--accent); }
+  .toggle::after { content:''; position:absolute; width:18px; height:18px; background:white; border-radius:50%; top:2px; left:2px; transition:transform 0.2s; }
+  .toggle.on::after { transform:translateX(18px); }
+  .input-field { background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:10px 14px; color:var(--text); font-size:13px; width:220px; font-family:var(--mono); }
+  .input-field:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); }
+
+  /* Features */
+  .features { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; max-width:900px; margin:0 auto; }
+  .feature-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:28px; transition:all 0.2s; position:relative; overflow:hidden; }
+  .feature-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent, var(--accent), transparent); opacity:0; transition:opacity 0.3s; }
+  .feature-card:hover { border-color:var(--border-hover); transform:translateY(-2px); }
+  .feature-card:hover::before { opacity:1; }
+  .feature-icon { width:44px; height:44px; background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.1); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:20px; margin-bottom:16px; }
+  .feature-card h3 { font-size:15px; font-weight:600; margin-bottom:8px; font-family:var(--font); }
+  .feature-card p { font-size:13px; color:var(--text-muted); line-height:1.6; }
+
+  .footer { padding:40px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; margin-top:80px; }
+  .footer-left { font-size:13px; color:var(--text-dim); }
+  .footer-right { display:flex; gap:24px; }
+  .footer-right a { color:var(--text-dim); text-decoration:none; font-size:13px; }
+
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+  @keyframes glow-pulse { 0%,100%{box-shadow:0 0 24px var(--accent-glow)} 50%{box-shadow:0 0 40px rgba(245,158,11,0.2)} }
+  @keyframes orb-breathe { 0%,100%{transform:scale(1)} 50%{transform:scale(1.06)} }
+  @keyframes ring-expand { 0%,100%{transform:scale(1);opacity:0.3} 50%{transform:scale(1.15);opacity:0} }
+  @keyframes wave { 0%,100%{height:15%} 50%{height:85%} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon"></div>
+    DotAgents
+  </div>
+  <div class="nav-links">
+    <a href="#">Features</a>
+    <a href="#">Protocol</a>
+    <a href="#">Docs</a>
+    <a href="#">GitHub</a>
+    <button class="btn btn-primary">Download</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">VOICE-FIRST AI AGENT PLATFORM</div>
+  <div class="hero-orb"></div>
+  <h1>Your AI <span class="glow">Ops Center</span></h1>
+  <p>Command a team of AI agents with your voice. They remember, they specialize, they ask before they act.</p>
+  <div class="hero-actions">
+    <button class="btn btn-primary">Download for macOS</button>
+    <button class="btn btn-ghost">Watch Demo →</button>
+  </div>
+</section>
+
+<div style="padding:40px; text-align:center;">
+  <div class="section-label">Color Palette</div>
+  <div class="section-title" style="margin-bottom:32px;">Option B — Voice Command Center</div>
+  <div class="swatches">
+    <div class="swatch"><div class="swatch-color" style="background:#0B1120"></div><div class="swatch-label">#0B1120<br>Background</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#131B2E"></div><div class="swatch-label">#131B2E<br>Card</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#1A2540"></div><div class="swatch-label">#1A2540<br>Surface</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#F59E0B"></div><div class="swatch-label">#F59E0B<br>Accent</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#FBBF24"></div><div class="swatch-label">#FBBF24<br>Hover</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#B45309"></div><div class="swatch-label">#B45309<br>Dim</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#F1F5F9; border-color:#334155"></div><div class="swatch-label">#F1F5F9<br>Text</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#10B981"></div><div class="swatch-label">#10B981<br>Success</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#F43F5E"></div><div class="swatch-label">#F43F5E<br>Error</div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<section class="app-section">
+  <div class="section-label">App UI — Recording</div>
+  <div class="section-title">Voice Command Active</div>
+  <div class="section-desc" style="margin:0 auto 48px;">The orb glows. Your voice becomes action.</div>
+  <div class="app-frame">
+    <div class="app-titlebar">
+      <div class="dots"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+      <div class="title">DotAgents — Command Center</div>
+      <div style="width:60px"></div>
+    </div>
+    <div class="app-body">
+      <div class="waveform-area">
+        <div class="waveform">
+          <div class="bar" style="height:15%"></div><div class="bar" style="height:40%"></div><div class="bar" style="height:65%"></div>
+          <div class="bar" style="height:85%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:75%"></div>
+          <div class="bar" style="height:35%"></div><div class="bar" style="height:90%"></div><div class="bar" style="height:50%"></div>
+          <div class="bar" style="height:70%"></div><div class="bar" style="height:25%"></div><div class="bar" style="height:80%"></div>
+          <div class="bar" style="height:45%"></div><div class="bar" style="height:60%"></div><div class="bar" style="height:20%"></div>
+          <div class="bar" style="height:75%"></div><div class="bar" style="height:40%"></div><div class="bar" style="height:85%"></div>
+          <div class="bar" style="height:30%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:70%"></div>
+          <div class="bar" style="height:45%"></div><div class="bar" style="height:80%"></div><div class="bar" style="height:35%"></div>
+        </div>
+        <div class="recording-label"><span class="active">⬤ RECORDING</span> — Hold Ctrl+Alt</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="app-section">
+  <div class="section-label">App UI — Sessions</div>
+  <div class="section-title">Mission Control</div>
+  <div class="section-desc" style="margin:0 auto 48px;">Every agent. Every task. Real-time status at a glance.</div>
+  <div class="app-frame">
+    <div class="app-titlebar">
+      <div class="dots"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+      <div class="title">DotAgents — 3 Missions Active</div>
+      <div style="width:60px"></div>
+    </div>
+    <div class="app-body">
+      <div class="tiles-grid">
+        <div class="tile">
+          <div class="tile-header">
+            <div class="tile-status active"><div class="dot-indicator"></div> Active</div>
+            <div class="tile-badge">iter 4/15</div>
+          </div>
+          <div class="tile-content">
+            <strong>Research competitor pricing</strong><br><br>
+            <span class="tool-call">exa:web_search</span> → 8 results<br>
+            <span class="tool-call">execute_command</span> → compiling...<br><br>
+            <span style="color:var(--text-dim); font-size:12px;">Building comparison table from 5 sources...</span>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile-header">
+            <div class="tile-status active"><div class="dot-indicator"></div> Active</div>
+            <div class="tile-badge">iter 2/10</div>
+          </div>
+          <div class="tile-content">
+            <strong>Draft tweet thread</strong><br><br>
+            <span class="tool-call">crawling_exa</span> → reading...<br><br>
+            <span style="color:var(--text-dim); font-size:12px;">Summarizing top posts for recap...</span>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile-header">
+            <div class="tile-status completed"><div class="dot-indicator"></div> Complete</div>
+            <div class="tile-badge">✓ 8 tools</div>
+          </div>
+          <div class="tile-content">
+            <strong>Email triage</strong><br><br>
+            <span style="color:var(--text-dim); font-size:12px;">10 emails triaged. 5 skip, 3 respond, 2 flagged.</span>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile-header">
+            <div class="tile-status active"><div class="dot-indicator"></div> Awaiting</div>
+            <div class="tile-badge">⚠ approval</div>
+          </div>
+          <div class="tile-content">
+            <strong>Deploy staging</strong><br><br>
+            <span style="color:var(--warning);">Needs approval:</span><br>
+            <span style="font-family:var(--mono); font-size:12px; color:var(--text-dim);">git push origin staging</span><br>
+            <div style="display:flex; gap:8px; margin-top:10px;">
+              <button class="btn btn-primary" style="padding:6px 16px; font-size:12px;">Approve</button>
+              <button class="btn btn-ghost" style="padding:6px 16px; font-size:12px;">Deny</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="app-section">
+  <div class="section-label">App UI — Settings</div>
+  <div class="section-title">System Configuration</div>
+  <div class="section-desc" style="margin:0 auto 48px;">Mission parameters. Your way.</div>
+  <div class="app-frame">
+    <div class="app-titlebar">
+      <div class="dots"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+      <div class="title">DotAgents — Settings</div>
+      <div style="width:60px"></div>
+    </div>
+    <div class="app-body" style="padding:0;">
+      <div class="settings-layout">
+        <div class="settings-sidebar">
+          <a class="active">General</a>
+          <a>Providers</a>
+          <a>Models</a>
+          <a>Agent Profiles</a>
+          <a>Skills</a>
+          <a>MCP Tools</a>
+          <a>Repeat Tasks</a>
+          <a>WhatsApp</a>
+        </div>
+        <div class="settings-main">
+          <div class="setting-group">
+            <h3>Voice & Input</h3>
+            <div class="setting-row">
+              <div class="setting-label">Text-to-Speech<small>Read responses aloud</small></div>
+              <div class="toggle on"></div>
+            </div>
+            <div class="setting-row">
+              <div class="setting-label">Tool Approval<small>Ask before executing tools</small></div>
+              <div class="toggle on"></div>
+            </div>
+            <div class="setting-row">
+              <div class="setting-label">Task Verification<small>Confirm task completion</small></div>
+              <div class="toggle"></div>
+            </div>
+          </div>
+          <div class="setting-group">
+            <h3>API Configuration</h3>
+            <div class="setting-row">
+              <div class="setting-label">OpenAI API Key</div>
+              <input class="input-field" type="password" value="sk-•••••••••••••••••" readonly>
+            </div>
+            <div class="setting-row">
+              <div class="setting-label">Default Model</div>
+              <input class="input-field" value="claude-sonnet-4-20250514" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="app-section" style="text-align:center;">
+  <div class="section-label">Capabilities</div>
+  <div class="section-title" style="margin-bottom:48px;">Command. Control. Confirm.</div>
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🎤</div>
+      <h3>Voice Command</h3>
+      <p>Hold a button. Speak your mission. Release. Your agents deploy immediately.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔌</div>
+      <h3>.agents Protocol</h3>
+      <p>Universal skills standard. Works across Claude Code, Cursor, Codex, and every adopter.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧠</div>
+      <h3>Mission Memory</h3>
+      <p>Persistent context across every operation. Brief it once. It never forgets.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🛡️</div>
+      <h3>Approval Gates</h3>
+      <p>Nothing destructive runs without your green light. Full control, always.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">👥</div>
+      <h3>Agent Fleet</h3>
+      <p>Specialists for every mission type. Research, code, browse, deploy — all coordinated.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Full Telemetry</h3>
+      <p>Langfuse tracing on every operation. Tokens, tools, decisions — full situational awareness.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-left">© 2026 DotAgents · <a href="https://twitter.com/techfren_ai" style="color:var(--accent); text-decoration:none;">@techfren_ai</a></div>
+  <div class="footer-right">
+    <a href="#">GitHub</a>
+    <a href="#">Discord</a>
+    <a href="#">Protocol</a>
+  </div>
+</footer>
+
+</body>
+</html>

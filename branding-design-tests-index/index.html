@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DotAgents Design Skill Shootout</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui; background: #0a0a0a; color: #e0e0e0; padding: 2rem; }
+  h1 { text-align: center; font-size: 2.5rem; margin-bottom: 0.5rem; }
+  .subtitle { text-align: center; color: #888; margin-bottom: 2rem; font-size: 1.1rem; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1400px; margin: 0 auto; }
+  .card { background: #151515; border: 1px solid #2a2a2a; border-radius: 12px; overflow: hidden; }
+  .card h2 { padding: 1rem 1.5rem; font-size: 1.2rem; border-bottom: 1px solid #2a2a2a; }
+  .card h2 span { font-size: 0.8rem; color: #888; display: block; margin-top: 0.3rem; font-weight: normal; }
+  .skill1 h2 { background: linear-gradient(90deg, #1a0a2e, #151515); border-left: 4px solid #ff6b35; }
+  .skill2 h2 { background: linear-gradient(90deg, #0a1a2e, #151515); border-left: 4px solid #3b82f6; }
+  .links { padding: 1rem 1.5rem; display: flex; gap: 1rem; }
+  .links a { display: inline-block; padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s; }
+  .links a:hover { transform: translateY(-2px); }
+  .skill1 .links a { background: #ff6b35; color: #000; }
+  .skill2 .links a { background: #3b82f6; color: #fff; }
+  .meta { padding: 0.5rem 1.5rem 1rem; color: #666; font-size: 0.85rem; }
+  .verdict { max-width: 1400px; margin: 3rem auto 0; background: #151515; border: 1px solid #2a2a2a; border-radius: 12px; padding: 2rem; }
+  .verdict h2 { margin-bottom: 1rem; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 0.6rem 1rem; text-align: left; border-bottom: 1px solid #222; }
+  th { color: #888; font-size: 0.85rem; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <h1>⚔️ Design Skill Shootout</h1>
+  <p class="subtitle">Anthropic frontend-design vs. ui-ux-pro-max — Same product, different philosophies</p>
+
+  <div class="grid">
+    <div class="card skill1">
+      <h2>Skill 1: Anthropic frontend-design
+        <span>Philosophy: Anti-slop, bold aesthetic, unforgettable visuals</span>
+      </h2>
+      <div class="links">
+        <a href="skill1-frontend-design/landing.html">🚀 Landing Page</a>
+        <a href="skill1-frontend-design/dashboard.html">📊 Dashboard</a>
+      </div>
+      <div class="meta">Retro-futuristic landing (550 lines) · Brutalist dashboard (835 lines) · Google Fonts: Dela Gothic One, IBM Plex Mono, Outfit, JetBrains Mono, Chakra Petch, Bebas Neue</div>
+    </div>
+
+    <div class="card skill2">
+      <h2>Skill 2: ui-ux-pro-max
+        <span>Philosophy: Systematic design intelligence, accessibility-first, checklist-driven</span>
+      </h2>
+      <div class="links">
+        <a href="skill2-ui-ux-pro-max/landing.html">🚀 Landing Page</a>
+        <a href="skill2-ui-ux-pro-max/dashboard.html">📊 Dashboard</a>
+      </div>
+      <div class="meta">Glassmorphism landing (364 lines) · Flat dashboard (504 lines) · Tailwind CDN · All SVG icons · 22+ cursor-pointer, 34+ aria labels</div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <h2>📋 Comparison Matrix</h2>
+    <table>
+      <tr><th>Dimension</th><th>Skill 1 (frontend-design)</th><th>Skill 2 (ui-ux-pro-max)</th></tr>
+      <tr><td>Visual wow factor</td><td>🔥🔥🔥 Particle systems, glitch text, CRT scanlines</td><td>⭐⭐ Clean, professional, polished</td></tr>
+      <tr><td>Accessibility</td><td>⭐ Minimal — creative-first</td><td>🔥🔥🔥 aria-labels, focus-visible, touch targets</td></tr>
+      <tr><td>Code quality</td><td>⭐⭐ Inline CSS/JS, self-contained</td><td>🔥🔥🔥 Tailwind classes, semantic HTML</td></tr>
+      <tr><td>Animations</td><td>🔥🔥🔥 Parallax, scroll-reveal, typing, sparklines</td><td>⭐⭐ Hover transitions, fade-ins</td></tr>
+      <tr><td>Interactivity</td><td>🔥🔥🔥 Working terminal, spawn/kill buttons</td><td>⭐⭐ Static but well-structured</td></tr>
+      <tr><td>Production-readiness</td><td>⭐⭐ Needs a11y pass</td><td>🔥🔥🔥 Checklist-validated, responsive</td></tr>
+      <tr><td>Uniqueness</td><td>🔥🔥🔥 Would NOT guess AI made this</td><td>⭐⭐ Looks like good SaaS template</td></tr>
+      <tr><td>Best for</td><td>Marketing sites, demos, impressions</td><td>Production apps, enterprise, accessibility</td></tr>
+    </table>
+  </div>
+</body>
+</html>

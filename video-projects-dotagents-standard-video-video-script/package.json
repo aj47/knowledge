@@ -1,0 +1,21 @@
+{
+  "name": "dotagents-standard-video",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "preview": "npx remotion studio src/index.ts",
+    "render": "node render.mjs"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.428",
+    "@remotion/cli": "^4.0.428",
+    "@remotion/renderer": "^4.0.428",
+    "@remotion/transitions": "^4.0.428",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.428"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}

@@ -1,0 +1,135 @@
+---
+kind: note
+id: notion-workspace-index
+updatedAt: 1775970484601
+tags: 
+title: Notion Workspace Index
+context: search-only
+source: ~/Documents/notion-workspace/combined.md
+source_type: notion-workspace
+---
+
+# Notion Workspace Index
+
+Curated heading index from the large Notion combined export.
+
+- line 1: Happiness relativity 00940c526ef14c879a52db38242d23f1.md
+- line 2: Happiness relativity
+- line 9: Mon 19 Dex 018bcfcf0f784f06a15b5ca17a293124.md
+- line 10: Mon 19 Dex
+- line 21: Week 1 SF 02888da350734d6e89de7d04ee96dbc9.md
+- line 22: Week 1 SF
+- line 32: 2mp 02cb77cb7a534f3785cf2aa113032770.md
+- line 33: 2mp
+- line 40: YouTube video 06f93fc54f274d1fbf799e7019f2dafc.md
+- line 41: YouTube video
+- line 46: Journal entry v2 07ebbadb673846e6a2213c0d7fab21da.md
+- line 47: Journal entry v2
+- line 61: Social
+- line 66: more thoughts 08ea3b6f08f548e2b87a121d5d4dd568.md
+- line 67: more thoughts
+- line 72: preparing for trip 0997fba49ce54559ae266cd206e61bd4.md
+- line 73: preparing for trip
+- line 78: zio related linkedin post 0a0d57af798948bfb5c95e018e614d97.md
+- line 79: zio related linkedin post
+- line 149: ideas 0cfbc950054d4cff8dc7933ad4e59b95.md
+- line 150: ideas
+- line 218: you are a spiritual being 0d8467384ae647f79b3a48e15e02767b.md
+- line 219: you are a spiritual being
+- line 228: Day 2 AirBnB 0f4a33be77a9416692d9af2c319e5059.md
+- line 229: Day 2 AirBnB
+- line 268: 2022 lessons 0fda1908185c4f5b87bad21ba2cc5be7.md
+- line 269: 2022 lessons
+- line 278: Meditation 1004e71e6ee84e49a8c148ba774115f5.md
+- line 279: Meditation
+- line 287: Links to my website 1007109a2818423db63924cf398764d2.md
+- line 288: Links to my website
+- line 320: Mon Jul 11 102625398f8f4d6c85d2fcc2102c4f03.md
+- line 321: Mon Jul 11
+- line 323: Intentions
+- line 327: Happenings
+- line 333: Grateful for
+- line 337: Action items
+- line 350: 7 Jan 23 106d23f7649449c082eee462b3c425a3.md
+- line 351: 7 Jan 23
+- line 353: Intentions
+- line 357: Happenings
+- line 363: Grateful for
+- line 369: Action items
+- line 373: Notes
+- line 380: vertex ai notes 13dd209543b44be783c1cba8c0bfb819.md
+- line 381: vertex ai notes
+- line 383: Ideas
+- line 395: Clippy for VSCODE
+- line 426: Writing era 1528584da13246fbbd590c402b2d37e5.md
+- line 427: Writing era
+- line 460: 2024 Quotes 17b93824ced14d50995a2db7cdd8e6ee.md
+- line 461: 2024 Quotes
+- line 466: freelance dev lessons 17ebf24d963543c996246d37ac972e8b.md
+- line 467: freelance dev lessons
+- line 472: Time Management 1ad2577c72d34680889c1ad69d6535e3.md
+- line 473: Time Management
+- line 495: LLM 1c9a9d4d0b6f44a8bb993e79757bb8d8.md
+- line 496: LLM
+- line 513: youtube bio 1e1ece5be63f43b98baffed957ce9140.md
+- line 514: youtube bio
+- line 519: books podcasts 1e752136652340c1b77fe5a124758fb7.md
+- line 520: books/podcasts
+- line 527: melb 1f64011f43cd4b1b941d8426d7c6e4bd.md
+- line 528: melb
+- line 562: Moat 1fa61832a05247a4887b07b966e4b27f.md
+- line 563: Moat?
+- line 574: know when to wear each hat 217de0abd36e4e2a802e3bb4d952a30a.md
+- line 575: know when to wear each hat
+- line 584: the more you immediate pleasure you get from an ac 23b8e6f45ece4b5b8da7891e734b175e.md
+- line 585: the more you immediate pleasure you get from an action, the more strongly you should question whether it aligns with your long term goals
+- line 594: Writing momentum dropped 23bbeb03bfa3483bb0ca5d41891b9cef.md
+- line 595: Writing momentum dropped
+- line 600: Leonardo interview 23d02e8705b64c32b72d3c1fb401e4a8.md
+- line 601: Leonardo interview
+- line 604: melb week 2 2513e33b77e3402780a35dcbd08db0c5.md
+- line 605: melb week 2
+- line 613: Tue 12 Jul 263455aaabd34389b352c68c2a32260f.md
+- line 614: Tue 12 Jul
+- line 616: Intentions
+- line 620: Happenings
+- line 624: Grateful for
+- line 628: Action items
+- line 632: Notes
+- line 635: Daily Entry 26a4c86d3dda41fa8d4f227af2725515.md
+- line 636: Daily Entry
+- line 638: Intentions
+- line 642: Happenings
+- line 644: Grateful for
+- line 648: Action items
+- line 652: Notes
+- line 655: Growing up 2736ae5d9d8e4292b19a8bc61598a66c.md
+- line 656: Growing up
+- line 661: why a software product 2ac916f8eb55413685f929c7b40e1d75.md
+- line 662: why a software product?
+- line 677: Techfren STREAM Schedule 2bdfc29d9ffd4d2b93254644126581a9.md
+- line 678: Techfren STREAM Schedule
+- line 684: 📅 Upcoming Stream Schedule:
+- line 704: 🕝 Past streams:
+- line 852: April 16, 2024 1:00 PM
+- line 896: Brain dump report 1 2cbd51b4b46b4fe5969880309e17920f.md
+- line 897: Brain dump report 1
+- line 938: Thoughts 2da44b1121c2480892c1bc52652acf74.md
+- line 939: Thoughts
+- line 945: Main Mission
+- line 955: Side quests
+- line 967: AgentGPT notes 30fff18fcaec4751b45015c4cd63277d.md
+- line 968: AgentGPT notes
+- line 980: wednesday april 12 32302f2fb4094c65b583c24ca98552c1.md
+- line 981: wednesday april 12
+- line 1041: Keyboard shortcuts 34367d1e3c644328b65b2fb1b2e874c7.md
+- line 1042: Keyboard shortcuts
+- line 1054: why havent i found the idea 346e990d7af84c4883878bdc31356aff.md
+- line 1055: why havent i found the idea
+- line 1060: I have noticed im more easily annoyed 361d23a9a21b46bb8691f714164e5bcb.md
+- line 1061: I have noticed im more easily annoyed
+- line 1072: ABE 38d8ba9f6ad84f49a4f45d4c7f0e80df.md
+- line 1073: ABE
+- line 1084: skate 39eae09435074043929e9730ebfd0ad6.md
+- line 1085: skate
+- line 1090: Tiktok 3a1b874d69b14ac982688c654f63d0e7.md
