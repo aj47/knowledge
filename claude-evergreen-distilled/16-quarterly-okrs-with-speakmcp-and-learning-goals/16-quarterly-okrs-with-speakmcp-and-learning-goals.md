@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-18-quarterly-okrs-with-speakmcp-and-learning-goals-bdd71178/claude-conversation-2026-02-18-quarterly-okrs-with-speakmcp-and-learning-goals-bdd71178.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, research, workflow, prompt, video, youtube]
+createdAt: 1776281681221
 ---
 
 # "Quarterly OKRs with SpeakMCP and learning goals" (Evergreen Distilled)

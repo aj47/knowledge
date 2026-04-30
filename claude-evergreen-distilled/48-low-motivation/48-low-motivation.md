@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-17-low-motivation-e6d4cff9/claude-conversation-2026-01-17-low-motivation-e6d4cff9.md
 source_type: claude-evergreen-distilled
 themes: [content, mcp]
+createdAt: 1776281681228
 ---
 
 # "💬 Low motivation" (Evergreen Distilled)

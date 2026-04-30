@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-25-shadow-work-on-limiting-beliefs-and-subconscious-patterns-bff76d28/claude-conversation-2025-12-25-shadow-work-on-limiting-beliefs-and-subconscious-patterns-bff76d28.md
 source_type: claude-evergreen-distilled
 themes: [product, personal]
+createdAt: 1777321855008
 ---
 
 # "Shadow work on limiting beliefs and subconscious patterns" (Evergreen Distilled)

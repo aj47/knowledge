@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: high
 domain: content
 usage: content
+createdAt: 1777321854926
 ---
 
 # Claude Evergreen Content

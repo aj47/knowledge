@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: high
 domain: product
 usage: product
+createdAt: 1777321854931
 ---
 
 # Quarterly OKRs with SpeakMCP and learning goals

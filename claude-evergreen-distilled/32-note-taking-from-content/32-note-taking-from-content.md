@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-30-note-taking-from-content-c2678ab9/claude-conversation-2025-12-30-note-taking-from-content-c2678ab9.md
 source_type: claude-evergreen-distilled
 themes: [content, research, agent, prompt, mcp, skills, automation]
+createdAt: 1777321855009
 ---
 
 # "Note-taking from content" (Evergreen Distilled)

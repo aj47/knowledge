@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-25-understanding-beliefs-through-personal-values-6c1b8b80/claude-conversation-2025-12-25-understanding-beliefs-through-personal-values-6c1b8b80.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, skills, health]
+createdAt: 1776281681227
 ---
 
 # "Understanding beliefs through personal values" (Evergreen Distilled)

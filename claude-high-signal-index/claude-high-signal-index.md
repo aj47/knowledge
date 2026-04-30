@@ -8,6 +8,7 @@ context: search-only
 source: claude-export-derived
 source_type: curated-index
 updated: 2026-04-11
+createdAt: 1776281681020
 ---
 
 # Claude High Signal Index

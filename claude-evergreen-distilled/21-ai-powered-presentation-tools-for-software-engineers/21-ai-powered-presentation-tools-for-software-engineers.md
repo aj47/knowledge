@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-03-23-ai-powered-presentation-tools-for-software-engineers-43049356/claude-conversation-2025-03-23-ai-powered-presentation-tools-for-software-engineers-43049356.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, research, agent, video, youtube, skills]
+createdAt: 1776281681229
 ---
 
 # "AI-Powered Presentation Tools for Software Engineers" (Evergreen Distilled)

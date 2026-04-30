@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: medium
 domain: engineering
 usage: engineering
+createdAt: 1777321854926
 ---
 
 # Claude Evergreen Personal

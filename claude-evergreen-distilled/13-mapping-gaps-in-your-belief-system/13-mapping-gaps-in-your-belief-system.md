@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b.md
 source_type: claude-evergreen-distilled
 themes: [content, personal]
+createdAt: 1776281681230
 ---
 
 # "Mapping gaps in your belief system" (Evergreen Distilled)

@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, agent, prompt, video, positioning]
+createdAt: 1776281681229
 ---
 
 # "Grok 4.1 free API on OpenRouter" (Evergreen Distilled)

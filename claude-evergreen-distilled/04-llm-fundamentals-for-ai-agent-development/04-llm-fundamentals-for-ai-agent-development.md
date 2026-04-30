@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c.md
 source_type: claude-evergreen-distilled
 themes: [engineering, content, personal, research, workflow, agent, prompt, mcp]
+createdAt: 1777321855003
 ---
 
 # "LLM fundamentals for AI agent development" (Evergreen Distilled)

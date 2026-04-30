@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-08-06-youtube-ads-investment-strategy-memo-77afc611/claude-conversation-2025-08-06-youtube-ads-investment-strategy-memo-77afc611.md
 source_type: claude-evergreen-distilled
 themes: [content, research, video, youtube, pricing]
+createdAt: 1776281681224
 ---
 
 # "YouTube Ads Investment Strategy Memo" (Evergreen Distilled)

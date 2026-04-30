@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-20-mcp-server-for-downloading-script-assets-4567801c/claude-conversation-2025-12-20-mcp-server-for-downloading-script-assets-4567801c.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, video, mcp, pricing]
+createdAt: 1777321855008
 ---
 
 # "MCP server for downloading script assets" (Evergreen Distilled)

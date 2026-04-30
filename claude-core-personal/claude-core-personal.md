@@ -6,6 +6,7 @@ tags:
 title: Claude Core Personal
 context: search-only
 source: claude-canonical-core
+createdAt: 1776281681010
 ---
 
 # Claude Core Personal

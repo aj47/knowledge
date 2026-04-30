@@ -7,6 +7,7 @@ group: claude-canonical-core
 title: Claude Canonical Core
 context: search-only
 source: claude-evergreen-distilled
+createdAt: 1776281681119
 ---
 
 # Claude Canonical Core

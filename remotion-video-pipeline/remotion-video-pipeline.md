@@ -4,7 +4,8 @@ id: remotion-video-pipeline
 title: Remotion Video Pipeline — Full Audit
 context: search-only
 updatedAt: 1774060818247
-tags: 
+tags:
+createdAt: 1776281681172
 ---
 
 # Remotion Video Pipeline — Full Audit

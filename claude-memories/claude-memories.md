@@ -8,6 +8,7 @@ source: claude-export
 source_path: /Users/ajjoobandi/Documents/claude-export
 source_type: memory
 title: "Claude memories"
+createdAt: 1776826582730
 ---
 
 # Claude memories

@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab.md
 source_type: claude-evergreen-distilled
 themes: [content, research, agent, prompt, mcp, skills]
+createdAt: 1776281681225
 ---
 
 # "MCP to skills migration stream planning" (Evergreen Distilled)

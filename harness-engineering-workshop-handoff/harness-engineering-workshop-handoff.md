@@ -3,6 +3,10 @@ title: Harness Engineering Workshop Handoff
 context: search-only
 created: 2026-04-26
 updatedAt: 1777578160336
+kind: note
+id: harness-engineering-workshop-handoff
+createdAt: 1777578160336
+tags: uncategorized
 ---
 
 # Harness Engineering Workshop Handoff

@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: medium
 domain: personal
 usage: personal
+createdAt: 1777321854933
 ---
 
 # Choosing oils for omega-6 balance

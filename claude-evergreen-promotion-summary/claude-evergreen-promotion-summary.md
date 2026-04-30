@@ -7,6 +7,7 @@ group: claude-evergreen-distilled
 title: Claude Evergreen Promotion Summary
 context: search-only
 source: claude-evergreen-distilled
+createdAt: 1776281681077
 ---
 
 # Claude Evergreen Promotion Summary

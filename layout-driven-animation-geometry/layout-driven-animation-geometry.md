@@ -1,5 +1,11 @@
 ---
 context: search-only
+kind: note
+id: layout-driven-animation-geometry
+title: Layout Driven Animation Geometry
+createdAt: 1777244561363
+updatedAt: 1777589795598
+tags: uncategorized
 ---
 
 # Layout-driven animation geometry

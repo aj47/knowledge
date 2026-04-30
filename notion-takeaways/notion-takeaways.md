@@ -11,6 +11,7 @@ domain: personal
 time_horizon: evergreen
 usage: reflection
 confidence: medium
+createdAt: 1776281681090
 ---
 
 # Notion Takeaways

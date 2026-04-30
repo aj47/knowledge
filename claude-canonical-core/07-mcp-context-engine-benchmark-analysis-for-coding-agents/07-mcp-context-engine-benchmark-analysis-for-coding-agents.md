@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: high
 domain: engineering
 usage: engineering
+createdAt: 1777321854928
 ---
 
 # MCP context engine benchmark analysis for coding agents

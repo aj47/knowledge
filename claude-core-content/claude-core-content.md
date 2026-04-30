@@ -6,6 +6,7 @@ tags:
 title: Claude Core Content
 context: search-only
 source: claude-canonical-core
+createdAt: 1776281681014
 ---
 
 # Claude Core Content

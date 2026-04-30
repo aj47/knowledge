@@ -6,6 +6,7 @@ id: anthropic-openclaw-rugpull-2026-04-04
 title: Anthropic Rug-Pulls OpenClaw/Claude Users — DotAgents Fixes It
 date: 2026-04-04
 context: search-only
+createdAt: 1776281681138
 ---
 
 # Anthropic Claude Rug Pull (2026-04-04)

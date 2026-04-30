@@ -8,6 +8,7 @@ context: search-only
 source: claude-export-derived
 source_type: topic-index
 updated: 2026-04-11
+createdAt: 1776281681062
 ---
 
 # Claude Topic Map

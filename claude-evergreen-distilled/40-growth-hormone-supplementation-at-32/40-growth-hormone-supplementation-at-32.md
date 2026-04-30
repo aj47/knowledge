@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-07-growth-hormone-supplementation-at-32-90809e25/claude-conversation-2026-01-07-growth-hormone-supplementation-at-32-90809e25.md
 source_type: claude-evergreen-distilled
 themes: [product, research, health, fitness]
+createdAt: 1776281681228
 ---
 
 # "Growth hormone supplementation at 32" (Evergreen Distilled)

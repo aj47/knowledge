@@ -7,6 +7,7 @@ group: claude-evergreen-distilled
 title: Claude Evergreen Engineering
 context: search-only
 source: claude-evergreen-distilled
+createdAt: 1776281681223
 ---
 
 # Claude Evergreen Engineering

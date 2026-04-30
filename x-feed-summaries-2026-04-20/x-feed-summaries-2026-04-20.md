@@ -9,6 +9,7 @@ date: 2026-04-20
 account: @techfrenAJ
 updatedAt: 1776643200000
 summary: X feed summary for April 20, 2026 with per-post metrics including views and reply/comment counts where available.
+createdAt: 1776748943072
 ---
 
 # X Feed Summary — April 20, 2026

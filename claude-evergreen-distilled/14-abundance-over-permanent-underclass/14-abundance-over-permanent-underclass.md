@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-13-abundance-over-permanent-underclass-5eff8094/claude-conversation-2026-02-13-abundance-over-permanent-underclass-5eff8094.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, content, agent, prompt, video, positioning]
+createdAt: 1776281681225
 ---
 
 # "Abundance over permanent underclass" (Evergreen Distilled)

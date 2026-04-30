@@ -2,6 +2,11 @@
 title: Agent Battler MVP
 context: search-only
 updated: 2026-04-24
+kind: note
+id: agent-battler-mvp
+createdAt: 1777077019401
+updatedAt: 1777589795548
+tags: uncategorized
 ---
 
 # Agent Battler MVP

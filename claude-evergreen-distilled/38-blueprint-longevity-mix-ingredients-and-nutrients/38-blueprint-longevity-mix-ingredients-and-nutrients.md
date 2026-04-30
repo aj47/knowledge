@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-04-blueprint-longevity-mix-ingredients-and-nutrients-4302ffaf/claude-conversation-2026-01-04-blueprint-longevity-mix-ingredients-and-nutrients-4302ffaf.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, research, health]
+createdAt: 1776281681229
 ---
 
 # "Blueprint longevity mix ingredients and nutrients" (Evergreen Distilled)

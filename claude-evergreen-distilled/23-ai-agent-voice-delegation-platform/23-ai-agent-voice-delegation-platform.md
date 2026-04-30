@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf.md
 source_type: claude-evergreen-distilled
 themes: [content, agent, mcp, automation, positioning]
+createdAt: 1776281681221
 ---
 
 # "AI Agent Voice Delegation Platform" (Evergreen Distilled)

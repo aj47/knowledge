@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, agent, video, youtube, skills]
+createdAt: 1776281681222
 ---
 
 # "Clawd.bot video use cases research" (Evergreen Distilled)

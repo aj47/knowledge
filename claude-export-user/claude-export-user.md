@@ -9,6 +9,7 @@ source: claude-export
 source_path: /Users/ajjoobandi/Documents/claude-export
 source_type: user
 title: "Claude export user"
+createdAt: 1776281681181
 ---
 
 # Claude export user

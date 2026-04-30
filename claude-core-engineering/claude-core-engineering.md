@@ -6,6 +6,7 @@ tags:
 title: Claude Core Engineering
 context: search-only
 source: claude-canonical-core
+createdAt: 1776281681100
 ---
 
 # Claude Core Engineering

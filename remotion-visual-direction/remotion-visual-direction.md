@@ -9,6 +9,7 @@ tags:
   - video
   - thumbnails
   - motion
+createdAt: 1776424779053
 ---
 
 # Remotion visual direction

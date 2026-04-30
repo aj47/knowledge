@@ -3,6 +3,11 @@ title: Experimental Media Lab
 slug: experimental-media-lab
 context: search-only
 updated: 2026-04-17
+kind: note
+id: experimental-media-lab
+createdAt: 1776489245599
+updatedAt: 1777589795596
+tags: uncategorized
 ---
 
 # Experimental Media Lab

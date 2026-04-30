@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: high
 domain: personal
 usage: personal
+createdAt: 1777321854932
 ---
 
 # Science-based fitness with Brian Johnson

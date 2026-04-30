@@ -6,6 +6,7 @@ context: search-only
 updatedAt: 1775963819461
 tags: 
 group: claude-export-audit
+createdAt: 1776281681208
 ---
 
 # Claude export ingestion audit

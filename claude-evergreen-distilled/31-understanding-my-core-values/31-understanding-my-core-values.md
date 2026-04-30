@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-24-understanding-my-core-values-d2dcb494/claude-conversation-2025-12-24-understanding-my-core-values-d2dcb494.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, video, youtube, health]
+createdAt: 1776281681216
 ---
 
 # "Understanding my core values" (Evergreen Distilled)

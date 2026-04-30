@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, research, video, youtube]
+createdAt: 1776281681228
 ---
 
 # "Clawdbot follow-up video talking points" (Evergreen Distilled)

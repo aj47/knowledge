@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, content, agent, prompt, video, youtube]
+createdAt: 1777321855010
 ---
 
 # "Elasticsearch blob store transient metadata consolidation" (Evergreen Distilled)

@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-18-preventing-forehead-pimples-0a360148/claude-conversation-2026-01-18-preventing-forehead-pimples-0a360148.md
 source_type: claude-evergreen-distilled
 themes: [product, research, health, fitness]
+createdAt: 1776281681220
 ---
 
 # "Preventing forehead pimples" (Evergreen Distilled)

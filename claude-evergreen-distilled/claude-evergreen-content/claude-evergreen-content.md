@@ -7,6 +7,7 @@ group: claude-evergreen-distilled
 title: Claude Evergreen Content
 context: search-only
 source: claude-evergreen-distilled
+createdAt: 1776281681220
 ---
 
 # Claude Evergreen Content

@@ -8,6 +8,7 @@ context: search-only
 source: claude-export
 source_type: index
 title: "Claude export index"
+createdAt: 1776281681129
 ---
 
 # Claude export index

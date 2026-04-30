@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9.md
 source_type: claude-evergreen-distilled
 themes: [prompt, health]
+createdAt: 1776281681219
 ---
 
 # "Chest pain that feels like heartburn" (Evergreen Distilled)

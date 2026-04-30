@@ -4,7 +4,8 @@ id: knowledge-inbox
 title: Knowledge Inbox
 context: search-only
 updatedAt: 1776547251362
-tags: 
+tags:
+createdAt: 1776658176766
 ---
 
 - 2026-04-10 06:58:30 | source zone: ~/Documents/personal-wiki | source: wiki/Agentic_Workflows.md | why it matters: this page now states that agentic workflows sit between product design and lived working method, and it explicitly centers delegation, parallel execution, and tool/protocol layers; that gives future intake a stable classification anchor for agent/worktree/MCP/skills evidence | candidate type: topic | suggested next destination: wiki

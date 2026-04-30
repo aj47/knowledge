@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c.md
 source_type: claude-evergreen-distilled
 themes: [content, memory, health]
+createdAt: 1776281681222
 ---
 
 # "Choosing oils for omega-6 balance" (Evergreen Distilled)

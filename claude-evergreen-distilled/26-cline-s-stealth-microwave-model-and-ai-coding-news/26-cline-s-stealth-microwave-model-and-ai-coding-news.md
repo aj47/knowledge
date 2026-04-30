@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-03-cline-s-stealth-microwave-model-and-ai-coding-news-d43d1e37/claude-conversation-2025-12-03-cline-s-stealth-microwave-model-and-ai-coding-news-d43d1e37.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, agent, video, pricing]
+createdAt: 1776281681228
 ---
 
 # "Cline's stealth microwave model and AI coding news" (Evergreen Distilled)

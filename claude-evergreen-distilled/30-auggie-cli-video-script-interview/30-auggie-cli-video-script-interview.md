@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-19-auggie-cli-video-script-interview-c5e12fbc/claude-conversation-2026-01-19-auggie-cli-video-script-interview-c5e12fbc.md
 source_type: claude-evergreen-distilled
 themes: [content, workflow, agent, video, mcp, automation]
+createdAt: 1776281681229
 ---
 
 # "Auggie CLI video script interview" (Evergreen Distilled)

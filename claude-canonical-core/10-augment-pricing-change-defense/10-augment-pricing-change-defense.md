@@ -12,6 +12,7 @@ time_horizon: evergreen
 confidence: high
 domain: engineering
 usage: engineering
+createdAt: 1777321854929
 ---
 
 # Augment pricing change defense

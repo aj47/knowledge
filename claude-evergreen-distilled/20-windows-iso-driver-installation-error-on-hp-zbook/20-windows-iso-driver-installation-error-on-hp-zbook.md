@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5.md
 source_type: claude-evergreen-distilled
 themes: [product, content, memory]
+createdAt: 1776281681225
 ---
 
 # "Windows ISO driver installation error on HP ZBook" (Evergreen Distilled)

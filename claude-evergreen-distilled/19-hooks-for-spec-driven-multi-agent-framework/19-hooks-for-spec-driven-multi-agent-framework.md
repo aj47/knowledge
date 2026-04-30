@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, workflow, agent, prompt, youtube, mcp, positioning]
+createdAt: 1776281681229
 ---
 
 # "Hooks for spec-driven multi-agent framework" (Evergreen Distilled)

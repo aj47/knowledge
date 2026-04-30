@@ -7,6 +7,7 @@ group: claude-evergreen-distilled
 title: Claude Evergreen Product
 context: search-only
 source: claude-evergreen-distilled
+createdAt: 1776281681219
 ---
 
 # Claude Evergreen Product

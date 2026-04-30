@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d/claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d.md
 source_type: claude-evergreen-distilled
 themes: [engineering, content, personal, workflow, agent, prompt, video, youtube]
+createdAt: 1776281681226
 ---
 
 # "Parallel ideation with AI subagents" (Evergreen Distilled)

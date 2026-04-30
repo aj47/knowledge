@@ -7,6 +7,7 @@ group: claude-evergreen-distilled
 title: Claude Evergreen Distilled
 context: search-only
 source: claude-curation-pass-2
+createdAt: 1776281681188
 ---
 
 # Claude Evergreen Distilled

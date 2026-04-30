@@ -7,6 +7,7 @@ group: claude-canonical-core
 title: Claude Canonical Core Audit
 context: search-only
 source: claude-canonical-core
+createdAt: 1776281681188
 ---
 
 # Claude Canonical Core Audit

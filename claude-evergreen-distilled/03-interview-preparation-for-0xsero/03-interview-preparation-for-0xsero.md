@@ -9,6 +9,7 @@ context: search-only
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-05-interview-preparation-for-0xsero-3fe0d934/claude-conversation-2026-01-05-interview-preparation-for-0xsero-3fe0d934.md
 source_type: claude-evergreen-distilled
 themes: [research, agent, twitter, automation, memory]
+createdAt: 1776281681228
 ---
 
 # "Interview preparation for 0xsero" (Evergreen Distilled)

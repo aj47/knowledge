@@ -8,6 +8,7 @@ context: search-only
 source: ~/Documents/notion-workspace/combined.md
 source_type: notion-workspace-extract
 confidence: low
+createdAt: 1776281681236
 ---
 
 # the more you immediate pleasure you get from an action, the more strongly you should question whether it aligns with your long term goals

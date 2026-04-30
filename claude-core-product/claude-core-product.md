@@ -6,6 +6,7 @@ tags:
 title: Claude Core Product
 context: search-only
 source: claude-canonical-core
+createdAt: 1776281681024
 ---
 
 # Claude Core Product
