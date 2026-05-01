@@ -4,7 +4,7 @@ kind: note
 id: 17-science-based-fitness-with-brian-johnson
 tags: 
 updatedAt: 1775966577628
-title: Science-based fitness with Brian Johnson
+title: Claude Canonical — Science-based fitness with Brian Johnson
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/42-science-based-fitness-with-brian-johnson/42-science-based-fitness-with-brian-johnson.md

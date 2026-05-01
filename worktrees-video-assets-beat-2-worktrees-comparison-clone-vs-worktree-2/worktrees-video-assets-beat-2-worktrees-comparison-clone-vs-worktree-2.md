@@ -1,7 +1,7 @@
 ---
 kind: note
 id: worktrees-video-assets-beat-2-worktrees-comparison-clone-vs-worktree-2
-title: Comparison Clone Vs Worktree
+title: Worktrees Asset — Beat 2 Worktrees — Comparison Clone Vs Worktree — SVG
 context: search-only
 updatedAt: 1773086333748
 tags: worktrees_video_assets, beat_2_worktrees, asset

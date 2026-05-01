@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 289a544c-c6aa-4910-8279-8084d0224950
 created_at: 2026-01-06T05:20:04.463794Z
 updated_at: 2026-01-06T05:24:35.260467Z
-title: "Choosing oils for omega-6 balance"
+title: Claude Conversation — 2026-01-06 — Choosing oils for omega-6 balance — 289a544c
 ---
 
 # Choosing oils for omega-6 balance

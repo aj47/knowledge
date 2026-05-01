@@ -4,7 +4,7 @@ kind: note
 id: 12-abundance-over-permanent-underclass
 tags: 
 updatedAt: 1775966577627
-title: Abundance over permanent underclass
+title: Claude Canonical — Abundance over permanent underclass
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/14-abundance-over-permanent-underclass/14-abundance-over-permanent-underclass.md

@@ -4,7 +4,7 @@ kind: note
 id: 15-quarterly-okrs-with-speakmcp-and-learning-goals
 tags: 
 updatedAt: 1775966577628
-title: Quarterly OKRs with SpeakMCP and learning goals
+title: Claude Canonical — Quarterly OKRs with SpeakMCP and learning goals
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/16-quarterly-okrs-with-speakmcp-and-learning-goals/16-quarterly-okrs-with-speakmcp-and-learning-goals.md

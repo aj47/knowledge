@@ -1,7 +1,7 @@
 ---
 kind: note
 id: tweets-images-2-stats
-title: 2 Stats
+title: Tweets Asset — 2 Stats — GIF
 context: search-only
 updatedAt: 1772473834554
 tags: tweets, images, asset

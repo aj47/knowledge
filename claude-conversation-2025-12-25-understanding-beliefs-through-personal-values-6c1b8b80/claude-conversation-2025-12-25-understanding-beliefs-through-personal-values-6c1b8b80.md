@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 6c1b8b80-20a7-4b09-9059-0e07099cfc22
 created_at: 2025-12-25T17:31:33.522007Z
 updated_at: 2025-12-25T19:38:25.043592Z
-title: "Understanding beliefs through personal values"
+title: Claude Conversation — 2025-12-25 — Understanding beliefs through personal values — 6c1b8b80
 ---
 
 # Understanding beliefs through personal values

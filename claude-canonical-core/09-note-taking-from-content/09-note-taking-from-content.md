@@ -4,7 +4,7 @@ kind: note
 id: 09-note-taking-from-content
 tags: 
 updatedAt: 1775966577627
-title: Note-taking from content
+title: Claude Canonical — Note-taking from content
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/32-note-taking-from-content/32-note-taking-from-content.md

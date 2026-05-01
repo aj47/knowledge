@@ -1,7 +1,7 @@
 ---
 kind: note
 id: product-vibe-olympics-site-index
-title: Index
+title: Product Asset — Vibe Olympics Site — Index — HTML
 context: search-only
 updatedAt: 1773515335610
 tags: product, vibe_olympics_site, asset

@@ -4,7 +4,7 @@ kind: note
 id: 06-enterprise-auggie-cli-training-module
 tags: 
 updatedAt: 1775966577627
-title: Enterprise Auggie CLI training module
+title: Claude Canonical — Enterprise Auggie CLI training module
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/11-enterprise-auggie-cli-training-module/11-enterprise-auggie-cli-training-module.md

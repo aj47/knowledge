@@ -4,7 +4,7 @@ kind: note
 id: 10-augment-pricing-change-defense
 tags: 
 updatedAt: 1775966577627
-title: Augment pricing change defense
+title: Claude Canonical — Augment pricing change defense
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/18-augment-pricing-change-defense/18-augment-pricing-change-defense.md

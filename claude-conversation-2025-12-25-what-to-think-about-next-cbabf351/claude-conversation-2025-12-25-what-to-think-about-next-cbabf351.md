@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: cbabf351-5d68-470f-a986-2719b72a69dd
 created_at: 2025-12-25T23:10:33.383588Z
 updated_at: 2025-12-25T23:24:58.781414Z
-title: "What to think about next"
+title: Claude Conversation — 2025-12-25 — What to think about next — cbabf351
 ---
 
 # What to think about next

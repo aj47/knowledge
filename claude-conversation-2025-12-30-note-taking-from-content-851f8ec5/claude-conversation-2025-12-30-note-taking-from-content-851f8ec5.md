@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 851f8ec5-b27e-4807-9f09-674e2c552666
 created_at: 2025-12-30T01:04:17.189650Z
 updated_at: 2025-12-30T01:04:43.723330Z
-title: "Note-taking from content"
+title: Claude Conversation — 2025-12-30 — Note-taking from content — 851f8ec5
 ---
 
 # Note-taking from content

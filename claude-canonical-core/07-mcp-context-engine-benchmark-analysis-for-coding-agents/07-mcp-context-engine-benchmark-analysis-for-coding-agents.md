@@ -4,7 +4,7 @@ kind: note
 id: 07-mcp-context-engine-benchmark-analysis-for-coding-agents
 tags: 
 updatedAt: 1775966577627
-title: MCP context engine benchmark analysis for coding agents
+title: Claude Canonical — MCP context engine benchmark analysis for coding agents
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/02-mcp-context-engine-benchmark-analysis-for-coding-agents/02-mcp-context-engine-benchmark-analysis-for-coding-agents.md

@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 5eff8094-1650-4916-9d92-5dd314844c56
 created_at: 2026-02-13T18:05:43.208143Z
 updated_at: 2026-02-17T01:15:31.194609Z
-title: "Abundance over permanent underclass"
+title: Claude Conversation — 2026-02-13 — Abundance over permanent underclass — 5eff8094
 ---
 
 # Abundance over permanent underclass

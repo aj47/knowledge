@@ -1,7 +1,7 @@
 ---
 kind: note
 id: video-projects-dotagents-vs-openclaw-video-src-index
-title: Index
+title: Video Project Asset — Dotagents Vs Openclaw Video / Src — Index — TS
 context: search-only
 updatedAt: 1772057454314
 tags: video_projects, dotagents_vs_openclaw_video, src, asset

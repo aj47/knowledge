@@ -1,7 +1,7 @@
 ---
 kind: note
 id: branding-mockups-index
-title: Index
+title: Branding Asset — Mockups — Index — HTML
 context: search-only
 updatedAt: 1772473834611
 tags: branding, mockups, asset

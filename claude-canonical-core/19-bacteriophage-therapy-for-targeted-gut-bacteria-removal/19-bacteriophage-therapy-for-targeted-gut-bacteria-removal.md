@@ -4,7 +4,7 @@ kind: note
 id: 19-bacteriophage-therapy-for-targeted-gut-bacteria-removal
 tags: 
 updatedAt: 1775966577628
-title: Bacteriophage therapy for targeted gut bacteria removal
+title: Claude Canonical — Bacteriophage therapy for targeted gut bacteria removal
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal.md

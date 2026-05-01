@@ -4,7 +4,7 @@ kind: note
 id: 11-youtube-ads-investment-strategy-memo
 tags: 
 updatedAt: 1775966577627
-title: YouTube Ads Investment Strategy Memo
+title: Claude Canonical — YouTube Ads Investment Strategy Memo
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/15-youtube-ads-investment-strategy-memo/15-youtube-ads-investment-strategy-memo.md

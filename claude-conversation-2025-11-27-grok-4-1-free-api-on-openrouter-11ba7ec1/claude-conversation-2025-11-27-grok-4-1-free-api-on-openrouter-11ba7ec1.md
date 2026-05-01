@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 11ba7ec1-b180-414f-8d0d-0952f03c3476
 created_at: 2025-11-27T18:09:09.009316Z
 updated_at: 2025-12-02T03:45:32.365526Z
-title: "Grok 4.1 free API on OpenRouter"
+title: Claude Conversation — 2025-11-27 — Grok 4.1 free API on OpenRouter — 11ba7ec1
 ---
 
 # Grok 4.1 free API on OpenRouter

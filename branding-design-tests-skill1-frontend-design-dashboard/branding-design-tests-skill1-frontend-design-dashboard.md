@@ -1,7 +1,7 @@
 ---
 kind: note
 id: branding-design-tests-skill1-frontend-design-dashboard
-title: Dashboard
+title: Branding Asset — Design Tests / Skill1 Frontend Design — Dashboard — HTML
 context: search-only
 updatedAt: 1772473834624
 tags: branding, design_tests, skill1_frontend_design, asset

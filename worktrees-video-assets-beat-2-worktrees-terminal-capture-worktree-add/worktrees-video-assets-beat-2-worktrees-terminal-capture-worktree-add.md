@@ -1,7 +1,7 @@
 ---
 kind: note
 id: worktrees-video-assets-beat-2-worktrees-terminal-capture-worktree-add
-title: Terminal Capture Worktree Add
+title: Worktrees Asset — Beat 2 Worktrees — Terminal Capture Worktree Add — PNG
 context: search-only
 updatedAt: 1773086379656
 tags: worktrees_video_assets, beat_2_worktrees, asset

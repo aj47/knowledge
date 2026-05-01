@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: dcd9f63e-f0cc-404c-8c6c-a146365c3882
 created_at: 2025-12-09T22:35:07.183975Z
 updated_at: 2025-12-10T02:15:45.259648Z
-title: "Elasticsearch blob store transient metadata consolidation"
+title: Claude Conversation — 2025-12-09 — Elasticsearch blob store transient metadata consolidation — dcd9f63e
 ---
 
 # Elasticsearch blob store transient metadata consolidation

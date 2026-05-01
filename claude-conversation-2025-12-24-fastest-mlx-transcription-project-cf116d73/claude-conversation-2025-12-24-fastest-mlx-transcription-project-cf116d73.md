@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: cf116d73-07e4-4144-988d-879fe1f9a322
 created_at: 2025-12-24T19:54:02.713833Z
 updated_at: 2025-12-24T20:03:29.981440Z
-title: "Fastest MLX transcription project"
+title: Claude Conversation — 2025-12-24 — Fastest MLX transcription project — cf116d73
 ---
 
 # Fastest MLX transcription project

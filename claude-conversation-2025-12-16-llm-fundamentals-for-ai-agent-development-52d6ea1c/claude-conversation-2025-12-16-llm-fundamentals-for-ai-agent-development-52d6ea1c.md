@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 52d6ea1c-8a28-42da-ba6a-46d9b8e97f8f
 created_at: 2025-12-16T21:36:15.065684Z
 updated_at: 2026-01-06T18:34:57.649096Z
-title: "LLM fundamentals for AI agent development"
+title: Claude Conversation — 2025-12-16 — LLM fundamentals for AI agent development — 52d6ea1c
 ---
 
 # LLM fundamentals for AI agent development

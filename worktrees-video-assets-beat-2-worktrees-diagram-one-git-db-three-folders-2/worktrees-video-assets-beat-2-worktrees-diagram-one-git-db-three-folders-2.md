@@ -1,7 +1,7 @@
 ---
 kind: note
 id: worktrees-video-assets-beat-2-worktrees-diagram-one-git-db-three-folders-2
-title: Diagram One Git Db Three Folders
+title: Worktrees Asset — Beat 2 Worktrees — Diagram One Git Db Three Folders — SVG
 context: search-only
 updatedAt: 1773086333742
 tags: worktrees_video_assets, beat_2_worktrees, asset

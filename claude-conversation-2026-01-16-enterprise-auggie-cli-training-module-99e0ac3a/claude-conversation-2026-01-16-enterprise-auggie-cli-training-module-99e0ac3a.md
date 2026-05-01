@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 99e0ac3a-1597-4cab-a5fc-b8c3e2a0da41
 created_at: 2026-01-16T17:13:09.019371Z
 updated_at: 2026-01-17T01:22:15.232491Z
-title: "Enterprise Auggie CLI training module"
+title: Claude Conversation — 2026-01-16 — Enterprise Auggie CLI training module — 99e0ac3a
 ---
 
 # Enterprise Auggie CLI training module

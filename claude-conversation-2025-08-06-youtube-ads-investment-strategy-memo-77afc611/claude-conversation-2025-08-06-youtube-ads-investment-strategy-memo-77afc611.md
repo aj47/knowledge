@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 77afc611-3bee-43ca-afae-68b0b4c1f2bf
 created_at: 2025-08-06T21:44:11.690517Z
 updated_at: 2025-08-06T22:13:14.657879Z
-title: "YouTube Ads Investment Strategy Memo"
+title: Claude Conversation — 2025-08-06 — YouTube Ads Investment Strategy Memo — 77afc611
 ---
 
 # YouTube Ads Investment Strategy Memo

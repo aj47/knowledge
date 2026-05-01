@@ -1,7 +1,7 @@
 ---
 kind: note
 id: branding-design-tests-skill1-frontend-design-landing
-title: Landing
+title: Branding Asset — Design Tests / Skill1 Frontend Design — Landing — HTML
 context: search-only
 updatedAt: 1772473834625
 tags: branding, design_tests, skill1_frontend_design, asset

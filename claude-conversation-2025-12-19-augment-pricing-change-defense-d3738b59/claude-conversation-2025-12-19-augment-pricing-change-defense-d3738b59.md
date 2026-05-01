@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: d3738b59-95c8-4b38-9fc8-227ef04f439e
 created_at: 2025-12-19T18:53:40.995150Z
 updated_at: 2025-12-19T19:08:54.308690Z
-title: "Augment pricing change defense"
+title: Claude Conversation — 2025-12-19 — Augment pricing change defense — d3738b59
 ---
 
 # Augment pricing change defense

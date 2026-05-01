@@ -4,7 +4,7 @@ kind: note
 id: 16-ai-powered-presentation-tools-for-software-engineers
 tags: 
 updatedAt: 1775966577628
-title: AI-Powered Presentation Tools for Software Engineers
+title: Claude Canonical — AI-Powered Presentation Tools for Software Engineers
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/21-ai-powered-presentation-tools-for-software-engineers/21-ai-powered-presentation-tools-for-software-engineers.md

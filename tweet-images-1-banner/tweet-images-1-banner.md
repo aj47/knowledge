@@ -1,7 +1,7 @@
 ---
 kind: note
 id: tweet-images-1-banner
-title: 1 Banner
+title: Tweet Images Asset — 1 Banner — GIF
 context: search-only
 updatedAt: 1773631150595
 tags: tweet_images, asset

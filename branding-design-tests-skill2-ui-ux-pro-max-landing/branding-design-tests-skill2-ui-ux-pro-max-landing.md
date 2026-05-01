@@ -1,7 +1,7 @@
 ---
 kind: note
 id: branding-design-tests-skill2-ui-ux-pro-max-landing
-title: Landing
+title: Branding Asset — Design Tests / Skill2 Ui Ux Pro Max — Landing — HTML
 context: search-only
 updatedAt: 1772473834626
 tags: branding, design_tests, skill2_ui_ux_pro_max, asset

@@ -1,7 +1,7 @@
 ---
 kind: note
 id: branding-design-tests-index
-title: Index
+title: Branding Asset — Design Tests — Index — HTML
 context: search-only
 updatedAt: 1772473834623
 tags: branding, design_tests, asset

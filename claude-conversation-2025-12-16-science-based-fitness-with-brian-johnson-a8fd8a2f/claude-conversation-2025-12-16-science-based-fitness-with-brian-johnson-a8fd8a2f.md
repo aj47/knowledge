@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: a8fd8a2f-3254-47b9-969d-636735f15c1d
 created_at: 2025-12-16T02:30:40.455182Z
 updated_at: 2025-12-16T02:41:17.173406Z
-title: "Science-based fitness with Brian Johnson"
+title: Claude Conversation — 2025-12-16 — Science-based fitness with Brian Johnson — a8fd8a2f
 ---
 
 # Science-based fitness with Brian Johnson

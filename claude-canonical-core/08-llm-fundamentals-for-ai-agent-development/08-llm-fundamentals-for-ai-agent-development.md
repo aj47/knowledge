@@ -4,7 +4,7 @@ kind: note
 id: 08-llm-fundamentals-for-ai-agent-development
 tags: 
 updatedAt: 1775966577627
-title: LLM fundamentals for AI agent development
+title: Claude Canonical — LLM fundamentals for AI agent development
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/04-llm-fundamentals-for-ai-agent-development/04-llm-fundamentals-for-ai-agent-development.md

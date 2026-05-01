@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 0f8f859d-7be7-465f-a869-0a4b7b236fbf
 created_at: 2025-12-27T20:29:01.552514Z
 updated_at: 2025-12-27T22:16:36.527683Z
-title: "Parallel ideation with AI subagents"
+title: Claude Conversation — 2025-12-27 — Parallel ideation with AI subagents — 0f8f859d
 ---
 
 # Parallel ideation with AI subagents

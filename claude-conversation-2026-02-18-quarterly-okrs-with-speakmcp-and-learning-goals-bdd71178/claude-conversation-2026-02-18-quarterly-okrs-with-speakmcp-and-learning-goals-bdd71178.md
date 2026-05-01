@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: bdd71178-256e-4dd0-8a97-a03616b353ae
 created_at: 2026-02-18T18:47:41.689949Z
 updated_at: 2026-02-18T19:03:32.144214Z
-title: "Quarterly OKRs with SpeakMCP and learning goals"
+title: Claude Conversation — 2026-02-18 — Quarterly OKRs with SpeakMCP and learning goals — bdd71178
 ---
 
 # Quarterly OKRs with SpeakMCP and learning goals

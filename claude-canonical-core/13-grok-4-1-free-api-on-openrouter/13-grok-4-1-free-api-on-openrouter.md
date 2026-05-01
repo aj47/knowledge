@@ -4,7 +4,7 @@ kind: note
 id: 13-grok-4-1-free-api-on-openrouter
 tags: 
 updatedAt: 1775966577628
-title: Grok 4.1 free API on OpenRouter
+title: Claude Canonical — Grok 4.1 free API on OpenRouter
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/08-grok-4-1-free-api-on-openrouter/08-grok-4-1-free-api-on-openrouter.md

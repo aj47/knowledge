@@ -4,7 +4,7 @@ kind: note
 id: 03-claude-evergreen-content
 tags: 
 updatedAt: 1775966577626
-title: Claude Evergreen Content
+title: Claude Canonical — Claude Evergreen Content
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/claude-evergreen-content/claude-evergreen-content.md

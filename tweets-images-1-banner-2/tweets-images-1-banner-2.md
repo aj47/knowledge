@@ -1,7 +1,7 @@
 ---
 kind: note
 id: tweets-images-1-banner-2
-title: 1 Banner
+title: Tweets Asset — 1 Banner — PNG
 context: search-only
 updatedAt: 1772473834548
 tags: tweets, images, asset

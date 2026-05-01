@@ -4,7 +4,7 @@ kind: note
 id: 04-claude-evergreen-personal
 tags: 
 updatedAt: 1775966577627
-title: Claude Evergreen Personal
+title: Claude Canonical — Claude Evergreen Personal
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/claude-evergreen-personal/claude-evergreen-personal.md

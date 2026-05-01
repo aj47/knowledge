@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 43049356-f1fa-43da-a835-768e88bda1cf
 created_at: 2025-03-23T04:46:55.538713Z
 updated_at: 2025-03-23T04:47:17.820024Z
-title: "AI-Powered Presentation Tools for Software Engineers"
+title: Claude Conversation — 2025-03-23 — AI-Powered Presentation Tools for Software Engineers — 43049356
 ---
 
 # AI-Powered Presentation Tools for Software Engineers

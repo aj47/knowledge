@@ -1,7 +1,7 @@
 ---
 kind: note
 id: tweets-drafts-tweet-drafts-2026-02-27_08-14
-title: Tweet Drafts — 2026-02-27
+title: Tweets Asset — Drafts — Tweet Drafts 2026 02 27 08 14 — MD
 context: search-only
 updatedAt: 1772208927088
 tags: tweets, drafts

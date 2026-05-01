@@ -1,7 +1,7 @@
 ---
 kind: note
 id: tweets-images-3-leaderboard
-title: 3 Leaderboard
+title: Tweets Asset — 3 Leaderboard — GIF
 context: search-only
 updatedAt: 1772473834556
 tags: tweets, images, asset

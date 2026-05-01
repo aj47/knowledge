@@ -4,7 +4,7 @@ kind: note
 id: 05-elasticsearch-blob-store-transient-metadata-consolidation
 tags: 
 updatedAt: 1775966577627
-title: Elasticsearch blob store transient metadata consolidation
+title: Claude Canonical — Elasticsearch blob store transient metadata consolidation
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/35-elasticsearch-blob-store-transient-metadata-consolidation/35-elasticsearch-blob-store-transient-metadata-consolidation.md

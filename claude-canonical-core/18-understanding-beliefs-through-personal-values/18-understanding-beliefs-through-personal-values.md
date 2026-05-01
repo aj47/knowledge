@@ -4,7 +4,7 @@ kind: note
 id: 18-understanding-beliefs-through-personal-values
 tags: 
 updatedAt: 1775966577628
-title: Understanding beliefs through personal values
+title: Claude Canonical — Understanding beliefs through personal values
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/37-understanding-beliefs-through-personal-values/37-understanding-beliefs-through-personal-values.md

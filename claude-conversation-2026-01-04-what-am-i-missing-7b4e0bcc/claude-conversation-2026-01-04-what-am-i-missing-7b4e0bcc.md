@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 7b4e0bcc-5d54-4525-8f1e-a31933b0bd9a
 created_at: 2026-01-04T08:06:35.525448Z
 updated_at: 2026-01-04T08:06:59.178057Z
-title: "What am I missing"
+title: Claude Conversation — 2026-01-04 — What am I missing — 7b4e0bcc
 ---
 
 # What am I missing

@@ -1,7 +1,7 @@
 ---
 kind: note
 id: branding-design-tests-skill2-ui-ux-pro-max-dashboard
-title: Dashboard
+title: Branding Asset — Design Tests / Skill2 Ui Ux Pro Max — Dashboard — HTML
 context: search-only
 updatedAt: 1772473834625
 tags: branding, design_tests, skill2_ui_ux_pro_max, asset

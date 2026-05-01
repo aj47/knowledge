@@ -4,7 +4,7 @@ id: claude-evergreen-content
 updatedAt: 1775964982191
 tags: 
 group: claude-evergreen-distilled
-title: Claude Evergreen Content
+title: Claude Evergreen Distilled — Claude Evergreen Content
 context: search-only
 source: claude-evergreen-distilled
 createdAt: 1776281681220

@@ -4,7 +4,7 @@ kind: note
 id: 14-parallel-ideation-with-ai-subagents
 tags: 
 updatedAt: 1775966577628
-title: Parallel ideation with AI subagents
+title: Claude Canonical — Parallel ideation with AI subagents
 context: search-only
 source: claude-canonical-core
 source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/33-parallel-ideation-with-ai-subagents/33-parallel-ideation-with-ai-subagents.md

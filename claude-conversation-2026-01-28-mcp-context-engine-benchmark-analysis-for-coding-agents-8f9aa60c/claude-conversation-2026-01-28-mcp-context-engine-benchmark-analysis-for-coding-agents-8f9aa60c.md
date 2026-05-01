@@ -12,7 +12,7 @@ source_type: conversation
 conversation_uuid: 8f9aa60c-050c-4845-b5de-6949d43d7865
 created_at: 2026-01-28T20:33:13.110412Z
 updated_at: 2026-02-03T01:26:59.053654Z
-title: "MCP context engine benchmark analysis for coding agents"
+title: Claude Conversation — 2026-01-28 — MCP context engine benchmark analysis for coding agents — 8f9aa60c
 ---
 
 # MCP context engine benchmark analysis for coding agents
