@@ -27,6 +27,8 @@ buckets=defaultdict(list)
 for p in sorted(ROOT.iterdir()):
     if not p.is_dir() or p.name == '.git':
         continue
+    if p.name in {'business','content','curated','generated','personal','systems','archive','inbox'}:
+        continue
     buckets[classify(p.name)].append(p.name)
 
 print('# Proposed Knowledge Taxonomy Move Map')

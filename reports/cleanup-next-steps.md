@@ -1,9 +1,9 @@
 # Knowledge Cleanup Next Steps
 
-Current baseline after the duplicate-title cleanup pass:
+Current baseline after the metadata cleanup and first taxonomy move pass:
 
 - 932 markdown notes
-- 847 top-level note/support directories
+- 353 top-level note/support directories
 - 57 non-markdown support files, mostly source snippets and lightweight assets
 - 0 bulky ignored media files present in the vault scan
 - 0 missing frontmatter blocks
@@ -12,7 +12,7 @@ Current baseline after the duplicate-title cleanup pass:
 - 0 duplicate IDs
 - 2 intentional `context: auto` notes
 
-## Completed in this pass
+## Completed metadata cleanup pass
 
 1. Normalized generated/reference duplicate titles where folder/reference metadata made the unique title obvious.
 2. Disambiguated semantic duplicates by source family, e.g. `Claude Canonical — ...`, `Claude Conversation — DATE — ... — HASH`, and `Claude Evergreen Distilled — ...`.
@@ -20,13 +20,19 @@ Current baseline after the duplicate-title cleanup pass:
 4. Updated the audit script to distinguish markdown notes from non-markdown support files instead of reporting only bulky media.
 5. Removed the tracked empty `knowledge-inbox/knowledge-inbox.md.tmp` placeholder and ignored future `*.tmp` scratch files.
 
+## Completed taxonomy move pass 1
+
+1. Committed the metadata/audit cleanup checkpoint as `398da36` (`Clean knowledge vault metadata`).
+2. Moved all 495 root-level `claude-conversation-*` raw conversation folders under `generated/`.
+3. Updated `tools/propose_taxonomy.py` so existing taxonomy bucket directories are treated as roots, not re-proposed as items.
+4. Regenerated audit/taxonomy reports after the move; audit still has 0 missing frontmatter, 0 missing required fields, 0 duplicate titles, and 0 duplicate IDs.
+
 ## Recommended cleanup sequence from here
 
-1. **Review and commit the title/audit cleanup as one atomic checkpoint.** The current tree is intentionally uncommitted for inspection.
-2. **Do not bulk-move folders until after that checkpoint.** Path moves will create noisy diffs; keep them separate from metadata normalization.
-3. **Review `reports/proposed-taxonomy.md` as a move plan.** Prefer small `git mv` batches by family: `generated/`, `content/`, `business/`, `agentic/`, etc.
-4. **Handle raw-vs-curated Claude material as provenance, not deletion.** Keep raw `claude-conversation-*` notes searchable; use canonical/evergreen notes as the curated reading surface.
-5. **Keep tools/reports tracked.** They are now the reproducible audit surface for future cleanup agents.
+1. **Review and commit the generated Claude conversation move as a separate checkpoint.**
+2. **Continue small `git mv` batches by family from `reports/proposed-taxonomy.md`:** remaining `generated/` candidates next, then `content/`, `business/`, `systems/`, `personal/`, `curated/`, and `archive/`.
+3. **Handle raw-vs-curated Claude material as provenance, not deletion.** Keep raw generated conversation notes searchable; use canonical/evergreen notes as the curated reading surface.
+4. **Keep tools/reports tracked.** They are now the reproducible audit surface for future cleanup agents.
 
 ## Useful commands
 
@@ -42,4 +48,4 @@ rm -rf tools/__pycache__
 
 ## Next safe work unit
 
-Commit the metadata cleanup first, then do a separate taxonomy-move pass using `reports/proposed-taxonomy.md`. Start with one low-risk bucket such as generated Claude conversations or content assets, verify the audit still passes, then continue bucket by bucket.
+Commit this generated Claude conversation move first, then continue bucket-by-bucket using `reports/proposed-taxonomy.md`. The next low-risk move is the remaining generated bucket (`discord-*`, `x-feed-*`, and `notion-workspace-extracts-*`).

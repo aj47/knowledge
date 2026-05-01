@@ -1,7 +1,7 @@
 # Knowledge Vault Audit
 
 - Markdown files: 932
-- Top-level note/support directories: 847
+- Top-level note/support directories: 353
 - Non-markdown support files: 57
 - Bulky ignored media files present: 0
 - Missing frontmatter: 0
