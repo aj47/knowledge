@@ -519,12 +519,12 @@ createdAt: 1776281681129
 
 ## Projects
 
-- [How to use Claude](../claude-project-how-to-use-claude-01980a33/claude-project-how-to-use-claude-01980a33.md) — docs: 1
-- [techfren creator](../claude-project-techfren-creator-019ac19b/claude-project-techfren-creator-019ac19b.md) — docs: 9
-- [Augment Code Marketing](../claude-project-augment-code-marketing-019b2419/claude-project-augment-code-marketing-019b2419.md) — docs: 1
-- [personal](../claude-project-personal-019b24dd/claude-project-personal-019b24dd.md) — docs: 8
+- [How to use Claude](../../generated/claude-project-how-to-use-claude-01980a33/claude-project-how-to-use-claude-01980a33.md) — docs: 1
+- [techfren creator](../../generated/claude-project-techfren-creator-019ac19b/claude-project-techfren-creator-019ac19b.md) — docs: 9
+- [Augment Code Marketing](../../generated/claude-project-augment-code-marketing-019b2419/claude-project-augment-code-marketing-019b2419.md) — docs: 1
+- [personal](../../generated/claude-project-personal-019b24dd/claude-project-personal-019b24dd.md) — docs: 8
 
 ## Other
 
-- [Claude memories](../claude-memories/claude-memories.md)
-- [Claude export user](../claude-export-user/claude-export-user.md)
+- [Claude memories](../../generated/claude-memories/claude-memories.md)
+- [Claude export user](../../generated/claude-export-user/claude-export-user.md)

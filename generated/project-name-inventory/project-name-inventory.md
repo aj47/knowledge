@@ -4,68 +4,98 @@ id: project-name-inventory
 title: Project Name Inventory
 context: search-only
 createdAt: 1777595275903
-updatedAt: 1777595364881
+updatedAt: 1777595546525
 tags: projects, inventory, local-history, dotagents
 ---
 
 # Project Name Inventory
 
-Consolidated from DotAgents conversations, knowledge notes, local development directories, shell history, Augment checkpoints, Cursor/editor history, package manifests, Documents/Desktop, and workspace dirs. Regrouped by project family / purpose on 2026-04-30.
+Consolidated from DotAgents conversations, knowledge notes, local development directories, shell history, Augment checkpoints, Cursor/editor history, package manifests, Documents/Desktop, and workspace dirs. Regrouped by project family, purpose, and subgroup on 2026-04-30.
 
 ## Grouping notes
-- Groups are heuristic and intentionally broad; many entries are aliases, worktrees, package names, video projects, task runs, or reference repos.
+- Groups and subgroups are heuristic; many entries are aliases, worktrees, package names, video projects, task runs, or reference repos.
 - “Primary products & platforms” is a high-signal alias rollup; detailed repo/package names remain in later sections.
 - Source ambiguity is preserved rather than over-deduplicated so this remains useful for search.
 
 ## Primary products & platforms
 
+### Agent/product platforms
+
 - ACP Remote
-- AgentBattler
-- AgentChess
 - Augment
 - Clawd / claud.bot
 - DotAgents / `.agents`
 - Intent
 - NVIDIA Control Center
 - OpenClaw
-- Personal Wiki / Private Wiki
-- Soul.md
 - SpeakMCP
-- TechFriend Discord Bot
-- Vibe Code Cup
-- Vibe Olympics
 - VibeCodeManager
 
+### Competitions & eval brands
+
+- AgentBattler
+- AgentChess
+- Vibe Code Cup
+- Vibe Olympics
+
+### Knowledge, community & identity
+
+- Personal Wiki / Private Wiki
+- Soul.md
+- TechFriend Discord Bot
+
 ## DotAgents ecosystem
+
+### Main apps, monorepos & worktrees
 
 - dap-mono-mobile
 - dap-mono-pr35
 - dap-mono-pr36
 - dap-mono-review
 - dap-mono-tiles
-- DotAgents Hub
-- DotAgents Protocol website / dotagentsprotocol-website
-- DotAgents vs OpenClaw video
-- dotagents-config
-- dotagents-core
-- dotagents-hub
-- dotagents-management-cli
 - dotagents-mono
 - dotagents-mono-dev
 - dotagents-mono-main
 - dotagents-mono-worktrees
+
+### Websites, hubs & management
+
+- DotAgents Hub
+- DotAgents Protocol website / dotagentsprotocol-website
+- dotagents-hub
+- dotagents-management-cli
+- manage-dotagents
+
+### Media/voice experiments
+
+- DotAgents vs OpenClaw video
+- dotagents-smallest-tts
+- dotagents-standard-video
+- dotagents-vs-openclaw-video
+
+### Runtime/core packages
+
+- dotagents-config
+- dotagents-core
 - dotagents-opentui-desktop
 - dotagents-rs
 - dotagents-runtime
 - dotagents-server
-- dotagents-smallest-tts
-- dotagents-standard-video
-- dotagents-vs-openclaw-video
-- manage-dotagents
 
 ## SpeakMCP / voice / mobile
 
+### Voice/TTS experiments
+
 - mac-say-mcp
+- Supertonic model skill
+- TTS / voiceover workflows
+- Voice Agent
+- voice agent hackathon pitch
+- voice-call
+- whispo
+
+### SpeakMCP apps, repos & workspaces
+
 - speakmcp-com
 - SpeakMCP-Mobile
 - SpeakMCP-Parent
@@ -74,38 +104,42 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - speakMCP_VP
 - SpeakMCPMobile
 - SpeedMCP / BKMCP
-- Supertonic model skill
-- TTS / voiceover workflows
-- Voice Agent
-- voice agent hackathon pitch
-- voice-call
-- whispo
 - worktree-3-speakmcp
 - worktree-4-speakmcp
 - worktree-5-speakmcp
+
+### Email/assistant utilities
+
 - Zele / email triage
 
 ## Agent runtimes, MCP & browser tooling
 
+### Browser automation
+
 - Agent Browser / browser skill
+- Browser Skill
+- Chrome browser skill
+- Chrome Browser Skill
+
+### Agents/runtime packages
+
 - agent-skills
 - agents-rust
+
+### MCP servers & integrations
+
 - Auggie MCP
 - auggie-context-mcp
 - auggie-mcp
 - auggie-mcp2
 - augment-mcp-server
-- Browser Skill
 - browsermcptesting
-- Chrome browser skill
-- Chrome Browser Skill
 - Claude skills vs MCP comparison
 - Cline MCP experiments
 - context-connectors
 - electron-native-mcp
 - figma-mcp
 - fun mcp
-- gemini-multimodal-playground
 - ghostty-mcp
 - iterm-mcp
 - Long Context Code Bench MCP
@@ -128,27 +162,25 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - tech content projects around MCP servers, AI code reviewers, Augment Code Review, and Agent Prompt Completions
 - zen-mcp-server
 
+### Model/multimodal experiments
+
+- gemini-multimodal-playground
+
 ## Agent competitions, orchestration & eval
 
+### AgentChess family
+
 - Agent chess/autoresearch
-- Agent DAO
-- agent-eval
-- agent-workspace
-- agentbattler
-- AgentBattler pitch Remotion
-- AgentBattler Workspaces
-- agentbattler-pitch-remotion
-- AgentBattler1
-- AgentBattler2
-- AgentBattler2-sonnet-45
 - agentchess
 - agentchess-ar
-- ai-coding-cup
+
+### Agent evaluation/orchestration
+
+- Agent DAO
+- agent-eval
 - autonomous-agents
-- coding-agent
 - coldstart-agents
 - coordinate-subagents
-- dynamic-agent
 - full-stack-fastapi-template
 - Parallel agents / subagents tests
 - pi-agent-core
@@ -165,16 +197,45 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - ProAgentNet
 - Subagent Depth Test
 
+### Agent workspaces/logs
+
+- agent-workspace
+
+### AgentBattler family
+
+- agentbattler
+- AgentBattler pitch Remotion
+- AgentBattler Workspaces
+- agentbattler-pitch-remotion
+- AgentBattler1
+- AgentBattler2
+- AgentBattler2-sonnet-45
+
+### Other
+
+- ai-coding-cup
+- coding-agent
+- dynamic-agent
+
 ## Vibe Code Cup, hackathons & creator demos
 
+### Hackathon projects
+
 - ai-animator
-- clipper-skill
 - CreatorToolHub
 - CreatorToolHub-ui-thumbnails
 - CreatorToolHub-wt-1
 - CreatorToolHub-wt-2
 - CreatorToolHub2
 - CreatorToolHubs
+- WBHack
+
+### Other
+
+- clipper-skill
+
+### Vibe Code Cup repos
+
 - remotion-vibe-code-cup
 - vcc2
 - vcc3
@@ -187,9 +248,10 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - vibe-cup-base-challenge
 - vibe-cup-v1
 - Vibecode Cup Segment
-- WBHack
 
 ## Augment / Aider / coding-assistant work
+
+### Aider projects
 
 - Aider
 - aider
@@ -198,6 +260,10 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - aider-chat
 - aider-s
 - aider-source
+- techfren-aider
+
+### Augment projects
+
 - auggie-analytics
 - augment docs / docs
 - augment-projects
@@ -207,8 +273,20 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - augmentcode
 - augmentcode-coming-soon
 - augmentcode.in
-- AutoScript
 - chess Augmenter
+- PR-134915-auggie
+- PR-2715-auggie
+- PR-5628-auggie
+
+### Coding assistant experiments
+
+- AutoScript
+- gpt-pilot
+- open-interpreter
+- self-operating-computer
+
+### Claude/Cursor/OpenAI/Codex
+
 - Claude export analysis
 - Claude Haiku / model comparison content
 - Claude project audits
@@ -216,66 +294,77 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - claude-code-example
 - codex-cli-example
 - Cursor agreement / Cursor content
-- gpt-pilot
-- open-interpreter
 - openai_codex_oauth_example
-- PR-134915-auggie
 - PR-134915-claude
-- PR-2715-auggie
 - PR-2715-claude
-- PR-5628-auggie
 - PR-5628-claude
-- self-operating-computer
-- techfren-aider
 
 ## Benchmarks, long-context & research
 
+### Agent/code evals
+
 - a2ui_0_9_eval_llm
 - a2ui_genkit_eval
+- crossbench
+- polyglot-benchmark
+- tbenchscrape
+
+### Autoresearch & paper analysis
+
 - autoresearch
 - autoresearch-test1
-- crossbench
 - DGX Spark research
+- multi_paper_synthesizer
+- Polymarket research
+- research_paper_analysis
+
+### Distributed/test infrastructure
+
 - distributed-integration-tests
+
+### Long-context benchmarks
+
 - LCCB Backup
 - LCCB Backup 30Nov norepocache
 - Long Context Code Bench
 - Long-Context-Code-Bench
 - Long-Context-Code-Bench PR134733
 - Long-Context-Code-Bench2
-- multi_paper_synthesizer
-- polyglot-benchmark
-- Polymarket research
-- research_paper_analysis
-- tbenchscrape
 
 ## Knowledge, memory & automation agents
 
+### Wiki & memory
+
 - Agent notes / private wiki promotion
-- angular-calendar
-- Calendar/email agents
-- Discord Recap
-- Discord Recap Remotion
-- Discord Recap Tweeter
-- Langfuse monitoring
 - Memory hygiene skill
 - memory-core
 - memory-lancedb
 - personal-wiki-webapp
 - Refine Personal Wiki
-- Serendipity Engine
-- Slack updates
-- Task prompt design / repeated tasks
 - Wiki Data Expander
 - Wikipedia-style Personal Wiki
+
+### Workflow/task systems
+
+- angular-calendar
+- Calendar/email agents
+- Task prompt design / repeated tasks
+
+### Monitoring/summarization agents
+
+- Discord Recap
+- Discord Recap Remotion
+- Discord Recap Tweeter
+- Langfuse monitoring
+- Serendipity Engine
+- Slack updates
 - X Summarizer
 
 ## TechFren / community / social content
 
+### TechFren/TechFriend properties
+
 - analytics-techfren
-- BrightDataTiktok
-- discord-recap-remotion
-- discord-summaries-viewer
 - Techfren recap Remotion
 - techfren-chat
 - techfren-discord-bot
@@ -285,170 +374,246 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - techfren-skills
 - techfren-website
 - TechFriend community
+
+### Other
+
+- BrightDataTiktok
 - TikTok / BrightDataTiktok
+
+### Discord/community bots
+
+- discord-recap-remotion
+- discord-summaries-viewer
+
+### X/Twitter/social workflows
+
 - X feed summaries
 - x-thread-dl
+
+### Analytics/content knowledge
+
 - YouTube Studio analytics checks
 
 ## Video, clips, Remotion & media production
 
+### Remotion/motion projects
+
 - AJ Motion
 - animations
 - animationTest
-- Batch stream/VOD processor
-- clip-editor
-- Clipper Skill
-- flux-thumbnails
-- gemini-media-ui
-- gemini-video-ui
-- gmclip-landing-page
-- Harness Engineering & more
-- Harness Engineering edit
-- Harness Engineering topic inventory
-- landscape-vid-to-portrait
-- lobster
-- OBS recording lag investigation
 - pitch-animations
 - Remotion skill / Remotion audits
 - remotion-projects
 - script2animation
+
+### Transcription/VOD/stream processing
+
+- Batch stream/VOD processor
+- Harness Engineering & more
+- Harness Engineering edit
+- Harness Engineering topic inventory
 - Stream transcript repurposing workflow
-- This list intentionally includes some repo names, product names, video projects, skills, local worktrees, and task-run folders because the request was to list as many project names as possible.
-- thumbnailer
 - transcribe-anything
 - transcription
+- VOD_Transcripts
+
+### Video editors & clip tools
+
+- clip-editor
+- Clipper Skill
+- gmclip-landing-page
 - video-editor
 - videoeditor
-- VOD_Transcripts
+
+### YouTube/TikTok/media assets
+
+- flux-thumbnails
+- gemini-media-ui
+- landscape-vid-to-portrait
+- thumbnailer
 - YouTube descriptions / metadata
 - youtube-ads
 
+### Other
+
+- gemini-video-ui
+- lobster
+- OBS recording lag investigation
+- This list intentionally includes some repo names, product names, video projects, skills, local worktrees, and task-run folders because the request was to list as many project names as possible.
+
 ## Product & app experiments
+
+### Other
 
 - 0to1 / oto1/site
 - 0to1-demo
-- Aloops
-- aloops QA agent
-- block-editor
-- block-editor2
-- block-editor3
-- cellular-peptides
-- cellular-web
-- chat-games
-- Chess Chad
-- ChessBit
-- code-runner
 - csv-google
 - django-marketplace
-- Elasticsearch PR work
-- frontend-experiments
-- gemini-3js
-- gemini-pelican
-- gemini-veo-3.1
 - InkeepAgent
-- marketingOS
 - ml-model-zio
-- mobile app bugfix work
 - neoh-react
 - netdash-ui
-- nextjs-web-app
 - notion-workspace
 - nutrition-quiz-temp
 - okr-tracker
-- openaiWaiting
 - pocketbase
-- RailsWorld
 - redis-testing
-- rust-chat-server
-- temporal-ai-agent
-- temporal-ai-agent-frontend
-- temporal_AI_agent
 - threejs-spacetime
 - time-stamp-genius
 - virtualify.space
 - vite-project
 - vite_react_shadcn_ts
 - voxelforge
-- web-app-generator
-- work-pr-2
-- work-pr-3
 - zio-cloud-save
 - zio-lab
 
+### PR/client/work projects
+
+- Aloops
+- aloops QA agent
+- Elasticsearch PR work
+- marketingOS
+- mobile app bugfix work
+- work-pr-2
+- work-pr-3
+
+### Web/app prototypes
+
+- block-editor
+- block-editor2
+- block-editor3
+- cellular-peptides
+- cellular-web
+- code-runner
+- frontend-experiments
+- nextjs-web-app
+- RailsWorld
+- rust-chat-server
+- temporal-ai-agent-frontend
+- web-app-generator
+
+### Games/chess/interactive
+
+- chat-games
+- Chess Chad
+- ChessBit
+
+### Gemini/AI media experiments
+
+- gemini-3js
+- gemini-pelican
+- gemini-veo-3.1
+- openaiWaiting
+- temporal-ai-agent
+- temporal_AI_agent
+
 ## Reference / cloned external repos
 
+### App/framework references
+
 - alexa-cookie-cli
+- medusa
+- medusa-next
+- nextjs-starter-medusa
+- odoo
+- TuyaOpen
+
+### AI/devtools references
+
 - Brokk powerrank
-- clawdslist
-- crabmusic
 - docs-root
 - docs-site
 - docs-util
-- medusa
-- medusa-next
-- nanoclaw
-- nextjs-starter-medusa
-- odoo
 - Peekaboo
 - powerrank
-- TuyaOpen
+
+### Other
+
+- clawdslist
+
+### Media/other references
+
+- crabmusic
+- nanoclaw
 
 ## Games, art & miscellaneous experiments
+
+### ASCII/visual/art
 
 - ascii-dashboard
 - asciiLava
 - asciiLava-colorfull
+- FrostD4D
+- MachinesBeFree
+- Surfing Llama’s
+
+### Games/toys/prototypes
+
 - BERIGAME / berigame-backend
-- bluebubbles
 - clickolas-cage
-- Deeper Blue
 - droidmission
 - flamki
-- FrostD4D
-- Iron Knight
-- jimtube
-- MachinesBeFree
-- MERSAL
-- pawnstorm
-- Rookie
-- Surfing Llama’s
 - Swabble
 - taiajagi
 - thriver
 
+### Misc named experiments
+
+- bluebubbles
+- Deeper Blue
+- Iron Knight
+- jimtube
+- MERSAL
+- pawnstorm
+- Rookie
+
 ## Intent / workspace task-run names
+
+### Other workspace tasks
 
 - ability-able
 - able-control
 - able-run
-- bug-continue
-- bug-fix
 - capture-ui
 - capture-ui-2
 - continue-add
-- ensure-app
-- export-mobile
 - extend-mobile
 - game-create-2
 - implement-task
 - kanban-remove
-- lets-plan
-- polished-build
-- polished-build-4
-- prompt-create
-- render-mobile
 - respond-user
-- section-create
 - settings-config-2
-- skill-design
-- skills-design
-- skills-design-2
 - subset-config
 - two-create
+
+### Fix/investigation tasks
+
+- bug-continue
+- bug-fix
+- ensure-app
 - two-fix
+
+### Build/polish tasks
+
+- export-mobile
+- polished-build
+- polished-build-4
+- render-mobile
 - web-build
 - web-build-2
 - web-deploy
+
+### Planning/design tasks
+
+- lets-plan
+- prompt-create
+- section-create
+- skill-design
+- skills-design
+- skills-design-2
+
+### Work/PR/issue tasks
+
 - work-github-2
 - work-issues
 - work-open
@@ -456,6 +621,8 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - worktree-issue-196
 
 ## Other / unclassified
+
+### Unclassified names
 
 - 100x-orchestrator
 - 4x-dev
@@ -490,11 +657,9 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - msteams
 - nextcloud-talk
 - nm-analyzer
-- nostr
 - parallelism
 - peering
 - personal
-- rlm-example
 - snackbot-harness-demo
 - Some names come from editor or shell history and may be cloned/reference repos rather than owned projects.
 - Some names may be aliases or duplicates of the same underlying project.
@@ -503,11 +668,19 @@ Consolidated from DotAgents conversations, knowledge notes, local development di
 - tech-friend-community
 - tech-friend-community2
 - test-electron-app
-- tool_use_cli
-- writer_critic
 - zalo / zalouser
 
+### Infrastructure/packages
+
+- nostr
+
+### Model/research/dev experiments
+
+- rlm-example
+- tool_use_cli
+- writer_critic
+
 ## Notes
-- This list intentionally includes repo names, product names, video projects, skills, local worktrees, package names, and task-run folders because the request was to list as many project names as possible.
-- Some names are aliases or duplicates of the same underlying project.
+- This list intentionally includes some repo names, product names, video projects, skills, local worktrees, and task-run folders because the request was to list as many project names as possible.
+- Some names may be aliases or duplicates of the same underlying project.
 - Some names come from editor or shell history and may be cloned/reference repos rather than owned projects.

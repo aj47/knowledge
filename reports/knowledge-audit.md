@@ -1,12 +1,12 @@
 # Knowledge Vault Audit
 
-- Markdown files: 932
+- Markdown files: 933
 - Top-level note/support directories: 8
 - Non-markdown support files: 57
 - Bulky ignored media files present: 0
 - Missing frontmatter: 0
 - Missing required fields: 0
-- Context counts: auto=2, search-only=930
+- Context counts: auto=2, search-only=931
 
 ## Duplicate titles
 
