@@ -1,7 +1,7 @@
 ---
 kind: note
 id: x-feed-summaries-2026-02-x-feed-summary_260226_2116
-title: X Feed Summary — $(date)
+title: X Feed Summary — 2026-02-26 21:16
 context: search-only
 updatedAt: 1772169368008
 tags: x_feed_summaries, 2026_02

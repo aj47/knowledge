@@ -2,36 +2,6 @@
 
 Purpose: identify likely merge/dedupe candidates. This does not modify notes.
 
-## X/Twitter Feed Summary (11)
-Families: x feed summary=11
-Suggested action: rename titles with date/tab to remove ambiguity; likely not duplicates.
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1300utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1300utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-18_21-19/x-feed-summaries-2026-02-x-feed-summary_2026-02-18_21-19.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1340utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1340utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1234utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1234utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-19_07-17/x-feed-summaries-2026-02-x-feed-summary_2026-02-19_07-17.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-18_2342/x-feed-summaries-2026-02-x-feed-summary-2026-02-18_2342.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19-0710utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-19-0710utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19_06-44/x-feed-summaries-2026-02-x-feed-summary-2026-02-19_06-44.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1130utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1130utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1415/x-feed-summaries-2026-02-x-feed-summary-2026-02-19-1415.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19t0630/x-feed-summaries-2026-02-x-feed-summary-2026-02-19t0630.md`
-
-## X/Twitter Feed Summary — Following Tab (11)
-Families: x feed summary=11
-Suggested action: rename titles with date/tab to remove ambiguity; likely not duplicates.
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-19_01-51/x-feed-summaries-2026-02-x-feed-summary_2026-02-19_01-51.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-19_02-24/x-feed-summaries-2026-02-x-feed-summary_2026-02-19_02-24.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-19_0048/x-feed-summaries-2026-02-x-feed-summary_2026-02-19_0048.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-19_0752/x-feed-summaries-2026-02-x-feed-summary_2026-02-19_0752.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19_01-20/x-feed-summaries-2026-02-x-feed-summary-2026-02-19_01-20.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-25_16-22/x-feed-summaries-2026-02-x-feed-summary_2026-02-25_16-22.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19t08-14/x-feed-summaries-2026-02-x-feed-summary-2026-02-19t08-14.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-25_17-58/x-feed-summaries-2026-02-x-feed-summary_2026-02-25_17-58.md`
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-26t0229-utc/x-feed-summaries-2026-02-x-feed-summary_2026-02-26t0229-utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-20-0545utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-20-0545utc.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-19_04-01/x-feed-summaries-2026-02-x-feed-summary-2026-02-19_04-01.md`
-
 ## 1 Banner (4)
 Families: generated asset note=2, other=2
 Suggested action: manually inspect; title collision may be legitimate.
@@ -47,14 +17,6 @@ Suggested action: manually inspect; title collision may be legitimate.
 - `branding-design-tests-index/branding-design-tests-index.md`
 - `product-vibe-olympics-site-index/product-vibe-olympics-site-index.md`
 - `video-projects-dotagents-vs-openclaw-video-src-index/video-projects-dotagents-vs-openclaw-video-src-index.md`
-
-## X Feed Summary — $(date) (4)
-Families: x feed summary=4
-Suggested action: rename titles with date/tab to remove ambiguity; likely not duplicates.
-- `x-feed-summaries-2026-02-x-feed-summary_2026-02-26_23-27/x-feed-summaries-2026-02-x-feed-summary_2026-02-26_23-27.md`
-- `x-feed-summaries-2026-02-x-feed-summary_260226_2116/x-feed-summaries-2026-02-x-feed-summary_260226_2116.md`
-- `x-feed-summaries-2026-02-x-feed-summary_260227_0814/x-feed-summaries-2026-02-x-feed-summary_260227_0814.md`
-- `x-feed-summaries-2026-02-x-feed-summary_260227_1101/x-feed-summaries-2026-02-x-feed-summary_260227_1101.md`
 
 ## MCP context engine benchmark analysis for coding agents (3)
 Families: canonical claude=1, raw claude conversation=2
@@ -76,13 +38,6 @@ Suggested action: group under generated/assets or archive if source assets are g
 - `worktrees-video-assets-beat-2-worktrees-demo-worktree-repo-wt-feature-billing-readme/worktrees-video-assets-beat-2-worktrees-demo-worktree-repo-wt-feature-billing-readme.md`
 - `worktrees-video-assets-beat-2-worktrees-demo-worktree-repo-wt-feature-auth-readme/worktrees-video-assets-beat-2-worktrees-demo-worktree-repo-wt-feature-auth-readme.md`
 - `worktrees-video-assets-beat-2-worktrees-demo-worktree-repo-readme/worktrees-video-assets-beat-2-worktrees-demo-worktree-repo-readme.md`
-
-## X Feed Summary (3)
-Families: x feed summary=3
-Suggested action: rename titles with date/tab to remove ambiguity; likely not duplicates.
-- `x-feed-summaries-2026-02-x-feed-summary_260227_0635/x-feed-summaries-2026-02-x-feed-summary_260227_0635.md`
-- `x-feed-summaries-2026-04-21/x-feed-summaries-2026-04-21.md`
-- `x-feed-summaries-2026-04-20/x-feed-summaries-2026-04-20.md`
 
 ## 2 Stats (2)
 Families: generated asset note=2
@@ -245,18 +200,6 @@ Families: raw claude conversation=2
 Suggested action: manually inspect; title collision may be legitimate.
 - `claude-conversation-2025-12-25-what-to-think-about-next-cbabf351/claude-conversation-2025-12-25-what-to-think-about-next-cbabf351.md`
 - `claude-conversation-2025-12-25-what-to-think-about-next-df493602/claude-conversation-2025-12-25-what-to-think-about-next-df493602.md`
-
-## X Feed Summary — $(date +"%B %d, %Y") (2)
-Families: x feed summary=2
-Suggested action: rename titles with date/tab to remove ambiguity; likely not duplicates.
-- `x-feed-summaries-2026-02-x-feed-summary_260227_0106/x-feed-summaries-2026-02-x-feed-summary_260227_0106.md`
-- `x-feed-summaries-2026-02-x-feed-summary_260227_0139/x-feed-summaries-2026-02-x-feed-summary_260227_0139.md`
-
-## X Feed Summary — Following Tab (2)
-Families: x feed summary=2
-Suggested action: rename titles with date/tab to remove ambiguity; likely not duplicates.
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-18_2205/x-feed-summaries-2026-02-x-feed-summary-2026-02-18_2205.md`
-- `x-feed-summaries-2026-02-x-feed-summary-2026-02-18-2300utc/x-feed-summaries-2026-02-x-feed-summary-2026-02-18-2300utc.md`
 
 ## YouTube Ads Investment Strategy Memo (2)
 Families: canonical claude=1, raw claude conversation=1

@@ -1,7 +1,7 @@
 ---
 kind: note
 id: x-feed-summaries-2026-02-x-feed-summary-2026-02-18-2300utc
-title: X Feed Summary — Following Tab
+title: X Feed Summary — 2026-02-18 23:00 UTC — Following Tab
 context: search-only
 updatedAt: 1771456086363
 tags: x_feed_summaries, 2026_02

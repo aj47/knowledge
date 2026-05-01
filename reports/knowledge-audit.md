@@ -8,15 +8,11 @@
 - Context counts: auto=2, search-only=930
 
 ## Duplicate titles
-- 11 × X/Twitter Feed Summary
-- 11 × X/Twitter Feed Summary — Following Tab
 - 4 × 1 Banner
 - 4 × Index
-- 4 × X Feed Summary — $(date)
 - 3 × MCP context engine benchmark analysis for coding agents
 - 3 × Note-taking from content
 - 3 × Worktree Demo
-- 3 × X Feed Summary
 - 2 × 2 Stats
 - 2 × 3 Leaderboard
 - 2 × AI-Powered Presentation Tools for Software Engineers
@@ -44,8 +40,6 @@
 - 2 × Understanding beliefs through personal values
 - 2 × What am I missing
 - 2 × What to think about next
-- 2 × X Feed Summary — $(date +"%B %d, %Y")
-- 2 × X Feed Summary — Following Tab
 - 2 × YouTube Ads Investment Strategy Memo
 
 ## Duplicate ids

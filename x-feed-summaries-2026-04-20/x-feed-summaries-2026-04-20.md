@@ -1,7 +1,7 @@
 ---
 kind: note
 id: x-feed-summaries-2026-04-20
-title: X Feed Summary
+title: X Feed Summary — 2026-04-20
 tags: 
 group: x-feed-summaries
 context: search-only
