@@ -2,11 +2,11 @@
 kind: note
 id: 17-self-aware-superiority-complex
 updatedAt: 1775964320251
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Self-aware superiority complex" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3.md
+source_note: ../../../generated/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, content, personal, research, agent, prompt, mcp]
 createdAt: 1776281681230
@@ -30,4 +30,4 @@ createdAt: 1776281681230
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3.md`
+- `../../../generated/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3/claude-conversation-2026-02-04-self-aware-superiority-complex-d14ebad3.md`

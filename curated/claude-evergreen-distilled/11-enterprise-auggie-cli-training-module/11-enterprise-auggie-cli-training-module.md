@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 11-enterprise-auggie-cli-training-module
-tags: 
+tags:
 updatedAt: 1775964982193
 title: "Enterprise Auggie CLI training module" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a.md
+source_note: ../../../generated/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, agent, prompt, video]
 createdAt: 1777321855005
@@ -30,4 +30,4 @@ createdAt: 1777321855005
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a.md`
+- `../../../generated/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a/claude-conversation-2026-01-16-enterprise-auggie-cli-training-module-99e0ac3a.md`

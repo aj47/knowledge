@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 04-llm-fundamentals-for-ai-agent-development
-tags: 
+tags:
 updatedAt: 1775964982193
 title: "LLM fundamentals for AI agent development" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c.md
+source_note: ../../../generated/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c.md
 source_type: claude-evergreen-distilled
 themes: [engineering, content, personal, research, workflow, agent, prompt, mcp]
 createdAt: 1777321855003
@@ -30,4 +30,4 @@ createdAt: 1777321855003
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c.md`
+- `../../../generated/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c/claude-conversation-2025-12-16-llm-fundamentals-for-ai-agent-development-52d6ea1c.md`

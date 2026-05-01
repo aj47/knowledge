@@ -2,11 +2,11 @@
 kind: note
 id: 45-probiotic-plan-for-enhancing-exercise-performance
 updatedAt: 1775964320292
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Probiotic Plan for Enhancing Exercise Performance" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc.md
+source_note: ../../../generated/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc.md
 source_type: claude-evergreen-distilled
 themes: [product, health]
 createdAt: 1776281681226
@@ -30,4 +30,4 @@ createdAt: 1776281681226
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc.md`
+- `../../../generated/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc/claude-conversation-2024-07-18-probiotic-plan-for-enhancing-exercise-performance-ac5619cc.md`

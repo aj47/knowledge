@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 35-elasticsearch-blob-store-transient-metadata-consolidation
-tags: 
+tags:
 updatedAt: 1775964982193
 title: "Elasticsearch blob store transient metadata consolidation" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e.md
+source_note: ../../../generated/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, content, agent, prompt, video, youtube]
 createdAt: 1777321855010
@@ -30,4 +30,4 @@ createdAt: 1777321855010
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e.md`
+- `../../../generated/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e/claude-conversation-2025-12-09-elasticsearch-blob-store-transient-metadata-consolidation-dcd9f63e.md`

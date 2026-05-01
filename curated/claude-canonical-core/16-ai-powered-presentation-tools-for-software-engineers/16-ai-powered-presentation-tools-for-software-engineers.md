@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 16-ai-powered-presentation-tools-for-software-engineers
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — AI-Powered Presentation Tools for Software Engineers
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/21-ai-powered-presentation-tools-for-software-engineers/21-ai-powered-presentation-tools-for-software-engineers.md
+source_note: ../../claude-evergreen-distilled/21-ai-powered-presentation-tools-for-software-engineers/21-ai-powered-presentation-tools-for-software-engineers.md
 time_horizon: evergreen
 confidence: high
 domain: product
@@ -36,4 +36,4 @@ createdAt: 1777321854931
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/21-ai-powered-presentation-tools-for-software-engineers/21-ai-powered-presentation-tools-for-software-engineers.md`
+- Evergreen source: `../../claude-evergreen-distilled/21-ai-powered-presentation-tools-for-software-engineers/21-ai-powered-presentation-tools-for-software-engineers.md`

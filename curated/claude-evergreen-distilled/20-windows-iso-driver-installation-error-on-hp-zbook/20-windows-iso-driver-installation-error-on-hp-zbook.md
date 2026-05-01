@@ -2,11 +2,11 @@
 kind: note
 id: 20-windows-iso-driver-installation-error-on-hp-zbook
 updatedAt: 1775964320254
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Windows ISO driver installation error on HP ZBook" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5.md
+source_note: ../../../generated/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5.md
 source_type: claude-evergreen-distilled
 themes: [product, content, memory]
 createdAt: 1776281681225
@@ -30,4 +30,4 @@ createdAt: 1776281681225
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5.md`
+- `../../../generated/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5/claude-conversation-2025-12-31-windows-iso-driver-installation-error-on-hp-zbook-02fb7ab5.md`

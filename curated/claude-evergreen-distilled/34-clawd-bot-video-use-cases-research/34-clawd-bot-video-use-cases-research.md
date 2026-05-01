@@ -2,11 +2,11 @@
 kind: note
 id: 34-clawd-bot-video-use-cases-research
 updatedAt: 1775964320277
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Clawd.bot video use cases research" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a.md
+source_note: ../../../generated/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, agent, video, youtube, skills]
 createdAt: 1776281681222
@@ -30,4 +30,4 @@ createdAt: 1776281681222
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a.md`
+- `../../../generated/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a/claude-conversation-2026-01-23-clawd-bot-video-use-cases-research-fe85c84a.md`

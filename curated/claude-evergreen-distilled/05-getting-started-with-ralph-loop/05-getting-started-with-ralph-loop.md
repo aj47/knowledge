@@ -2,11 +2,11 @@
 kind: note
 id: 05-getting-started-with-ralph-loop
 updatedAt: 1775964320231
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Getting started with Ralph Loop" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d.md
+source_note: ../../../generated/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, personal, research, agent, prompt, mcp]
 createdAt: 1776281681224
@@ -30,4 +30,4 @@ createdAt: 1776281681224
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d.md`
+- `../../../generated/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d/claude-conversation-2026-01-17-getting-started-with-ralph-loop-e7b6459d.md`

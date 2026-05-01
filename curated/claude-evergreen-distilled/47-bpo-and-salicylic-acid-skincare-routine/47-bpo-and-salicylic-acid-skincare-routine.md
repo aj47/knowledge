@@ -2,11 +2,11 @@
 kind: note
 id: 47-bpo-and-salicylic-acid-skincare-routine
 updatedAt: 1775964320293
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "BPO and salicylic acid skincare routine" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295.md
+source_note: ../../../generated/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295.md
 source_type: claude-evergreen-distilled
 themes: [product]
 createdAt: 1776281681217
@@ -30,4 +30,4 @@ createdAt: 1776281681217
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295.md`
+- `../../../generated/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295/claude-conversation-2026-01-21-bpo-and-salicylic-acid-skincare-routine-7e27f295.md`

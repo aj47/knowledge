@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 17-science-based-fitness-with-brian-johnson
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Science-based fitness with Brian Johnson
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/42-science-based-fitness-with-brian-johnson/42-science-based-fitness-with-brian-johnson.md
+source_note: ../../claude-evergreen-distilled/42-science-based-fitness-with-brian-johnson/42-science-based-fitness-with-brian-johnson.md
 time_horizon: evergreen
 confidence: high
 domain: personal
@@ -36,4 +36,4 @@ createdAt: 1777321854932
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/42-science-based-fitness-with-brian-johnson/42-science-based-fitness-with-brian-johnson.md`
+- Evergreen source: `../../claude-evergreen-distilled/42-science-based-fitness-with-brian-johnson/42-science-based-fitness-with-brian-johnson.md`

@@ -2,11 +2,11 @@
 kind: note
 id: 12-extending-janus-model-for-image-to-image
 updatedAt: 1775964320244
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Extending Janus Model for Image-to-Image" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6.md
+source_note: ../../../generated/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6.md
 source_type: claude-evergreen-distilled
 themes: [content, prompt]
 createdAt: 1776281681222
@@ -30,4 +30,4 @@ createdAt: 1776281681222
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6.md`
+- `../../../generated/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6/claude-conversation-2024-10-18-extending-janus-model-for-image-to-image-851042f6.md`

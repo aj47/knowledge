@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 18-understanding-beliefs-through-personal-values
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Understanding beliefs through personal values
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/37-understanding-beliefs-through-personal-values/37-understanding-beliefs-through-personal-values.md
+source_note: ../../claude-evergreen-distilled/37-understanding-beliefs-through-personal-values/37-understanding-beliefs-through-personal-values.md
 time_horizon: evergreen
 confidence: high
 domain: personal
@@ -36,4 +36,4 @@ createdAt: 1777321854932
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/37-understanding-beliefs-through-personal-values/37-understanding-beliefs-through-personal-values.md`
+- Evergreen source: `../../claude-evergreen-distilled/37-understanding-beliefs-through-personal-values/37-understanding-beliefs-through-personal-values.md`

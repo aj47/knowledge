@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 13-grok-4-1-free-api-on-openrouter
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Grok 4.1 free API on OpenRouter
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/08-grok-4-1-free-api-on-openrouter/08-grok-4-1-free-api-on-openrouter.md
+source_note: ../../claude-evergreen-distilled/08-grok-4-1-free-api-on-openrouter/08-grok-4-1-free-api-on-openrouter.md
 time_horizon: evergreen
 confidence: high
 domain: engineering
@@ -36,4 +36,4 @@ createdAt: 1777321854930
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/08-grok-4-1-free-api-on-openrouter/08-grok-4-1-free-api-on-openrouter.md`
+- Evergreen source: `../../claude-evergreen-distilled/08-grok-4-1-free-api-on-openrouter/08-grok-4-1-free-api-on-openrouter.md`

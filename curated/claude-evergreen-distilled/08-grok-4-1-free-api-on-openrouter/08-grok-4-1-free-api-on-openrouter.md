@@ -2,11 +2,11 @@
 kind: note
 id: 08-grok-4-1-free-api-on-openrouter
 updatedAt: 1775964320237
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Grok 4.1 free API on OpenRouter" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1.md
+source_note: ../../../generated/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, workflow, agent, prompt, video, positioning]
 createdAt: 1776281681229
@@ -30,4 +30,4 @@ createdAt: 1776281681229
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1.md`
+- `../../../generated/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1/claude-conversation-2025-11-27-grok-4-1-free-api-on-openrouter-11ba7ec1.md`

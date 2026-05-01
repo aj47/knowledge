@@ -2,11 +2,11 @@
 kind: note
 id: 01-claude-duplicate-candidates
 updatedAt: 1775964250561
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: Claude Duplicate Candidates (Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-export-ingestion-audit/claude-duplicate-candidates.md
+source_note: ../../claude-export-ingestion-audit/claude-duplicate-candidates.md
 source_type: claude-distilled-evergreen
 themes: []
 createdAt: 1776281681226
@@ -22,4 +22,4 @@ createdAt: 1776281681226
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-export-ingestion-audit/claude-duplicate-candidates.md`
+- `../../claude-export-ingestion-audit/claude-duplicate-candidates.md`

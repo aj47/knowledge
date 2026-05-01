@@ -2,11 +2,11 @@
 kind: note
 id: 28-clawdbot-follow-up-video-talking-points
 updatedAt: 1775964320266
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Clawdbot follow-up video talking points" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c.md
+source_note: ../../../generated/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, research, video, youtube]
 createdAt: 1776281681228
@@ -30,4 +30,4 @@ createdAt: 1776281681228
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c.md`
+- `../../../generated/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c/claude-conversation-2026-01-27-clawdbot-follow-up-video-talking-points-36c27a9c.md`

@@ -2,11 +2,11 @@
 kind: note
 id: 36-maximizing-impact-and-growth-through-content
 updatedAt: 1775964320280
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Maximizing impact and growth through content" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085.md
+source_note: ../../../generated/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, agent, prompt, video, youtube, mcp]
 createdAt: 1776281681229
@@ -30,4 +30,4 @@ createdAt: 1776281681229
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085.md`
+- `../../../generated/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085/claude-conversation-2025-11-26-maximizing-impact-and-growth-through-content-775b2085.md`

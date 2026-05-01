@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 10-augment-pricing-change-defense
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — Augment pricing change defense
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/18-augment-pricing-change-defense/18-augment-pricing-change-defense.md
+source_note: ../../claude-evergreen-distilled/18-augment-pricing-change-defense/18-augment-pricing-change-defense.md
 time_horizon: evergreen
 confidence: high
 domain: engineering
@@ -36,4 +36,4 @@ createdAt: 1777321854929
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/18-augment-pricing-change-defense/18-augment-pricing-change-defense.md`
+- Evergreen source: `../../claude-evergreen-distilled/18-augment-pricing-change-defense/18-augment-pricing-change-defense.md`

@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 08-llm-fundamentals-for-ai-agent-development
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — LLM fundamentals for AI agent development
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/04-llm-fundamentals-for-ai-agent-development/04-llm-fundamentals-for-ai-agent-development.md
+source_note: ../../claude-evergreen-distilled/04-llm-fundamentals-for-ai-agent-development/04-llm-fundamentals-for-ai-agent-development.md
 time_horizon: evergreen
 confidence: high
 domain: engineering
@@ -36,4 +36,4 @@ createdAt: 1777321854928
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/04-llm-fundamentals-for-ai-agent-development/04-llm-fundamentals-for-ai-agent-development.md`
+- Evergreen source: `../../claude-evergreen-distilled/04-llm-fundamentals-for-ai-agent-development/04-llm-fundamentals-for-ai-agent-development.md`

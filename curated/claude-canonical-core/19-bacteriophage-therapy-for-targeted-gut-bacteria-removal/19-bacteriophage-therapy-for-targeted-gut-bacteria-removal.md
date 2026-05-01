@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 19-bacteriophage-therapy-for-targeted-gut-bacteria-removal
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Bacteriophage therapy for targeted gut bacteria removal
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal.md
+source_note: ../../claude-evergreen-distilled/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal.md
 time_horizon: evergreen
 confidence: medium
 domain: personal
@@ -36,4 +36,4 @@ createdAt: 1777321854932
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal.md`
+- Evergreen source: `../../claude-evergreen-distilled/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal/44-bacteriophage-therapy-for-targeted-gut-bacteria-removal.md`

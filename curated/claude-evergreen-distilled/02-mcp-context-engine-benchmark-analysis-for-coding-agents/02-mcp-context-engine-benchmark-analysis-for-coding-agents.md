@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 02-mcp-context-engine-benchmark-analysis-for-coding-agents
-tags: 
+tags:
 updatedAt: 1775964982193
 title: "MCP context engine benchmark analysis for coding agents" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c.md
+source_note: ../../../generated/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c.md
 source_type: claude-evergreen-distilled
 themes: [product, research, agent, mcp]
 createdAt: 1777321855002
@@ -30,4 +30,4 @@ createdAt: 1777321855002
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c.md`
+- `../../../generated/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c/claude-conversation-2026-01-28-mcp-context-engine-benchmark-analysis-for-coding-agents-8f9aa60c.md`

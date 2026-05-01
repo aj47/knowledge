@@ -2,7 +2,7 @@
 kind: note
 id: claude-best-of-dashboard
 updatedAt: 1775966542226
-tags: 
+tags:
 title: Claude Best Of Dashboard
 context: search-only
 source: claude-canonical-core
@@ -23,8 +23,8 @@ createdAt: 1776281681192
 
 ## Entry points
 
-- Canonical index: `/Users/ajjoobandi/.agents/knowledge/claude-canonical-core/claude-canonical-core.md`
-- Domain core: `/Users/ajjoobandi/.agents/knowledge/claude-core-engineering/claude-core-engineering.md`
-- Domain core: `/Users/ajjoobandi/.agents/knowledge/claude-core-content/claude-core-content.md`
-- Domain core: `/Users/ajjoobandi/.agents/knowledge/claude-core-product/claude-core-product.md`
-- Domain core: `/Users/ajjoobandi/.agents/knowledge/claude-core-personal/claude-core-personal.md`
+- Canonical index: `../claude-canonical-core/claude-canonical-core.md`
+- Domain core: `../claude-core-engineering/claude-core-engineering.md`
+- Domain core: `../claude-core-content/claude-core-content.md`
+- Domain core: `../claude-core-product/claude-core-product.md`
+- Domain core: `../claude-core-personal/claude-core-personal.md`

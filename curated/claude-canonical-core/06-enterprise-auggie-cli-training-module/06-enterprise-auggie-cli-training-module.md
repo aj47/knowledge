@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 06-enterprise-auggie-cli-training-module
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — Enterprise Auggie CLI training module
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/11-enterprise-auggie-cli-training-module/11-enterprise-auggie-cli-training-module.md
+source_note: ../../claude-evergreen-distilled/11-enterprise-auggie-cli-training-module/11-enterprise-auggie-cli-training-module.md
 time_horizon: evergreen
 confidence: high
 domain: engineering
@@ -36,4 +36,4 @@ createdAt: 1777321854927
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/11-enterprise-auggie-cli-training-module/11-enterprise-auggie-cli-training-module.md`
+- Evergreen source: `../../claude-evergreen-distilled/11-enterprise-auggie-cli-training-module/11-enterprise-auggie-cli-training-module.md`

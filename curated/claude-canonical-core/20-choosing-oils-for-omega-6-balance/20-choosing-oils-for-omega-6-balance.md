@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 20-choosing-oils-for-omega-6-balance
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Choosing oils for omega-6 balance
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/46-choosing-oils-for-omega-6-balance/46-choosing-oils-for-omega-6-balance.md
+source_note: ../../claude-evergreen-distilled/46-choosing-oils-for-omega-6-balance/46-choosing-oils-for-omega-6-balance.md
 time_horizon: evergreen
 confidence: medium
 domain: personal
@@ -36,4 +36,4 @@ createdAt: 1777321854933
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/46-choosing-oils-for-omega-6-balance/46-choosing-oils-for-omega-6-balance.md`
+- Evergreen source: `../../claude-evergreen-distilled/46-choosing-oils-for-omega-6-balance/46-choosing-oils-for-omega-6-balance.md`

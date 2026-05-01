@@ -2,11 +2,11 @@
 kind: note
 id: 13-mapping-gaps-in-your-belief-system
 updatedAt: 1775964320246
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Mapping gaps in your belief system" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b.md
+source_note: ../../../generated/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b.md
 source_type: claude-evergreen-distilled
 themes: [content, personal]
 createdAt: 1776281681230
@@ -30,4 +30,4 @@ createdAt: 1776281681230
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b.md`
+- `../../../generated/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b/claude-conversation-2025-12-25-mapping-gaps-in-your-belief-system-06cc278b.md`

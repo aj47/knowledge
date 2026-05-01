@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 15-quarterly-okrs-with-speakmcp-and-learning-goals
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Quarterly OKRs with SpeakMCP and learning goals
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/16-quarterly-okrs-with-speakmcp-and-learning-goals/16-quarterly-okrs-with-speakmcp-and-learning-goals.md
+source_note: ../../claude-evergreen-distilled/16-quarterly-okrs-with-speakmcp-and-learning-goals/16-quarterly-okrs-with-speakmcp-and-learning-goals.md
 time_horizon: evergreen
 confidence: high
 domain: product
@@ -36,4 +36,4 @@ createdAt: 1777321854931
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/16-quarterly-okrs-with-speakmcp-and-learning-goals/16-quarterly-okrs-with-speakmcp-and-learning-goals.md`
+- Evergreen source: `../../claude-evergreen-distilled/16-quarterly-okrs-with-speakmcp-and-learning-goals/16-quarterly-okrs-with-speakmcp-and-learning-goals.md`

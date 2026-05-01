@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 25-script-adaptation-for-auggie
-tags: 
+tags:
 updatedAt: 1775964982194
 title: "Script adaptation for Auggie" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5.md
+source_note: ../../../generated/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, research, workflow, agent, prompt, video, mcp]
 createdAt: 1777321855007
@@ -30,4 +30,4 @@ createdAt: 1777321855007
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5.md`
+- `../../../generated/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5/claude-conversation-2026-01-20-script-adaptation-for-auggie-7de85ad5.md`

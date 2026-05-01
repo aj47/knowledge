@@ -2,11 +2,11 @@
 kind: note
 id: 10-mcp-to-skills-migration-stream-planning
 updatedAt: 1775964320241
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "MCP to skills migration stream planning" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab.md
+source_note: ../../../generated/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab.md
 source_type: claude-evergreen-distilled
 themes: [content, research, agent, prompt, mcp, skills]
 createdAt: 1776281681225
@@ -30,4 +30,4 @@ createdAt: 1776281681225
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab.md`
+- `../../../generated/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab/claude-conversation-2026-01-01-mcp-to-skills-migration-stream-planning-c95082ab.md`

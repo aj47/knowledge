@@ -2,11 +2,11 @@
 kind: note
 id: 19-hooks-for-spec-driven-multi-agent-framework
 updatedAt: 1775964320253
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Hooks for spec-driven multi-agent framework" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624.md
+source_note: ../../../generated/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624.md
 source_type: claude-evergreen-distilled
 themes: [engineering, product, workflow, agent, prompt, youtube, mcp, positioning]
 createdAt: 1776281681229
@@ -30,4 +30,4 @@ createdAt: 1776281681229
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624.md`
+- `../../../generated/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624/claude-conversation-2026-02-18-hooks-for-spec-driven-multi-agent-framework-0aa7a624.md`

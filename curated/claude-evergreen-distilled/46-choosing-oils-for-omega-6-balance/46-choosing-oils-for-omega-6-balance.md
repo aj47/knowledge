@@ -2,11 +2,11 @@
 kind: note
 id: 46-choosing-oils-for-omega-6-balance
 updatedAt: 1775964320293
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Choosing oils for omega-6 balance" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c.md
+source_note: ../../../generated/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c.md
 source_type: claude-evergreen-distilled
 themes: [content, memory, health]
 createdAt: 1776281681222
@@ -30,4 +30,4 @@ createdAt: 1776281681222
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c.md`
+- `../../../generated/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c/claude-conversation-2026-01-06-choosing-oils-for-omega-6-balance-289a544c.md`

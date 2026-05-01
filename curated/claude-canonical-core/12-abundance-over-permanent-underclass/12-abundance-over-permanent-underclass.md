@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 12-abundance-over-permanent-underclass
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — Abundance over permanent underclass
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/14-abundance-over-permanent-underclass/14-abundance-over-permanent-underclass.md
+source_note: ../../claude-evergreen-distilled/14-abundance-over-permanent-underclass/14-abundance-over-permanent-underclass.md
 time_horizon: evergreen
 confidence: high
 domain: product
@@ -36,4 +36,4 @@ createdAt: 1777321854930
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/14-abundance-over-permanent-underclass/14-abundance-over-permanent-underclass.md`
+- Evergreen source: `../../claude-evergreen-distilled/14-abundance-over-permanent-underclass/14-abundance-over-permanent-underclass.md`

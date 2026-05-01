@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 01-claude-evergreen-engineering
-tags: 
+tags:
 updatedAt: 1775966577626
 title: Engineering Strategy
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/claude-evergreen-engineering/claude-evergreen-engineering.md
+source_note: ../../claude-evergreen-distilled/claude-evergreen-engineering/claude-evergreen-engineering.md
 time_horizon: evergreen
 confidence: medium
 domain: engineering
@@ -31,8 +31,8 @@ createdAt: 1777321854925
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/claude-evergreen-engineering/claude-evergreen-engineering.md`
+- Evergreen source: `../../claude-evergreen-distilled/claude-evergreen-engineering/claude-evergreen-engineering.md`
 
 ## Merged from
 
-- Claude Evergreen Product — `/Users/ajjoobandi/.agents/knowledge/claude-canonical-core/02-claude-evergreen-product/02-claude-evergreen-product.md`
+- Claude Evergreen Product — `../02-claude-evergreen-product/02-claude-evergreen-product.md`

@@ -2,11 +2,11 @@
 kind: note
 id: 07-demo-repositories-for-context-services-use-cases
 updatedAt: 1775964320235
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Demo repositories for context services use cases" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249.md
+source_note: ../../../generated/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249.md
 source_type: claude-evergreen-distilled
 themes: [research, workflow, prompt, mcp]
 createdAt: 1776281681225
@@ -30,4 +30,4 @@ createdAt: 1776281681225
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249.md`
+- `../../../generated/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249/claude-conversation-2026-01-14-demo-repositories-for-context-services-use-cases-7453a249.md`

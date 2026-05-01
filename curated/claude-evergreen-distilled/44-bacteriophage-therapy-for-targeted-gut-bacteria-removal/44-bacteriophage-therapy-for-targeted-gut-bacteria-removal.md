@@ -2,11 +2,11 @@
 kind: note
 id: 44-bacteriophage-therapy-for-targeted-gut-bacteria-removal
 updatedAt: 1775964320291
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Bacteriophage therapy for targeted gut bacteria removal" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c.md
+source_note: ../../../generated/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, research, health]
 createdAt: 1776281681223
@@ -30,4 +30,4 @@ createdAt: 1776281681223
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c.md`
+- `../../../generated/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c/claude-conversation-2026-02-07-bacteriophage-therapy-for-targeted-gut-bacteria-removal-2252902c.md`

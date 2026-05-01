@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 09-note-taking-from-content
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — Note-taking from content
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/32-note-taking-from-content/32-note-taking-from-content.md
+source_note: ../../claude-evergreen-distilled/32-note-taking-from-content/32-note-taking-from-content.md
 time_horizon: evergreen
 confidence: high
 domain: content
@@ -36,4 +36,4 @@ createdAt: 1777321854929
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/32-note-taking-from-content/32-note-taking-from-content.md`
+- Evergreen source: `../../claude-evergreen-distilled/32-note-taking-from-content/32-note-taking-from-content.md`

@@ -2,11 +2,11 @@
 kind: note
 id: 22-monetizing-a-kimi-k2-5-fine-tune-model
 updatedAt: 1775964320255
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Monetizing a Kimi K2.5 fine-tune model" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4.md
+source_note: ../../../generated/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4.md
 source_type: claude-evergreen-distilled
 themes: [product, content, research, youtube, positioning, pricing, health]
 createdAt: 1776281681230
@@ -30,4 +30,4 @@ createdAt: 1776281681230
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4.md`
+- `../../../generated/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4/claude-conversation-2026-02-12-monetizing-a-kimi-k2-5-fine-tune-model-e3840fa4.md`

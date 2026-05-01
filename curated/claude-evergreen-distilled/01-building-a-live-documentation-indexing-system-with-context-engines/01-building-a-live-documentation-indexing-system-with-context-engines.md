@@ -2,11 +2,11 @@
 kind: note
 id: 01-building-a-live-documentation-indexing-system-with-context-engines
 updatedAt: 1775964320220
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Building a live documentation indexing system with context engines" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8.md
+source_note: ../../../generated/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, research, workflow, agent, video, mcp, memory]
 createdAt: 1776281681224
@@ -30,4 +30,4 @@ createdAt: 1776281681224
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8.md`
+- `../../../generated/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8/claude-conversation-2026-01-12-building-a-live-documentation-indexing-system-with-context-engines-62e9b8b8.md`

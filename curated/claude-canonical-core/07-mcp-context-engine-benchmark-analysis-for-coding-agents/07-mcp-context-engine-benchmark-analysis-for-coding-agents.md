@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 07-mcp-context-engine-benchmark-analysis-for-coding-agents
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — MCP context engine benchmark analysis for coding agents
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/02-mcp-context-engine-benchmark-analysis-for-coding-agents/02-mcp-context-engine-benchmark-analysis-for-coding-agents.md
+source_note: ../../claude-evergreen-distilled/02-mcp-context-engine-benchmark-analysis-for-coding-agents/02-mcp-context-engine-benchmark-analysis-for-coding-agents.md
 time_horizon: evergreen
 confidence: high
 domain: engineering
@@ -36,4 +36,4 @@ createdAt: 1777321854928
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/02-mcp-context-engine-benchmark-analysis-for-coding-agents/02-mcp-context-engine-benchmark-analysis-for-coding-agents.md`
+- Evergreen source: `../../claude-evergreen-distilled/02-mcp-context-engine-benchmark-analysis-for-coding-agents/02-mcp-context-engine-benchmark-analysis-for-coding-agents.md`

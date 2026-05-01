@@ -2,11 +2,11 @@
 kind: note
 id: 39-i-never-used-to-get-forehead-a
 updatedAt: 1775964320287
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "💬 I never used to get forehead a..." (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d.md
+source_note: ../../../generated/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d.md
 source_type: claude-evergreen-distilled
 themes: [product, content, personal, research, health]
 createdAt: 1776281681222
@@ -30,4 +30,4 @@ createdAt: 1776281681222
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d.md`
+- `../../../generated/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d/claude-conversation-2026-01-19-i-never-used-to-get-forehead-a-09a5c31d.md`

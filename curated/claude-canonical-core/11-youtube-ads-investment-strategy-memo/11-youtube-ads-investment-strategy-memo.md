@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 11-youtube-ads-investment-strategy-memo
-tags: 
+tags:
 updatedAt: 1775966577627
 title: Claude Canonical — YouTube Ads Investment Strategy Memo
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/15-youtube-ads-investment-strategy-memo/15-youtube-ads-investment-strategy-memo.md
+source_note: ../../claude-evergreen-distilled/15-youtube-ads-investment-strategy-memo/15-youtube-ads-investment-strategy-memo.md
 time_horizon: evergreen
 confidence: high
 domain: product
@@ -36,4 +36,4 @@ createdAt: 1777321854929
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/15-youtube-ads-investment-strategy-memo/15-youtube-ads-investment-strategy-memo.md`
+- Evergreen source: `../../claude-evergreen-distilled/15-youtube-ads-investment-strategy-memo/15-youtube-ads-investment-strategy-memo.md`

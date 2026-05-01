@@ -2,12 +2,12 @@
 group: claude-canonical-core
 kind: note
 id: 14-parallel-ideation-with-ai-subagents
-tags: 
+tags:
 updatedAt: 1775966577628
 title: Claude Canonical — Parallel ideation with AI subagents
 context: search-only
 source: claude-canonical-core
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/33-parallel-ideation-with-ai-subagents/33-parallel-ideation-with-ai-subagents.md
+source_note: ../../claude-evergreen-distilled/33-parallel-ideation-with-ai-subagents/33-parallel-ideation-with-ai-subagents.md
 time_horizon: evergreen
 confidence: high
 domain: content
@@ -31,8 +31,8 @@ createdAt: 1777321854931
 
 ## Implications / next-use
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d/claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d.md`
+- `../../../generated/claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d/claude-conversation-2025-12-27-parallel-ideation-with-ai-subagents-0f8f859d.md`
 
 ## Source lineage
 
-- Evergreen source: `/Users/ajjoobandi/.agents/knowledge/claude-evergreen-distilled/33-parallel-ideation-with-ai-subagents/33-parallel-ideation-with-ai-subagents.md`
+- Evergreen source: `../../claude-evergreen-distilled/33-parallel-ideation-with-ai-subagents/33-parallel-ideation-with-ai-subagents.md`

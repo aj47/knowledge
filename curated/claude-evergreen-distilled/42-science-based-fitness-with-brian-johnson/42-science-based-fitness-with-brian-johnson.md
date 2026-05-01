@@ -2,11 +2,11 @@
 kind: note
 id: 42-science-based-fitness-with-brian-johnson
 updatedAt: 1775964320290
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Science-based fitness with Brian Johnson" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f.md
+source_note: ../../../generated/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, research, health, fitness]
 createdAt: 1776281681229
@@ -30,4 +30,4 @@ createdAt: 1776281681229
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f.md`
+- `../../../generated/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f/claude-conversation-2025-12-16-science-based-fitness-with-brian-johnson-a8fd8a2f.md`

@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 09-integrating-context-engine-sdk-with-langchain
-tags: 
+tags:
 updatedAt: 1775964982194
 title: "Integrating context engine SDK with LangChain" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531.md
+source_note: ../../../generated/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531.md
 source_type: claude-evergreen-distilled
 themes: [content, research, workflow, agent, prompt, video, mcp, memory]
 createdAt: 1777321855004
@@ -30,4 +30,4 @@ createdAt: 1777321855004
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531.md`
+- `../../../generated/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531/claude-conversation-2025-12-08-integrating-context-engine-sdk-with-langchain-d4c30531.md`

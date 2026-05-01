@@ -2,11 +2,11 @@
 kind: note
 id: 43-chest-pain-that-feels-like-heartburn
 updatedAt: 1775964320291
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Chest pain that feels like heartburn" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9.md
+source_note: ../../../generated/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9.md
 source_type: claude-evergreen-distilled
 themes: [prompt, health]
 createdAt: 1776281681219
@@ -30,4 +30,4 @@ createdAt: 1776281681219
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9.md`
+- `../../../generated/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9/claude-conversation-2026-02-05-chest-pain-that-feels-like-heartburn-750f30f9.md`

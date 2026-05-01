@@ -2,11 +2,11 @@
 kind: note
 id: 23-ai-agent-voice-delegation-platform
 updatedAt: 1775964320255
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "AI Agent Voice Delegation Platform" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf.md
+source_note: ../../../generated/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf.md
 source_type: claude-evergreen-distilled
 themes: [content, agent, mcp, automation, positioning]
 createdAt: 1776281681221
@@ -30,4 +30,4 @@ createdAt: 1776281681221
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf.md`
+- `../../../generated/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf/claude-conversation-2025-07-30-ai-agent-voice-delegation-platform-cb85d9cf.md`

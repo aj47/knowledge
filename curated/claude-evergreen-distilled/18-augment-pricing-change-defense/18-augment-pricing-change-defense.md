@@ -2,11 +2,11 @@
 group: claude-evergreen-distilled
 kind: note
 id: 18-augment-pricing-change-defense
-tags: 
+tags:
 updatedAt: 1775964982194
 title: "Augment pricing change defense" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59.md
+source_note: ../../../generated/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59.md
 source_type: claude-evergreen-distilled
 themes: [research, prompt, youtube, pricing]
 createdAt: 1777321855006
@@ -30,4 +30,4 @@ createdAt: 1777321855006
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59.md`
+- `../../../generated/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59/claude-conversation-2025-12-19-augment-pricing-change-defense-d3738b59.md`

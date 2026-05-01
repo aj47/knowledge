@@ -2,11 +2,11 @@
 kind: note
 id: 24-ai-agent-marketplace-platform-ideas
 updatedAt: 1775964320256
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "AI agent marketplace platform ideas" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7.md
+source_note: ../../../generated/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7.md
 source_type: claude-evergreen-distilled
 themes: [content, personal, research, workflow, agent, skills, pricing, health]
 createdAt: 1776281681223
@@ -30,4 +30,4 @@ createdAt: 1776281681223
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7.md`
+- `../../../generated/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7/claude-conversation-2026-01-31-ai-agent-marketplace-platform-ideas-a1a81ba7.md`

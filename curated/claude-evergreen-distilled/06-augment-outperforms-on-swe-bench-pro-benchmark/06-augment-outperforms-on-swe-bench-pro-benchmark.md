@@ -2,11 +2,11 @@
 kind: note
 id: 06-augment-outperforms-on-swe-bench-pro-benchmark
 updatedAt: 1775964320233
-tags: 
+tags:
 group: claude-evergreen-distilled
 title: "Augment outperforms on SWE-bench Pro benchmark" (Evergreen Distilled)
 context: search-only
-source_note: /Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f.md
+source_note: ../../../generated/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f.md
 source_type: claude-evergreen-distilled
 themes: [engineering, content, research, agent, prompt, video, skills]
 createdAt: 1776281681225
@@ -30,4 +30,4 @@ createdAt: 1776281681225
 
 ## Source
 
-- `/Users/ajjoobandi/.agents/knowledge/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f.md`
+- `../../../generated/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f/claude-conversation-2026-02-03-augment-outperforms-on-swe-bench-pro-benchmark-8636a41f.md`
