@@ -27,7 +27,7 @@ pattern observed: creating multiple repeat tasks at once, then manually disablin
 recommended artifact type: template
 why this would save time: a small "start with one atomic loop" task template would avoid over-creating loops and reduce follow-up cleanup
 ## 2026-04-09 18:34:00
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `personal-os-loop/task.md`, `wiki-refiner/task.md`, `wiki-refiner-run-log/wiki-refiner-run-log.md`, and recent knowledge/task directories.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `personal-os-loop/task.md`, `wiki-refiner/task.md`, `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, and recent knowledge/task directories.
 - decision: Improved the `personal-os-loop` prompt by adding one exact run-entry template so the autonomy log becomes consistently structured across runs.
 - files_changed: `~/.agents/tasks/personal-os-loop/task.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: logging and feedback-loop quality
@@ -35,15 +35,15 @@ why this would save time: a small "start with one atomic loop" task template wou
 - result: The loop now tells future runs exactly how to append entries, reducing drift and making the feedback loop more machine-readable and reviewable.
 - next_candidate: Add one small checklist or proposal that reconciles the wiki-refiner task log format with the stricter wiki-refiner task requirements so the wiki pipeline has one canonical run record.
 ## 2026-04-09 18:37:07
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `personal-os-loop/task.md`, `wiki-refiner/task.md`, and `wiki-refiner-run-log/wiki-refiner-run-log.md`.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `personal-os-loop/task.md`, `wiki-refiner/task.md`, and `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`.
 - decision: Added one canonical run-record checklist to `wiki-refiner-run-log.md` so the wiki pipeline has a single durable log contract aligned with the stricter `wiki-refiner` task requirements.
-- files_changed: `~/.agents/knowledge/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: The main reliability gap was log-contract drift between the wiki task prompt and its durable run log; tightening one canonical record improves future runs without adding new moving parts.
 - result: `wiki-refiner-run-log.md` now contains a concise checklist covering the stricter fields from `wiki-refiner/task.md` plus a rule declaring this file the single canonical run record.
 - next_candidate: Add one small proposal in `knowledge-os.md` clarifying which durable note is canonical for each active loop so coordinator tasks stop duplicating log instructions.
 ## 2026-04-09 18:44:49
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-refiner-run-log/wiki-refiner-run-log.md`, `idea-backlog/idea-backlog.md`, `crm/crm.md`, and current task prompts under `~/.agents/tasks`.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `idea-backlog/idea-backlog.md`, `crm/crm.md`, and current task prompts under `~/.agents/tasks`.
 - decision: Added a canonical file map and one coordination rule to `knowledge-os.md` so active loops and subsystems have an explicit source-of-truth file contract.
 - files_changed: `~/.agents/knowledge/knowledge-os/knowledge-os.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
@@ -67,58 +67,58 @@ why this would save time: a small "start with one atomic loop" task template wou
 - result: `idea-backlog.md` now defines a 1-5 scoring contract, a summed priority score, and clearer entry fields so ideas can be sorted with less ambiguity while staying file-first.
 - next_candidate: Add one small status artifact for the wiki pipeline that records the last successful build/check time so reliability gaps become visible without changing code.
 ## 2026-04-09 18:50:34
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-refiner-run-log/wiki-refiner-run-log.md`, `idea-backlog/idea-backlog.md`, `crm/crm.md`, and current task/knowledge directories.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `idea-backlog/idea-backlog.md`, `crm/crm.md`, and current task/knowledge directories.
 - decision: Added one compact wiki pipeline status artifact so the latest known build/check state is visible without reading the full run log.
-- files_changed: `~/.agents/knowledge/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: The highest safe leverage was making wiki health legible at a glance; the system already had a detailed run log, but lacked a compact status file that future runs can quickly inspect before deciding whether reliability work is needed.
 - result: The wiki pipeline now has a single lightweight status note with a strict field contract for last check time, last successful build, build status, and next reliability action.
 - next_candidate: Add one small proposal or checklist to reconcile `wiki-pipeline-status.md` updates with actual wiki build execution so the status file stays fresh rather than becoming stale metadata.
 ## 2026-04-09 18:53:53
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-pipeline-status/wiki-pipeline-status.md`, `wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/ingest_manifest.json`, `~/Documents/personal-wiki/meta/wiki_stats.json`, and `~/Documents/personal-wiki/meta/build_site.py`.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-pipeline-status/wiki-pipeline-status.md`, `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/ingest_manifest.json`, `~/Documents/personal-wiki/meta/wiki_stats.json`, and `~/Documents/personal-wiki/meta/build_site.py`.
 - source_selection_reason: The top ranked frontier item is still wiki pipeline reliability, and the newest status artifact was too shallow because it could go stale without showing whether key pipeline evidence files were even present.
 - decision: Tightened `wiki-pipeline-status.md` with a stricter snapshot contract covering manifest/stats presence and explicit evidence fields.
-- files_changed: `~/.agents/knowledge/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: This was the safest next improvement because it strengthens the file contract of an existing canonical status artifact, making future reliability checks faster and less ambiguous without editing code, adding tasks, or touching the loop prompt again.
 - result: The wiki status note now records whether key pipeline evidence files exist, cites the files checked for the snapshot, and preserves the next action of doing one explicit build/check before claiming exact build freshness.
 - next_candidate: Run one explicit wiki build/check and update `wiki-pipeline-status.md` with exact build outcome fields only if the check can be done safely without introducing code changes.
 
 ## 2026-04-09 19:14:19
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-pipeline-status/wiki-pipeline-status.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/ingest_manifest.json`, `~/Documents/personal-wiki/meta/wiki_stats.json`, and `~/Documents/personal-wiki/meta/build_site.py`.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/ingest_manifest.json`, `~/Documents/personal-wiki/meta/wiki_stats.json`, and `~/Documents/personal-wiki/meta/build_site.py`.
 - source_selection_reason: The top frontier item remained wiki pipeline reliability, and the last two wiki-status runs explicitly proposed the next concrete step of executing one explicit build/check to replace unknown freshness with observed evidence.
 - decision: Ran one explicit wiki build/check and updated the canonical wiki pipeline status note with the observed build result and output evidence.
-- files_changed: `~/.agents/knowledge/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: This was the highest-leverage safe action because it completed the previously proposed concrete reliability step, converting the status file from inferred metadata into observed pipeline evidence without changing DotAgents code or adding new tasks.
 - result: The wiki pipeline status note now records an explicit build outcome, concrete evidence files, and a real checked timestamp instead of `unknown` build freshness.
 - next_candidate: Add one compact checklist artifact that defines how future runs should reconcile `wiki-pipeline-status.md` with `wiki-refiner-log.md` after content passes so the status note stays trustworthy.
 
 ## 2026-04-09 19:21:43
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-pipeline-status/wiki-pipeline-status.md`, `wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/ingest_manifest.json`, `~/Documents/personal-wiki/meta/wiki_stats.json`, and `~/Documents/personal-wiki/site/_index.html`.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-pipeline-status/wiki-pipeline-status.md`, `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/ingest_manifest.json`, `~/Documents/personal-wiki/meta/wiki_stats.json`, and `~/Documents/personal-wiki/site/_index.html`.
 - source_selection_reason: The last run explicitly proposed reconciling wiki status with the latest wiki-refiner run, and the current status note still implied freshness without reflecting that later content passes ended with `Site rebuild status: pending` or `not run in this pass`.
 - decision: Reconciled the canonical wiki pipeline status note against the latest visible wiki-refiner log evidence so build freshness stays separated from later unbuilt content passes.
-- files_changed: `~/.agents/knowledge/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: This was the highest-leverage safe action because it executed the previously proposed concrete reconciliation step, tightening the status artifact's contract without changing code or creating another checklist file.
 - result: `wiki-pipeline-status.md` now preserves the last explicit successful build timestamp while also reflecting that newer wiki-refiner runs have not rebuilt the site yet, reducing the chance of stale build confidence.
 - next_candidate: Tighten `wiki-refiner-run-log.md` with one compact reconciliation note telling future runs when to update `wiki-pipeline-status.md` after a content pass versus after an explicit build.
 
 ## 2026-04-09 19:21:43
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-pipeline-status/wiki-pipeline-status.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/build_site.py`, and the latest wiki-refiner run tail.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/meta/build_site.py`, and the latest wiki-refiner run tail.
 - source_selection_reason: The wiki pipeline status note had been tightened already, and the next highest-leverage safe step was to reconcile that status against the newer wiki-refiner content-pass evidence without touching code or creating a new task.
 - decision: Reconciled `wiki-pipeline-status.md` so it keeps the last explicit successful build timestamp while noting that later wiki-refiner runs did not rebuild the site.
-- files_changed: `~/.agents/knowledge/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-pipeline-status/wiki-pipeline-status.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: This was the safest high-leverage step because it prevented stale build confidence by separating observed build freshness from later unbuilt content passes, improving trust in the canonical status artifact without adding prompt churn.
 - result: `wiki-pipeline-status.md` now reflects both the last verified build and the newer no-rebuild content passes, so future runs can make faster, more accurate reliability decisions.
 - next_candidate: Tighten `wiki-refiner-run-log.md` with one compact reconciliation note telling future runs when to update `wiki-pipeline-status.md` after a content pass versus after an explicit build.
 
 ## 2026-04-09 19:23:00
-- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/site/_index.html`, and `~/Documents/personal-wiki/meta/wiki_stats.json`.
+- inspected: `knowledge-os.md`, `knowledge-os-plan.md`, `agent-autonomy.md`, `systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/Documents/personal-wiki/wiki-refiner-log.md`, `~/Documents/personal-wiki/site/_index.html`, and `~/Documents/personal-wiki/meta/wiki_stats.json`.
 - source_selection_reason: The previous run already proposed tightening the wiki refiner run log with a reconciliation note, and the evidence showed later content passes can occur without a rebuild, making the run log the safest durable place to encode that distinction.
 - decision: Added one compact reconciliation note to `wiki-refiner-run-log.md` so the wiki pipeline records content-pass progress separately from explicit build freshness.
-- files_changed: `~/.agents/knowledge/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
+- files_changed: `~/.agents/knowledge/systems/wiki-refiner-run-log/wiki-refiner-run-log.md`, `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - category: knowledge/wiki pipeline reliability
 - highest_leverage_reason: This was the highest-leverage safe action because it executed the previously proposed concrete next step and tightened the canonical run log without changing DotAgents code or duplicating status fields.
 - result: The run log now says later content passes do not imply a rebuild, which protects the canonical pipeline status file from being updated by inference.

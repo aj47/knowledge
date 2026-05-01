@@ -21,7 +21,7 @@ createdAt: 1776281681136
 - `claude-distilled-product`: product-focused distilled index
 - `claude-distilled-content`: content-focused distilled index
 - `claude-distilled-personal`: personal-focused distilled index
-- `claude-export-ingestion-audit/claude-duplicate-candidates.md`: duplicate audit
+- `../claude-duplicate-candidates/claude-duplicate-candidates.md`: duplicate audit
 
 ## Distilled note counts
 

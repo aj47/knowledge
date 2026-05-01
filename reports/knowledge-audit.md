@@ -67,7 +67,7 @@
 - content/video-projects-dotagents-vs-openclaw-video-src-scenes-theturnscene/TheTurnScene.tsx
 - content/video-projects-dotagents-vs-openclaw-video-tsconfig/tsconfig.json
 - content/video-projects-frontend-model-comparison-benchmark-metrics/benchmark-metrics.csv
-- curated/claude-export-ingestion-audit/claude-topic-audit.json
+- generated/claude-export-ingestion-audit/claude-topic-audit.json
 - personal/tax-fbar-prep-2025/ING-Savings-2025.csv
 - personal/tax-fbar-prep-2025/ING-Transactions-2025.csv
 - personal/tax-fbar-prep-2025/brand-deals-2025.csv

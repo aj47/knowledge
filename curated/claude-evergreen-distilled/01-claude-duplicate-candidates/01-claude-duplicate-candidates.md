@@ -6,7 +6,7 @@ tags:
 group: claude-evergreen-distilled
 title: Claude Duplicate Candidates (Distilled)
 context: search-only
-source_note: ../../claude-export-ingestion-audit/claude-duplicate-candidates.md
+source_note: ../../../generated/claude-duplicate-candidates/claude-duplicate-candidates.md
 source_type: claude-distilled-evergreen
 themes: []
 createdAt: 1776281681226
@@ -22,4 +22,4 @@ createdAt: 1776281681226
 
 ## Source
 
-- `../../claude-export-ingestion-audit/claude-duplicate-candidates.md`
+- `../../../generated/claude-duplicate-candidates/claude-duplicate-candidates.md`

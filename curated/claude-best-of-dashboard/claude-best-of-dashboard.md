@@ -23,8 +23,8 @@ createdAt: 1776281681192
 
 ## Entry points
 
-- Canonical index: `../claude-canonical-core/claude-canonical-core.md`
-- Domain core: `../claude-core-engineering/claude-core-engineering.md`
-- Domain core: `../claude-core-content/claude-core-content.md`
-- Domain core: `../claude-core-product/claude-core-product.md`
-- Domain core: `../claude-core-personal/claude-core-personal.md`
+- Canonical index: [Claude Canonical Core](../claude-canonical-core/claude-canonical-core.md)
+- Domain core: [Claude Core Engineering](../claude-core-engineering/claude-core-engineering.md)
+- Domain core: [Claude Core Content](../claude-core-content/claude-core-content.md)
+- Domain core: [Claude Core Product](../claude-core-product/claude-core-product.md)
+- Domain core: [Claude Core Personal](../claude-core-personal/claude-core-personal.md)

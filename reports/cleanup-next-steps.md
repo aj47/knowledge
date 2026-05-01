@@ -1,8 +1,8 @@
 # Knowledge Cleanup Next Steps
 
-Current baseline after the full root taxonomy move pass:
+Current baseline after the full root taxonomy move pass plus the first curated-bucket semantic curation pass:
 
-- 932 markdown notes
+- 933 markdown notes
 - 8 top-level taxonomy note directories, plus `tools/` and `reports/`
 - 57 non-markdown support files, mostly source snippets and lightweight assets
 - 0 bulky ignored media files present in the vault scan
@@ -29,10 +29,23 @@ Current baseline after the full root taxonomy move pass:
 5. Regenerated audit/taxonomy reports after the moves; audit still has 0 missing frontmatter, 0 missing required fields, 0 duplicate titles, and 0 duplicate IDs.
 6. `reports/proposed-taxonomy.md` now reports 0 remaining move candidates across all taxonomy buckets.
 
+## Completed curated-bucket semantic curation pass
+
+1. Reviewed the 11 `curated/` notes with no markdown links and classified them by semantic role.
+2. Kept curated reading surfaces in `curated/`: canonical Claude indexes, topic maps, distilled indexes, and best-of dashboard.
+3. Moved audit/run-log/generated artifacts out of `curated/`:
+   - Claude audit and promotion summaries → `generated/`
+   - Notion workspace heading index → `generated/`
+   - Notion personal takeaways → `personal/`
+   - Wiki pipeline status and refiner log → `systems/`
+4. Converted the best-of dashboard path-only entry points into markdown links so every remaining `curated/` note has at least one navigable link.
+5. Updated moved references in `systems/knowledge-os`, `systems/agent-autonomy`, and Claude provenance notes.
+6. Regenerated audit/taxonomy/duplicate reports and verified no missing non-generated relative markdown links.
+
 ## Recommended cleanup sequence from here
 
-1. **Review and commit the full taxonomy move as a separate checkpoint.**
-2. **Do semantic curation inside buckets next, not more root moves.** Start with `curated/` vs `generated/` provenance links, then prune/merge within high-noise families only after inspection.
+1. **Commit this curated semantic curation pass as a separate checkpoint.**
+2. **Continue semantic curation inside buckets, not broad root moves.** Next best target: `generated/` high-noise Claude audit/export artifacts versus evergreen distilled notes.
 3. **Handle raw-vs-curated Claude material as provenance, not deletion.** Keep raw generated conversation notes searchable; use canonical/evergreen notes as the curated reading surface.
 4. **Keep tools/reports tracked.** They are now the reproducible audit surface for future cleanup agents.
 
@@ -50,4 +63,4 @@ rm -rf tools/__pycache__
 
 ## Next safe work unit
 
-Commit this full taxonomy move first. The next safe work unit is a semantic curation pass inside one bucket, preferably `curated/` or `generated/`, using reports plus manual inspection rather than broad automated deletion.
+Commit this curated semantic curation pass first. The next safe work unit is a generated-bucket provenance pass: inspect generated Claude audit/export artifacts, preserve source-truth files, and only merge/delete empty derived wrappers after manual review.

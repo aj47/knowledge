@@ -54,8 +54,8 @@ This note is the canonical operating brief for the personal operating system for
 - Personal OS coordinator loop: `~/.agents/tasks/personal-os-loop/task.md` logs to `~/.agents/knowledge/agent-autonomy/agent-autonomy.md`
 - Knowledge OS strategy and system decisions: `~/.agents/knowledge/knowledge-os/knowledge-os.md`
 - Personal OS rollout plan and expansion rules: `~/.agents/knowledge/knowledge-os-plan/knowledge-os-plan.md`
-- Wiki refiner runs: `~/.agents/knowledge/wiki-refiner-run-log/wiki-refiner-run-log.md`
-- Wiki pipeline status snapshot: `~/.agents/knowledge/wiki-pipeline-status/wiki-pipeline-status.md`
+- Wiki refiner runs: `~/.agents/knowledge/systems/wiki-refiner-run-log/wiki-refiner-run-log.md`
+- Wiki pipeline status snapshot: `~/.agents/knowledge/systems/wiki-pipeline-status/wiki-pipeline-status.md`
 - Idea pipeline schema and backlog entries: `~/.agents/knowledge/idea-backlog/idea-backlog.md`
 - CRM schema and opportunity records: `~/.agents/knowledge/crm/crm.md`
 
